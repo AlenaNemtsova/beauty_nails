@@ -1,0 +1,9 @@
+.card__menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card__item {
+  display: grid;
+  grid-template-columns: 1fr 5% 7% 38%;
+}/*# sourceMappingURL=style.css.map */

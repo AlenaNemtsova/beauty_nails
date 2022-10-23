@@ -1,0 +1,12 @@
+.card__menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    // background-color: #f6d365;
+}
+
+.card__item {
+    display: grid;
+    grid-template-columns: 1fr 5% 7% 38%;
+    // padding: 5px;
+    // margin-top: 5px;
+}
