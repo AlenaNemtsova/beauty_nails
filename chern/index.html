@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="root">
+        <div class="card">
+            <form class="admin" onsubmit="return false;">
+                <h1 class="admin__title">Добавить акцию</h1>
+                <input type="text" id="newNameCompany" placeholder="название" class="admin__input">
+                <input type="text" id="newLogoCompany" placeholder="URL логотипа" class="admin__input">
+                <input type="text" id="newPay" placeholder="стоимость" class="admin__input">
+                <select name="currency" id="newCurrency" class="admin__select" id="currency">
+                    <option value="ruble" class="admin__option">₽</option>
+                    <option value="dollar" class="admin__option">$</option>
+                </select>
+                <select name="type" class="admin__select" id="type">
+                    <option value="Russia" class="admin__option">Русская</option>
+                    <option value="other" class="admin__option">Иностранная</option>
+                </select>
+                <button class="admin__button">Добавить</button>
+            </form>
+            <div class="card__list">
+                <div class="card__menu">
+                    <span class="card__text">Название</span>
+                    <span class="card__text">Логотип</span>
+                    <span class="card__text">Стоимость</span>
+                    <span class="card__text">Валюта</span>
+                    <span class="card__text">Страна</span>
+                </div>
+                <!-- <div class="card__item">
+                <span class="card__name">lego</span>
+                <img src="https://avatarko.ru/img/kartinka/33/multfilm_lyagushka_32117.jpg" alt="" class="card__logo">
+                <span class="card__pay">100</span>
+                <span class="card__currency">₽</span>
+                <span class="card__from">Russia</span>
+                <button class="card__btn">Удалить</button>
+                </div>  -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
