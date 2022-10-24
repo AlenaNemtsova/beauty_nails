@@ -3,18 +3,18 @@
 const combinedServiceManicureTop = [
     {
     name: 'Маникюр классический / комбинированный / аппаратный, покрытие гель-лак',
-    price: 1700,
-    currency: '₽'
+    price: '1700 ₽',
+    //currency: '₽'
     },
     {
     name: 'Маникюр бразильский, покрытие гель-лак',
-    price: 1900,
-    currency: '₽'
+    price: '1900 ₽',
+    //currency: '₽'
     },
     {
     name: 'Маникюр мужской, покрытие гель-лак',
-    price: 1900,
-    currency: '₽'
+    price: '1900 ₽',
+    //currency: '₽'
     }
 ]
 
@@ -23,13 +23,13 @@ const combinedServiceManicureTop = [
 const combinedServiceManicureTopRemove = [
     {
     name: 'Маникюр классический / комбинированный / аппаратный + покрытие гель-лак + снятие',
-    price: 1900,
-    currency: '₽'
+    price: '1900 ₽',
+    //currency: '₽'
     },
     {
     name: 'Маникюр Бразильский + Покрытие гель-лак + Снятие',
-    price: 2100,
-    currency: '₽'
+    price: '2100 ₽',
+    //currency: '₽'
     }
 ]
 
@@ -38,18 +38,18 @@ const combinedServiceManicureTopRemove = [
 const combinedServiceManicureTopAlignment = [
     {
     name: 'Маникюр классический / комбинированный / аппаратный + покрытие гель-лак + выравнивание',
-    price: 2300,
-    currency: '₽'
+    price: '2300 ₽',
+    //currency: '₽'
     },
     {
     name: 'Маникюр + Выравнивание + Покрытие гель-лак Luxio',
-    price: 2500,
-    currency: '₽'
+    price: '2500 ₽',
+    //currency: '₽'
     },
     {
     name: 'Маникюр Бразильский + Выравнивание + Покрытие гель-лак',
-    price: 2500,
-    currency: '₽'
+    price: '2500 ₽',
+    //currency: '₽'
     }
 ]
 
@@ -58,18 +58,18 @@ const combinedServiceManicureTopAlignment = [
 const combinedServiceManicureTopAlignmentRemove = [
     {
     name: 'Маникюр классический/ комбинированный/ аппаратный + выравнивание + покрытие гель-лак + снятие',
-    price: 2400,
-    currency: '₽'
+    price: '2400 ₽',
+    //currency: '₽'
     },
     {
     name: 'Маникюр Бразильский + Выравнивание + Покрытие гель-лак + Снятие',
-    price: 2700,
-    currency: '₽'
+    price: '2700 ₽',
+    //currency: '₽'
     },
     {
     name: 'Маникюр Бразильский + Выравнивание + Покрытие гель-лак Luxio + Снятие',
-    price: 2900,
-    currency: '₽'
+    price: '2900 ₽',
+    //currency: '₽'
     }
 ]
 
@@ -78,18 +78,18 @@ const combinedServiceManicureTopAlignmentRemove = [
 const combinedServiceManicureStrengthening = [
     {
     name: 'Маникюр Классический/ Комбинированный/ Аппаратный + Укрепление ногтевой пластины IBX/ Vitagel/ Masura',
-    price: 1200,
-    currency: '₽'
+    price: '1200 ₽',
+    //currency: '₽'
     },
     {
     name: 'Маникюр Бразильский + Укрепление ногтевой пластины IBX/ Vitagel/ Masura',
-    price: 1500,
-    currency: '₽'
+    price: '1500 ₽',
+    //currency: '₽'
     },
     {
     name: 'Выравнивание ногтевой пластины базой',
-    price: 600,
-    currency: '₽'
+    price: '600 ₽',
+    //currency: '₽'
     }
 ]
 
@@ -98,33 +98,33 @@ const combinedServiceManicureStrengthening = [
 const combinedServicePedicureTop = [
     {
     name: 'Педикюр классический/ комбинированный/ аппаратный + покрытие гель-лак',
-    price: 2500,
-    currency: '₽'
+    price: '2500 ₽',
+    //currency: '₽'
     },
     {
     name: 'Педикюр классический/ комбинированный/ аппаратный + покрытие гель-лак Luxio',
-    price: 2900,
-    currency: '₽'
+    price: '2900 ₽',
+    //currency: '₽'
     },
     {
     name: 'Глубокий эстетический педикюр Golden Trace + Покрытие гель-лак',
-    price: 3200,
-    currency: '₽'
+    price: '3200 ₽',
+    //currency: '₽'
     },
     {
     name: 'Экспресс педикюр (только пальчики) + покрытие гель-лак',
-    price: 2100,
-    currency: '₽'
+    price: '2100 ₽',
+    //currency: '₽'
     },
     {
     name: 'Педикюр бразильский + покрытие гель-лак',
-    price: 2600,
-    currency: '₽'
+    price: '2600 ₽',
+    //currency: '₽'
     },
     {
     name: 'Смарт педикюр с покрытием гель-лак',
-    price: 2800,
-    currency: '₽'
+    price: '2800 ₽',
+    //currency: '₽'
     }
 ]
 
@@ -133,28 +133,28 @@ const combinedServicePedicureTop = [
 const combinedServicePedicureTopRemove = [
     {
     name: 'Педикюр классический/ комбинированный/ аппаратный + покрытие гель-лак + снятие',
-    price: 2700,
-    currency: '₽'
+    price: '2700 ₽',
+    //currency: '₽'
     },
     {
     name: 'Педикюр Комбинированный + Гель-Лак + Снятие Гель-Лак',
-    price: 2600,
-    currency: '₽'
+    price: '2600 ₽',
+    //currency: '₽'
     },
     {
     name: 'Педикюр Бразильский + Покрытие Гель-Лак + Снятие',
-    price: 2700,
-    currency: '₽'
+    price: '2700 ₽',
+    //currency: '₽'
     },
     {
     name: 'Экспресс педикюр (только пальчики) + покрытие гель-лак + снятие',
-    price: 2300,
-    currency: '₽'
+    price: '2300 ₽',
+    //currency: '₽'
     },
     {
     name: 'Снятие + Смарт педикюр + Покрытие гель-лак',
-    price: 3000,
-    currency: '₽'
+    price: '3000 ₽',
+    //currency: '₽'
     }
 ]
 
@@ -163,33 +163,33 @@ const combinedServicePedicureTopRemove = [
 const combinedServicePedicureStrengthening = [
     {
     name: 'Педикюр Классический/ Комбинированный + Укрепление ногтевой пластины IBX/ Vitagel/ Masura',
-    price: 1900,
-    currency: '₽'
+    price: '1900 ₽',
+    //currency: '₽'
     },
     {
     name: 'Педикюр Аппаратный + Укрепление ногтевой пластины IBX/ Vitagel/ Masura',
-    price: 1900,
-    currency: '₽'
+    price: '1900 ₽',
+    //currency: '₽'
     },
     {
     name: 'Педикюр Аппаратный + Укрепление ногтевой пластины IBX/ Vitagel/ Masura + Снятие',
-    price: 2200,
-    currency: '₽'
+    price: '2200 ₽',
+    //currency: '₽'
     },
     {
     name: 'Педикюр Бразильский + Укрепление ногтевой пластины IBX/ Vitagel/ Masur',
-    price: 2100,
-    currency: '₽'
+    price: '2100 ₽',
+    //currency: '₽'
     },
     {
     name: 'Педикюр Бразильский + Укрепление ногтевой пластины IBX/ Vitagel/ Masura + Снятие',
-    price: 2400,
-    currency: '₽'
+    price: '2400 ₽',
+    //currency: '₽'
     },
     {
     name: 'Экспресс Педикюр (только пальчики) + Укрепление ногтевой пластины IBX/ Vitagel/ Masura',
-    price: 1600,
-    currency: '₽'
+    price: '1600 ₽',
+    //currency: '₽'
     }
 ]
 
@@ -199,18 +199,18 @@ const combinedServicePedicureStrengthening = [
 const monoServiceManicure = [
     {
     name: 'Маникюр классический/ комбинированный/ аппаратный (без покрытия)',
-    price: 800,
-    currency: '₽'
+    price: '800 ₽',
+    //currency: '₽'
     },
     {
     name: 'Маникюр бразильский (без покрытия)',
-    price: 1000,
-    currency: '₽'
+    price: '1000 ₽',
+    //currency: '₽'
     },
     {
     name: 'Маникюр мужской (без покрытия)',
-    price: 1000,
-    currency: '₽'
+    price: '1000 ₽',
+    //currency: '₽'
     }
 ]
 
@@ -219,33 +219,33 @@ const monoServiceManicure = [
 const monoServicePedicure = [
     {
     name: 'Педикюр классический/комбинированный/аппаратный (без покрытия)Маникюр классический/ комбинированный/ аппаратный (без покрытия)',
-    price: 1600,
-    currency: '₽'
+    price: '1600 ₽',
+    //currency: '₽'
     },
     {
     name: 'Педикюр бразильский (без покрытия)',
-    price: 1800,
-    currency: '₽'
+    price: '1800 ₽',
+    //currency: '₽'
     },
     {
     name: 'Экспресс педикюр (только пальчики)',
-    price: 1100,
-    currency: '₽'
+    price: '1100 ₽',
+    //currency: '₽'
     },
     {
     name: 'Глубокий эстетический педикюр Golden trace (без покрытия)',
-    price: 2500,
-    currency: '₽'
+    price: '2500 ₽',
+    //currency: '₽'
     },
     {
     name: 'Педикюр мужской',
-    price: 2000,
-    currency: '₽'
+    price: '2000 ₽',
+    //currency: '₽'
     },
     {
     name: 'Смарт педикюр без покрытия',
-    price: 1900,
-    currency: '₽'
+    price: '1900 ₽',
+    //currency: '₽'
     }
 ]
 
@@ -254,38 +254,38 @@ const monoServicePedicure = [
 const monoServiceTop = [
     {
     name: 'Покрытие гель-лак',
-    price: 1400,
-    currency: '₽'
+    price: '1400 ₽',
+    //currency: '₽'
     },
     {
     name: 'Покрытие гель-лак Luxio',
-    price: 1600,
-    currency: '₽'
+    price: '1600 ₽',
+    //currency: '₽'
     },
     {
     name: 'Покрытие гель-лак френч',
-    price: 1800,
-    currency: '₽'
+    price: '1800 ₽',
+    //currency: '₽'
     },
     {
     name: 'Укрепление ногтевой пластины Vitagel/IBX/ Masura',
-    price: 600,
-    currency: '₽'
+    price: '600 ₽',
+    //currency: '₽'
     },
     {
     name: 'Акриловое укрепление',
-    price: 600,
-    currency: '₽'
+    price: '600 ₽',
+    //currency: '₽'
     },
     {
     name: 'Гелевое укрепление',
-    price: 1000,
-    currency: '₽'
+    price: '1000 ₽',
+    //currency: '₽'
     },
     {
     name: 'Матовый топ/ Кошачий глаз/ Светоотражающий топ',
-    price: 100,
-    currency: '₽'
+    price: '100 ₽',
+    //currency: '₽'
     }
 ]
 
@@ -293,18 +293,18 @@ const monoServiceTop = [
 const monoServiceDesign = [
     {
     name: 'Более 3-х цветов',
-    price: 200,
-    currency: '₽'
+    price: '200 ₽',
+    //currency: '₽'
     },
     {
     name: 'Слайдеры',
-    price: 100,
-    currency: '₽'
+    price: '100 ₽',
+    //currency: '₽'
     },
     {
     name: 'Дизайн простой/ дизайн средний/ дизайн сложный',
-    price: '50/100/200',
-    currency: '₽'
+    price: '50/100/200 ₽',
+    //currency: '₽'
     }
 ]
 
@@ -312,33 +312,33 @@ const monoServiceDesign = [
 const monoServiceCare = [
     {
     name: 'Спа-уход/ скраб',
-    price: '500/300',
-    currency: '₽'
+    price: '500/300 ₽',
+    //currency: '₽'
     },
     {
     name: 'Парафинотерапия (холодный парафин)',
-    price: 400,
-    currency: '₽'
+    price: '400 ₽',
+    //currency: '₽'
     },
     {
     name: 'Массаж рук/ массаж ног',
-    price: '200/500',
-    currency: '₽'
+    price: '200/500 ₽',
+    //currency: '₽'
     },
     {
     name: 'Удаление вросшего ногтя',
-    price: 200,
-    currency: '₽'
+    price: '200 ₽',
+    //currency: '₽'
     },
     {
     name: 'Скраб для ног',
-    price: 300,
-    currency: '₽'
+    price: '300 ₽',
+    //currency: '₽'
     },
     {
     name: 'Удаление Натоптыша/ Мозоли',
-    price: 200,
-    currency: '₽'
+    price: '200 ₽',
+    //currency: '₽'
     }
 ]
 
@@ -346,23 +346,23 @@ const monoServiceCare = [
 const monoServiceCorrection = [
     {
     name: 'Наращивание* + покрытие гель-лак',
-    price: 4000,
-    currency: '₽'
+    price: '4000 ₽',
+    //currency: '₽'
     },
     {
     name: 'Снятие нарощенных ногтей/ гелевого укрепления',
-    price: 500,
-    currency: '₽'
+    price: '500 ₽',
+    //currency: '₽'
     },
     {
     name: 'Донаращивание 1 ногтя',
-    price: 400,
-    currency: '₽'
+    price: '400 ₽',
+    //currency: '₽'
     },
     {
     name: 'Изменение формы ногтей',
-    price: 100,
-    currency: '₽'
+    price: '100 ₽',
+    //currency: '₽'
     }
 ]
 
@@ -418,21 +418,21 @@ const createCard = (obj) => {
     const price = document.createElement('span');
     price.className = 'card__price';
     price.textContent = obj.price;
-    const currency = document.createElement('span');
-    currency.className = 'card__currency';
-    currency.textContent = obj.currency;
+    // const currency = document.createElement('span');
+    // currency.className = 'card__currency';
+    // currency.textContent = obj.currency;
     // const button = document.createElement('button');
     // button.className = 'card__btn';
     // button.textContent = 'Записаться';
-    const button = document.createElement('a');
-    button.className = 'card__btn';
-    button.textContent = 'Записаться';
-    button.href = 'https://librobeauty.ru/uslugi';
+    // const button = document.createElement('a');
+    // button.className = 'card__btn';
+    // button.textContent = 'Записаться';
+    // button.href = 'https://librobeauty.ru/uslugi';
 
     block.append(name);
     block.append(price);
-    block.append(currency);
-    block.append(button);
+    //block.append(currency);
+    //block.append(button);
     //console.log(block);
     return block;
 }

@@ -1,6 +1,6 @@
 
-//шрифт montserrat 300/400/500
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+//шрифт montserrat 200/300/400/500
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
 
 .container__service {
     // width: 1440px;
@@ -12,28 +12,49 @@
 
 .card__menu {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 4fr 1fr;
     // background-color: #f6d365;
 }
 
 .card__item {
     display: grid;
-    grid-template-columns: 1fr 5% 7% 38%;
+    grid-template-columns: 4fr 1fr;
     // padding: 5px;
     // margin-top: 5px;
 }
 
-//временные стили для ссылок-кнопок
-.card__btn {
-    width: 155px;
-    height: 55px;
+.service__title {
     font-family: Montserrat;
+    font-size: 500;
+    text-transform: uppercase;
+}
+
+.service__title_item {
+    font-family: Montserrat;
+    font-size: 300;
+}
+
+.card__name {
+    font-family: Montserrat;
+    font-size: 200;
+}
+
+.card__price {
+    justify-self: end;
+}
+
+//временные стили для ссылок-кнопок
+.card__price {
+    width: 65px;
+    height: 20px;
+    font-family: Montserrat;
+    font-size: 500;
     font-style: normal;
     font-weight: 500;
     font-size: 11px;
     line-height: 2px;
-    text-decoration: none;
     display: flex;
+    justify-content: center;
     align-items: center;
     text-align: center;
     text-transform: uppercase;
