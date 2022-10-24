@@ -193,6 +193,42 @@ const combinedServicePedicureStrengthening = [
     }
 ]
 
+//Моноуслуги
+//Педикюр + укрепление ногтевой пластины
+
+const monoServiceManicure = [
+    {
+    name: 'Маникюр классический/ комбинированный/ аппаратный (без покрытия)',
+    price: 900,
+    currency: '₽'
+    },
+    {
+    name: 'Педикюр Аппаратный + Укрепление ногтевой пластины IBX/ Vitagel/ Masura',
+    price: 1900,
+    currency: '₽'
+    },
+    {
+    name: 'Педикюр Аппаратный + Укрепление ногтевой пластины IBX/ Vitagel/ Masura + Снятие',
+    price: 2200,
+    currency: '₽'
+    },
+    {
+    name: 'Педикюр Бразильский + Укрепление ногтевой пластины IBX/ Vitagel/ Masur',
+    price: 2100,
+    currency: '₽'
+    },
+    {
+    name: 'Педикюр Бразильский + Укрепление ногтевой пластины IBX/ Vitagel/ Masura + Снятие',
+    price: 2400,
+    currency: '₽'
+    },
+    {
+    name: 'Экспресс Педикюр (только пальчики) + Укрепление ногтевой пластины IBX/ Vitagel/ Masura',
+    price: 1600,
+    currency: '₽'
+    }
+]
+
 //контейнер для карточек комбинированных услуг Маникюр + Покрытие
 const combinedServiceListManicureTop = document.querySelector('.service__list_manicure-top');
 
