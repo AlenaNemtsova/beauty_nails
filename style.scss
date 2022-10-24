@@ -1,3 +1,15 @@
+
+//шрифт montserrat 300/400/500
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
+.container__service {
+    // width: 1440px;
+    height: 100%;
+    padding-left: 140px;
+    padding-right: 140px;
+    background: #E6E9EE;
+}
+
 .card__menu {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -9,4 +21,33 @@
     grid-template-columns: 1fr 5% 7% 38%;
     // padding: 5px;
     // margin-top: 5px;
+}
+
+//временные стили для ссылок-кнопок
+.card__btn {
+    width: 155px;
+    height: 55px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 2px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #090909;
+    background: #F5FF00;
+    border-radius: 30px;
+}
+
+//свернуть пункты с ценами
+.slide div.service__list_manicure-top,
+.slide [type="checkbox"]{
+    display:none;
+}
+
+.slide [type="checkbox"]:checked ~ div.service__list_manicure-top {
+    display:block;
 }

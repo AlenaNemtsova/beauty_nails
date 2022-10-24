@@ -12,9 +12,9 @@
     <title>Beauty Nails</title>
     <style>
         /* стиль технический, потом удалить */
-        .service__card {
+        /* .service__card {
             border: 1px solid black;
-        }
+        } */
     </style>
 </head>
 
@@ -22,18 +22,24 @@
     <header></header>
     <main>
         <!-- Услуги и цены -->
-        <div>
+        <div class="container__service">
             <h2>Услуги и цены</h2>
             <div class="price">
                 <div class="service__card">
                     <h3 class="service__title">Комбинированные услуги</h3>
                     <hr>
                     <!-- Маникюр + Покрытие -->
-                    <p class="service__title_item">Маникюр + покрытие</p>
-                    <div class="service__list_manicure-top">
-                        <div class="card__menu">
-                            <span class="service__text">Название</span>
-                            <span class="service__text">Стоимость</span>
+                    <div class="slide">
+                        <label for="slide1">
+                            Свернуть ✔
+                        </label>
+                        <input type="checkbox" id="slide1" />
+                        <p class="service__title_item">Маникюр + покрытие</p>
+                        <div class="service__list_manicure-top">
+                            <div class="card__menu">
+                                <span class="service__text">Название</span>
+                                <span class="service__text">Стоимость</span>
+                            </div>
                         </div>
                     </div>
                     <hr>
@@ -127,6 +133,62 @@
                     </div>
                     <hr>
                     <!-- Маникюр-->
+
+                    <!-- Педикюр-->
+                    <p class="service__title_item">Педикюр</p>
+                    <div class="service__list_pedicure">
+                        <div class="card__menu">
+                            <span class="service__text">Название</span>
+                            <span class="service__text">Стоимость</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- Педикюр-->
+
+                    <!-- Покрытие-->
+                    <p class="service__title_item">Покрытие</p>
+                    <div class="service__list_top">
+                        <div class="card__menu">
+                            <span class="service__text">Название</span>
+                            <span class="service__text">Стоимость</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- Покрытие-->
+
+                    <!-- Дизайн (за 1 ноготь)-->
+                    <p class="service__title_item">Дизайн (за 1 ноготь)</p>
+                    <div class="service__list_design">
+                        <div class="card__menu">
+                            <span class="service__text">Название</span>
+                            <span class="service__text">Стоимость</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- Дизайн (за 1 ноготь)-->
+
+                    <!-- Уход-->
+                    <p class="service__title_item">Уход</p>
+                    <div class="service__list_care">
+                        <div class="card__menu">
+                            <span class="service__text">Название</span>
+                            <span class="service__text">Стоимость</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- Уход-->
+
+                    <!-- Моделирование и коррекция-->
+                    <p class="service__title_item">Моделирование и коррекция</p>
+                    <div class="service__list_correction">
+                        <div class="card__menu">
+                            <span class="service__text">Название</span>
+                            <span class="service__text">Стоимость</span>
+                        </div>
+                    </div>
+                    <p>*в стоимость входит маникюр. Покрытие гель-лаком в стоимость не входит</p>
+                    <hr>
+                    <!-- Моделирование и коррекция-->
                 </div>
             </div>
         </div>

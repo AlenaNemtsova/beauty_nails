@@ -1,3 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+.container__service {
+  height: 100%;
+  padding-left: 140px;
+  padding-right: 140px;
+  background: #E6E9EE;
+}
+
 .card__menu {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -6,4 +14,31 @@
 .card__item {
   display: grid;
   grid-template-columns: 1fr 5% 7% 38%;
+}
+
+.card__btn {
+  width: 155px;
+  height: 55px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 2px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #090909;
+  background: #F5FF00;
+  border-radius: 30px;
+}
+
+.slide div.service__list_manicure-top,
+.slide [type=checkbox] {
+  display: none;
+}
+
+.slide [type=checkbox]:checked ~ div.service__list_manicure-top {
+  display: block;
 }/*# sourceMappingURL=style.css.map */

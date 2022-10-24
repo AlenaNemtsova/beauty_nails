@@ -194,37 +194,174 @@ const combinedServicePedicureStrengthening = [
 ]
 
 //Моноуслуги
-//Педикюр + укрепление ногтевой пластины
+//Маникюр
 
 const monoServiceManicure = [
     {
     name: 'Маникюр классический/ комбинированный/ аппаратный (без покрытия)',
-    price: 900,
+    price: 800,
     currency: '₽'
     },
     {
-    name: 'Педикюр Аппаратный + Укрепление ногтевой пластины IBX/ Vitagel/ Masura',
+    name: 'Маникюр бразильский (без покрытия)',
+    price: 1000,
+    currency: '₽'
+    },
+    {
+    name: 'Маникюр мужской (без покрытия)',
+    price: 1000,
+    currency: '₽'
+    }
+]
+
+//Педикюр
+
+const monoServicePedicure = [
+    {
+    name: 'Педикюр классический/комбинированный/аппаратный (без покрытия)Маникюр классический/ комбинированный/ аппаратный (без покрытия)',
+    price: 1600,
+    currency: '₽'
+    },
+    {
+    name: 'Педикюр бразильский (без покрытия)',
+    price: 1800,
+    currency: '₽'
+    },
+    {
+    name: 'Экспресс педикюр (только пальчики)',
+    price: 1100,
+    currency: '₽'
+    },
+    {
+    name: 'Глубокий эстетический педикюр Golden trace (без покрытия)',
+    price: 2500,
+    currency: '₽'
+    },
+    {
+    name: 'Педикюр мужской',
+    price: 2000,
+    currency: '₽'
+    },
+    {
+    name: 'Смарт педикюр без покрытия',
     price: 1900,
     currency: '₽'
-    },
+    }
+]
+
+//Покрытие
+
+const monoServiceTop = [
     {
-    name: 'Педикюр Аппаратный + Укрепление ногтевой пластины IBX/ Vitagel/ Masura + Снятие',
-    price: 2200,
+    name: 'Покрытие гель-лак',
+    price: 1400,
     currency: '₽'
     },
     {
-    name: 'Педикюр Бразильский + Укрепление ногтевой пластины IBX/ Vitagel/ Masur',
-    price: 2100,
-    currency: '₽'
-    },
-    {
-    name: 'Педикюр Бразильский + Укрепление ногтевой пластины IBX/ Vitagel/ Masura + Снятие',
-    price: 2400,
-    currency: '₽'
-    },
-    {
-    name: 'Экспресс Педикюр (только пальчики) + Укрепление ногтевой пластины IBX/ Vitagel/ Masura',
+    name: 'Покрытие гель-лак Luxio',
     price: 1600,
+    currency: '₽'
+    },
+    {
+    name: 'Покрытие гель-лак френч',
+    price: 1800,
+    currency: '₽'
+    },
+    {
+    name: 'Укрепление ногтевой пластины Vitagel/IBX/ Masura',
+    price: 600,
+    currency: '₽'
+    },
+    {
+    name: 'Акриловое укрепление',
+    price: 600,
+    currency: '₽'
+    },
+    {
+    name: 'Гелевое укрепление',
+    price: 1000,
+    currency: '₽'
+    },
+    {
+    name: 'Матовый топ/ Кошачий глаз/ Светоотражающий топ',
+    price: 100,
+    currency: '₽'
+    }
+]
+
+//Дизайн (за 1 ноготь)
+const monoServiceDesign = [
+    {
+    name: 'Более 3-х цветов',
+    price: 200,
+    currency: '₽'
+    },
+    {
+    name: 'Слайдеры',
+    price: 100,
+    currency: '₽'
+    },
+    {
+    name: 'Дизайн простой/ дизайн средний/ дизайн сложный',
+    price: '50/100/200',
+    currency: '₽'
+    }
+]
+
+//Уход
+const monoServiceCare = [
+    {
+    name: 'Спа-уход/ скраб',
+    price: '500/300',
+    currency: '₽'
+    },
+    {
+    name: 'Парафинотерапия (холодный парафин)',
+    price: 400,
+    currency: '₽'
+    },
+    {
+    name: 'Массаж рук/ массаж ног',
+    price: '200/500',
+    currency: '₽'
+    },
+    {
+    name: 'Удаление вросшего ногтя',
+    price: 200,
+    currency: '₽'
+    },
+    {
+    name: 'Скраб для ног',
+    price: 300,
+    currency: '₽'
+    },
+    {
+    name: 'Удаление Натоптыша/ Мозоли',
+    price: 200,
+    currency: '₽'
+    }
+]
+
+//Моделирование и коррекция
+const monoServiceCorrection = [
+    {
+    name: 'Наращивание* + покрытие гель-лак',
+    price: 4000,
+    currency: '₽'
+    },
+    {
+    name: 'Снятие нарощенных ногтей/ гелевого укрепления',
+    price: 500,
+    currency: '₽'
+    },
+    {
+    name: 'Донаращивание 1 ногтя',
+    price: 400,
+    currency: '₽'
+    },
+    {
+    name: 'Изменение формы ногтей',
+    price: 100,
     currency: '₽'
     }
 ]
@@ -253,6 +390,24 @@ const combinedServiceListPedicureTopRemove = document.querySelector('.service__l
 //контейнер для карточек комбинированных услуг Педикюр + укрепление ногтевой пластины
 const combinedServiceListPedicureStrengthening = document.querySelector('.service__list_pedicure-strengthening');
 
+//контейнер для карточек моноуслуг Маникюр
+const monoServiceListManicure = document.querySelector('.service__list_manicure');
+
+//контейнер для карточек моноуслуг Педикюр
+const monoServiceListPedicure = document.querySelector('.service__list_pedicure');
+
+//контейнер для карточек моноуслуг Покрытие
+const monoServiceListTop = document.querySelector('.service__list_top');
+
+//контейнер для карточек моноуслуг Дизайн
+const monoServiceListDesign = document.querySelector('.service__list_design');
+
+//контейнер для карточек моноуслуг Дизайн
+const monoServiceListCare = document.querySelector('.service__list_care');
+
+//контейнер для карточек моноуслуг Моделирование и коррекция
+const monoServiceListCorrection = document.querySelector('.service__list_correction');
+
 //создаем карточки
 const createCard = (obj) => {
     const block = document.createElement('div');
@@ -266,9 +421,13 @@ const createCard = (obj) => {
     const currency = document.createElement('span');
     currency.className = 'card__currency';
     currency.textContent = obj.currency;
-    const button = document.createElement('button');
+    // const button = document.createElement('button');
+    // button.className = 'card__btn';
+    // button.textContent = 'Записаться';
+    const button = document.createElement('a');
     button.className = 'card__btn';
     button.textContent = 'Записаться';
+    button.href = 'https://librobeauty.ru/uslugi';
 
     block.append(name);
     block.append(price);
@@ -337,5 +496,47 @@ const addCard = (objItem, container) => {
     document.addEventListener('DOMContentLoaded', () => {
         combinedServicePedicureStrengthening.forEach((element) => {
             addCard(element, combinedServiceListPedicureStrengthening);
+        })
+    })
+
+    //тут циклом проходимся по JSON-у,  чтобы отрисовать каждую карточку для моноуслуг Маникюр
+    document.addEventListener('DOMContentLoaded', () => {
+        monoServiceManicure.forEach((element) => {
+            addCard(element, monoServiceListManicure);
+        })
+    })
+
+    //тут циклом проходимся по JSON-у,  чтобы отрисовать каждую карточку для моноуслуг Педикюр
+    document.addEventListener('DOMContentLoaded', () => {
+        monoServicePedicure.forEach((element) => {
+            addCard(element, monoServiceListPedicure);
+        })
+    })
+
+    //тут циклом проходимся по JSON-у,  чтобы отрисовать каждую карточку для моноуслуг Покрытие
+    document.addEventListener('DOMContentLoaded', () => {
+        monoServiceTop.forEach((element) => {
+            addCard(element, monoServiceListTop);
+        })
+    })
+
+    //тут циклом проходимся по JSON-у,  чтобы отрисовать каждую карточку для моноуслуг Дизайн
+    document.addEventListener('DOMContentLoaded', () => {
+        monoServiceDesign.forEach((element) => {
+            addCard(element, monoServiceListDesign);
+        })
+    })
+
+    //тут циклом проходимся по JSON-у,  чтобы отрисовать каждую карточку для моноуслуг Уход
+    document.addEventListener('DOMContentLoaded', () => {
+        monoServiceCare.forEach((element) => {
+            addCard(element, monoServiceListCare);
+        })
+    })
+
+    //тут циклом проходимся по JSON-у,  чтобы отрисовать каждую карточку для моноуслуг Моделирование и коррекция
+    document.addEventListener('DOMContentLoaded', () => {
+        monoServiceCorrection.forEach((element) => {
+            addCard(element, monoServiceListCorrection);
         })
     })
