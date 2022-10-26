@@ -303,7 +303,7 @@ const monoServiceDesign = [
     },
     {
     name: 'Дизайн простой/ дизайн средний/ дизайн сложный',
-    price: '50/100/200 ₽',
+    price: '50/100/200'
     //currency: '₽'
     }
 ]
@@ -540,3 +540,86 @@ const addCard = (objItem, container) => {
             addCard(element, monoServiceListCorrection);
         })
     })
+
+    //аккордеон 
+class ItcAccordion {
+    constructor(target, config) {
+    this._el = typeof target === 'string' ? document.querySelector(target) : target;
+    const defaultConfig = {
+        alwaysOpen: true
+    };
+    this._config = Object.assign(defaultConfig, config);
+    this.addEventListener();
+}
+    addEventListener() {
+    this._el.addEventListener('click', (e) => {
+        const elHeader = e.target.closest('.accordion__header');
+    if (!elHeader) {
+        return;
+    }
+    if (!this._config.alwaysOpen) {
+        const elOpenItem = this._el.querySelector('.accordion__item_show');
+        if (elOpenItem) {
+        elOpenItem !== elHeader.parentElement ? elOpenItem.classList.toggle('accordion__item_show') : null;
+        }
+    }
+    elHeader.parentElement.classList.toggle('accordion__item_show');
+    });}
+}
+
+new ItcAccordion('#accordion-1', {
+    alwaysOpen: false
+});
+
+new ItcAccordion('#accordion-2', {
+    alwaysOpen: false
+});
+
+new ItcAccordion('#accordion-3', {
+    alwaysOpen: false
+});
+
+new ItcAccordion('#accordion-4', {
+    alwaysOpen: false
+});
+
+new ItcAccordion('#accordion-5', {
+    alwaysOpen: false
+});
+
+new ItcAccordion('#accordion-6', {
+    alwaysOpen: false
+});
+
+new ItcAccordion('#accordion-7', {
+    alwaysOpen: false
+});
+
+new ItcAccordion('#accordion-8', {
+    alwaysOpen: false
+});
+
+new ItcAccordion('#accordion-9', {
+    alwaysOpen: false
+});
+
+new ItcAccordion('#accordion-10', {
+    alwaysOpen: false
+});
+
+new ItcAccordion('#accordion-11', {
+    alwaysOpen: false
+});
+
+new ItcAccordion('#accordion-12', {
+    alwaysOpen: false
+});
+
+new ItcAccordion('#accordion-13', {
+    alwaysOpen: false
+});
+
+new ItcAccordion('#accordion-14', {
+    alwaysOpen: false
+});
+
