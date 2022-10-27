@@ -312,7 +312,7 @@ const monoServiceDesign = [
 const monoServiceCare = [
     {
     name: 'Спа-уход/ скраб',
-    price: '500/300 ₽',
+    price: '500/300',
     //currency: '₽'
     },
     {
@@ -322,7 +322,7 @@ const monoServiceCare = [
     },
     {
     name: 'Массаж рук/ массаж ног',
-    price: '200/500 ₽',
+    price: '200/500',
     //currency: '₽'
     },
     {
@@ -418,22 +418,26 @@ const createCard = (obj) => {
     const price = document.createElement('span');
     price.className = 'card__price';
     price.textContent = obj.price;
+    const line = document.createElement('hr');
+    line.className = 'card__line';
+    console.log(line);
     // const currency = document.createElement('span');
     // currency.className = 'card__currency';
     // currency.textContent = obj.currency;
     // const button = document.createElement('button');
     // button.className = 'card__btn';
     // button.textContent = 'Записаться';
-    // const button = document.createElement('a');
+    // const button = document.createElement('hr');
     // button.className = 'card__btn';
     // button.textContent = 'Записаться';
     // button.href = 'https://librobeauty.ru/uslugi';
 
     block.append(name);
     block.append(price);
+    block.append(line);
     //block.append(currency);
-    //block.append(button);
-    //console.log(block);
+    // block.append(button);
+    console.log(block);
     return block;
 }
 
