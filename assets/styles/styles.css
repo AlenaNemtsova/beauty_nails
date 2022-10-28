@@ -227,4 +227,50 @@ img {
   color: #191919;
   font-size: rem(16);
   text-transform: uppercase;
+}
+
+/* футер и хедер */
+.header__nav, .footer__container {
+  max-width: 1160px;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header__nav-container {
+  background-color: #E6E9EE;
+}
+
+.header__nav-brand {
+  font-size: 24px;
+}
+.header__nav a {
+  color: #16191E;
+}
+.header__nav-phone {
+  color: #F5FF00;
+}
+
+.header__nav-link a:hover {
+  border: 1px solid #F5FF00;
+  border-radius: 30px;
+  background-color: #F5FF00;
+}
+
+.header__nav-phone:hover {
+  border: 1px solid #F5FF00;
+  border-radius: 30px;
+  background-color: #F5FF00;
+}
+
+footer {
+  background-color: #E6E9EE;
+}
+
+.footer__nav-brand a {
+  color: #16191E;
+  font-size: 24px;
+}
+
+.footer__nav-link a {
+  color: #16191E;
 }/*# sourceMappingURL=styles.css.map */
