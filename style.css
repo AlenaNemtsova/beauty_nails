@@ -35,4 +35,16 @@
   opacity: 1;
   visibility: visible;
   transition: 0.5s all;
+}
+
+.btn-booking {
+  width: 120px;
+  height: 45px;
+  color: #090909;
+  font-size: 11px;
+  border: 2px solid #F5FF00;
+  border-radius: 30px;
+  background: #F5FF00;
+  cursor: pointer;
+  text-transform: uppercase;
 }/*# sourceMappingURL=style.css.map */

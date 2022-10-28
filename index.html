@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,200&display=swap"
+        rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
     <link rel="stylesheet" href="style.css">
@@ -13,88 +17,110 @@
 </head>
 
 <body>
+    <!-- класс wrapper делает все блоки flex -->
+    <div class="wrapper">
+        <header>
+            <!-- класс content-container ограничивает ширину внутреннего содержания блока и ставит по центру-->
+            <div class="content-container"></div>
+        </header>
+
+        <!-- блок 1 – название и баннер -->
+        <main>
+            <div class="content-container">Сеть салонов красоты в Москве</div>
+
+
+            <!-- блок 2 Услуги -->
+            <section>
+                <div class="content-container"></div>
+            </section>
+
+            <!-- блок 3 Выберите мастера -->
+            <section>
+                <div class="content-container">
+                    <!-- Запись -->
+                    <a href="#popup" class="popup__open">попап 1</a>
+
+                    <div class="popup" id="popup">
+                        <div class="popup__body">
+                            <div class="popup__content">
+                                <form action="" class="popup__content" id="booking">
+                                    <a href="#header" class="popup__close">X</a>
+                                    <div class="item">
+                                        <label for="first_name">Введите Ваше имя</label>
+                                        <input type="text" id="username" name="username" required />*
+                                    </div>
+                                    <div class="item">
+                                        <label for="phone">Введите Ваш номер телефона</label>
+                                        <input type="tel" id="phone" maxlength="11" minlength="11" name="phone"
+                                            required />*
+                                    </div>
+                                    <select name="person" id="master" class="choose_master"
+                                        onchange="selectedMaster(this)">
+                                        <option value="none" default>Выберите мастера:</option>
+                                        <option value="petrova">Петрова</option>
+                                        <option value="ivanova">Иванова</option>
+                                        <option value="sidorova">Сидорова</option>
+                                    </select>
+
+                                    <select name="procedure" id="type" class="choose_type" style="display: none;"
+                                        onchange="selectedType(this)"></select>
+
+                                    <div class="choose_date" style="display: none;">Выбрать дату и время</div>
+                                    <button type="submit" class="booking">Записаться</button>
+                                </form>
+                                <a href="#popup_2" class="popup__open">попап 2</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Подтверждение -->
+                    <div class="popup" id="popup_2">
+                        <div class="popup__body">
+                            <div class="popup__content">
+                                <a href="#header" class="popup__close close-popup-js">X</a>
+                                <div class="confirmation"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- блок 4 Галерея мастеров -->
+            <section>
+                <div class="content-container"></div>
+            </section>
+
+            <!-- блок 5 Услуги и цены – калькулятор -->
+            <section>
+                <div class="content-container"></div>
+            </section>
+
+            <!-- блок 6 Стоимость услуг – прайс -->
+            <section>
+                <div class="content-container">
+
+                </div>
+            </section>
+
+            <!-- блок 7 Подарочные сертификаты -->
+            <section>
+                <div class="content-container"></div>
+            </section>
+
+            <!-- блок 8 Контакты – карта -->
+            <section>
+                <div class="content-container"></div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="content-container"></div>
+        </footer>
+    </div>
+
     <header id="header"></header>
     <main>
-        <!-- Услуги и цены -->
-        <div>
-            <h2>Услуги и цены</h2>
-            <div class="price"></div>
-        </div>
-
-        <!-- Запись -->
-        <!--  <div class="popup" id="popup">
-            <div class="popup__body">
-                <a href="#header" class="popup__close close-popup-js">X</a>
-                <form action="" class="popup__content">
-                                        <select name="" id="master" class="choose_master" onchange="selectedMaster(this)">
-                        <option value="none" default>Выберите мастера:</option>
-                        <option value="petrova">Петрова</option>
-                        <option value="ivanova">Иванова</option>
-                        <option value="sidorova">Сидорова</option>
-                    </select>
-
-                    <select name="" id="type" class="choose_type" style="display: none;"
-                        onchange="selectedType(this)"></select>
-
-                    <div class="choose_date" style="display: none;">Выбрать дату и время</div>
-                    <button type="submit" class="confirm">Записаться</button>
-                </form>
-            </div>
-        </div> -->
-
-        <!-- Подтверждение -->
-        <!-- <div class="popup" id="popup__2">
-            <div class="popup__body">
-                <div class="popup__content">
-                    <div>${userName}, вы записаны к ${masterName} на ${date} на сеанс ${type}</div>
-                </div>
-            </div>
-        </div> -->
 
 
-
-        <!-- Запись -->
-        <a href="#popup" class="popup__open">попап 1</a>
-
-        <div class="popup" id="popup">
-            <div class="popup__body">
-                <div class="popup__content">
-                    <form action="" class="popup__content" id="booking">
-                        <a href="#header" class="popup__close">X</a>
-                        <div class="item">
-                            <label for="first_name">Введите Ваше имя</label>
-                            <input type="text" id="username" name="username" required />*
-                        </div>
-                        <div class="item">
-                            <label for="phone">Введите Ваш номер телефона</label>
-                            <input type="tel" id="phone" maxlength="11" minlength="11" name="phone" required />*
-                        </div>
-                        <select name="person" id="master" class="choose_master" onchange="selectedMaster(this)">
-                            <option value="none" default>Выберите мастера:</option>
-                            <option value="petrova">Петрова</option>
-                            <option value="ivanova">Иванова</option>
-                            <option value="sidorova">Сидорова</option>
-                        </select>
-
-                        <select name="procedure" id="type" class="choose_type" style="display: none;"
-                            onchange="selectedType(this)"></select>
-
-                        <div class="choose_date" style="display: none;">Выбрать дату и время</div>
-                        <button type="submit" class="booking">Записаться</button>
-                    </form>
-                    <a href="#popup_2" class="popup__open">попап 2</a>
-                </div>
-            </div>
-        </div>
-        <!-- Подтверждение -->
-        <div class="popup" id="popup_2">
-            <div class="popup__body">
-                <div class="popup__content">
-                    <a href="#header" class="popup__close close-popup-js">X</a>
-                    <div class="confirmation">${userName}, вы записаны к ${masterName} на ${date} на сеанс ${type}</div>
-                </div>
-            </div>
-        </div>
 
     </main>
     <footer></footer>

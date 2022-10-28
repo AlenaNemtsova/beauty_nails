@@ -1,35 +1,4 @@
 'use strict'
-//генерация прайса
-const priceList = `[
-    {
-    "name": "Маникюр классический/ комбинированный/ аппаратный (без покрытия)",
-    "price": "800р" 
-    },{
-    "name": "Маникюр бразильский (без покрытия)",
-    "price": "1000р"  
-    },{
-    "name": "Педикюр классический/комбинированный/аппаратный (без покрытия)",
-    "price": "1600р"
-    },{
-    "name": "Педикюр бразильский (без покрытия)",
-    "price": "1800р"  
-    }]`
-
-document.addEventListener('DOMContentLoaded', (event) => {
-    let items = JSON.parse(priceList);
-    let priceContent = '';
-    for (let item of items) {
-        priceContent += `
-        <div class="item">
-            <p class="item_title">${item.name}</p>
-            <p class="item_price">${item.price}</p>
-            <button class="button btn-booking">Записаться</button>
-        </div>
-        `
-    }
-    document.querySelector('.price').innerHTML = priceContent;
-});
-
 
 //при нажатии на любую кнопку записаться должно всплывать модальное окно
 const openPopupButtons = document.querySelectorAll('.popup__open'); //кнопки-ссылки открытия
@@ -123,3 +92,5 @@ document.querySelector('.booking').addEventListener('click', (e) => {
 
 //стилизовать кнопки под ссылки
 //получиь данные из формы  - если у опшенов есть вэлью, то берет значения и них, подумать, где могут понадобиться вэлью и если нигде не нужны - удалить
+//календарь
+//при нажатиии на кнопку "Записаться" на первом попапе должен появляться второй попа с подтверждением
