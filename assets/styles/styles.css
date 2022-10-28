@@ -1,0 +1,20 @@
+body {
+  min-width: 320px;
+  font-weight: 400;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-container {
+  max-width: 1160px;
+  margin: 0px auto;
+}
+
+img {
+  max-width: 100%;
+}/*# sourceMappingURL=styles.css.map */
