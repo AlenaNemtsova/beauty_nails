@@ -1,34 +1,5 @@
 {
-  "name": "beauty_nails",
-  "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "build": "rimraf dist && webpack --mode production",
-    "dev": "webpack-dev-server --mode development --open --watch"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@babel/cli": "^7.6.4",
-    "@babel/core": "^7.6.4",
-    "@babel/preset-env": "^7.6.3",
-    "autoprefixer": "^9.6.5",
-    "babel-loader": "^8.0.6",
-    "css-loader": "^3.2.0",
-    "cssnano": "^4.1.10",
-    "gh-pages": "^2.1.1",
-    "html-webpack-plugin": "^3.2.0",
-    "mini-css-extract-plugin": "^0.8.0",
-    "postcss-loader": "^3.0.0",
-    "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.9",
-    "webpack-dev-server": "^3.9.0",
-    "webpack-md5-hash": "0.0.6"
-  },
   "dependencies": {
-    "babel-polyfill": "^6.26.0",
-    "core-js": "^3.1.4",
     "normalize.css": "^8.0.1"
   }
 }
