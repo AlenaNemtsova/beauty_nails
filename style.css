@@ -17,14 +17,6 @@
 }
 
 .service__title {
-  background-image: url(/assets/images/line_services_title.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   font-family: Montserrat;
   font-weight: 400;
   text-transform: uppercase;
@@ -154,6 +146,67 @@
 
 .slide_text {
   font-family: Montserrat;
-  font-size: 15px;
+  font-size: 1.3em;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 1023px) {
+  .slide_text {
+    font-size: 1.1em;
+  }
+  .service__title_item {
+    font-size: 0.95rem;
+  }
+  .accordion__header {
+    padding: 0.5rem 0.8rem;
+  }
+  .service__title {
+    font-size: 0.9rem;
+  }
+  .service__title span {
+    padding: 5px 0;
+  }
+  .card__name {
+    font-size: 0.8em;
+  }
+  .card__price {
+    width: 55px;
+    font-size: 0.8em;
+    border-radius: 30px;
+    padding: 12px;
+    margin-top: 15px;
+  }
+  .text_note {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .slide_text {
+    font-size: 1em;
+  }
+  .service__title_item {
+    font-size: 0.8rem;
+  }
+  .accordion__header {
+    padding: 0.3rem 0.6rem;
+  }
+  .service__title {
+    font-size: 0.7rem;
+  }
+  .service__title span {
+    padding: 5px 0;
+  }
+  .card__name {
+    font-size: 0.8em;
+  }
+  .card__price {
+    width: 45px;
+    font-size: 0.6em;
+    border-radius: 30px;
+    padding: 12px;
+    margin-top: 15px;
+  }
+  .text_note {
+    font-size: 0.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */
