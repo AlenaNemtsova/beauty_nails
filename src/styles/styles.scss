@@ -1,7 +1,50 @@
-
 //шрифт montserrat 200/300/400/500
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
 
+//переменные 
+//для элементов
+$btn-price-main: #F5FF00;
+$btn-price-hover: #E8F01A;
+$page-bg-white: #ffffff;
+$page-bg-grey: #E6E9EE;
+$card-title-bg: #16191E;
+$card-body-bg:#E5EEF6;
+
+//для текста
+$default-font: "Montserrat", Arial, sans-serif;
+$main-fsz: rem(16);
+
+$main-text: #191919;
+$card-text:#83868c;
+$attention-text:#F5FF00;
+
+//Дания тексты
+$color3: #000;
+$color4:#090909;
+
+
+body {
+    min-width: 320px;
+    font-weight: 400;
+    font-family: $default-font;
+}
+
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-container {
+    max-width: 1160px;
+    margin: 0px auto;
+}
+
+img {
+    max-width: 100%; //делает изображения адаптивными
+}
+
+/* Услуги и цены */
 .container__service {
     // width: 1440px;
     height: 100%;

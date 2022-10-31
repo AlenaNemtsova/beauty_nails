@@ -1,4 +1,27 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap");
+body {
+  min-width: 320px;
+  font-weight: 400;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-container {
+  max-width: 1160px;
+  margin: 0px auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Услуги и цены */
 .container__service {
   height: 100%;
   padding-left: 140px;
@@ -209,4 +232,4 @@
   .text_note {
     font-size: 0.5rem;
   }
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=styles.css.map */
