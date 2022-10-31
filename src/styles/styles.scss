@@ -2,6 +2,52 @@
 //шрифт montserrat 200/300/400/500
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
 
+//переменные 
+//для элементов
+$btn-price-main: #F5FF00;
+$btn-price-hover: #E8F01A;
+$page-bg-white: #ffffff;
+$page-bg-grey: #E6E9EE;
+$card-title-bg: #16191E;
+$card-body-bg:#E5EEF6;
+
+//для текста
+$default-font: "Montserrat", Arial, sans-serif;
+$main-fsz: rem(16);
+
+$main-text: #16191E;
+$card-text:#83868c;
+$attention-text:#F5FF00;
+
+//Дания тексты
+$color3: #000;
+$color4:#090909;
+
+
+body {
+    min-width: 320px;
+    font-weight: 400;
+    font-family: $default-font;
+}
+
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-container {
+    max-width: 1200px;
+    margin: 0px auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+img {
+    max-width: 100%; //делает изображения адаптивными
+}
+
+/* Услуги и цены */
 .container__service {
     // width: 1440px;
     height: 100%;
@@ -98,7 +144,7 @@
     font-weight: 200;
 }
 
-//аккордеон для прайса
+///аккордеон для прайса
 .accordion {
     padding: 0.5%;
 }
@@ -217,6 +263,11 @@
         padding:12px;
         margin-top: 15px;
     }
+.header__nav, .footer__container {
+    max-width: 1600px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+}
 
     .text_note {
         font-size: 0.7rem;
@@ -236,6 +287,22 @@
 
 .accordion__header {
     padding: 0.3rem 0.6rem;
+.header__nav-brand:hover {
+    color: #16191E;
+}
+
+.header__nav-link a:hover {
+    border: 1px solid $yellow-color;
+    border-radius: 30px;
+    background-color: $yellow-color;
+    color: #16191E;
+}
+
+.header__nav-phone:hover {
+    border: 1px solid $yellow-color;
+    border-radius: 30px;
+    background-color: $yellow-color; 
+    color: #16191E;
 }
 
     .service__title {
@@ -263,3 +330,52 @@
         font-size: 0.5rem;
     }
 }
+
+
+.footer__container a:hover {
+    color: #16191E;    
+}
+
+.slider {
+    margin: 100px;
+    padding: 50px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    color: #16191E;
+}
+
+.item_col {
+    align-self: center;
+    text-align: center;
+}
+
+.btn {
+    padding: 10px;
+    background-color: #E8F01A;
+    color: #E8F01A;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color:#E8F01A;
+    transition: 0.5s;
+}
+
+.slider .item img {
+    object-fit: cover;
+    width: 50%;
+    height: 400px;
+}
+
+.previous, .next {
+    align-self: center;
+    cursor: pointer;
+}
+
+
+@import '_services-prices';
