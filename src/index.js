@@ -748,8 +748,8 @@ showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
-    let slides = document.getElementsByClassName("item");
-    
+    let slides = document.getElementsByClassName("slider_item");
+    console.log(slides)
     if (n > slides.length) {
         slideIndex = 1
     }
@@ -760,7 +760,7 @@ function showSlides(n) {
     for (let slide of slides) {
         slide.style.display = "none";
     }
-
+        console.log(slideIndex);
     slides[slideIndex - 1].style.display = "flex";    
     }
 
