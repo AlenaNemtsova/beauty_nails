@@ -1,7 +1,7 @@
 'use strict'
 
-import "normalize.css";
-import "./styles/styles.css";
+// import "normalize.css";
+// import "./styles/styles.css";
 
 //JSON для комбинированных услуг
 //Маникюр + покрытие

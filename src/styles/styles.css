@@ -238,6 +238,10 @@ img {
   font-family: "Montserrat", sans-serif;
 }
 
+.slider__container {
+  font-family: "Montserrat", sans-serif;
+}
+
 .header__nav-container {
   background-color: #E6E9EE;
 }
@@ -292,6 +296,10 @@ footer {
   padding: 50px;
 }
 
+.slider__container {
+  background-color: #E6E9EE;
+}
+
 .item {
   display: flex;
   justify-content: space-evenly;
@@ -304,24 +312,26 @@ footer {
   text-align: center;
 }
 
-.btn {
+.popup__open {
   padding: 10px;
   background-color: #E8F01A;
-  color: #E8F01A;
-  border-radius: 5px;
+  color: #16191E;
+  border-radius: 15px;
   cursor: pointer;
 }
 
-.btn:hover {
+.popup__open:hover {
   background-color: #E8F01A;
   transition: 0.5s;
+  text-decoration: none;
 }
 
-.slider .item img {
+#slider__img {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 50%;
+  width: 60%;
   height: 400px;
+  margin: 50px;
 }
 
 .previous, .next {
@@ -329,6 +339,37 @@ footer {
   cursor: pointer;
 }
 
+.arrow_mobile {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .slider_item {
+    flex-direction: column-reverse;
+  }
+  .slider {
+    margin: 0;
+    padding: auto;
+  }
+  #slider__img {
+    width: 100%;
+    height: 80%;
+    padding: 10px;
+  }
+  .previous, .next {
+    display: none;
+  }
+  .arrow_mobile {
+    display: flex;
+    justify-content: space-around;
+  }
+  .previous_mobile, .next_mobile {
+    align-self: center;
+    cursor: pointer;
+    transition: 0.5s;
+    color: blue;
+  }
+}
 .services-prices {
   background-color: #E6E9EE;
 }
