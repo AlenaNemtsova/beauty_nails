@@ -209,10 +209,17 @@ img {
   position: absolute;
   top: 10px;
   right: 10px;
-  font-size: 20px;
+  font-size: 30px;
   color: #16191E;
   text-decoration: none;
   cursor: pointer;
+}
+.popup__open {
+  background-color: #5FC369;
+  border: none;
+  padding: 18px 30px;
+  cursor: pointer;
+  color: #FFFFFF;
 }
 .popup.open {
   opacity: 1;

@@ -390,7 +390,7 @@
             <div class="popup__body">
               <div class="popup__content">
                 <form action="" class="popup__content" id="booking">
-                  <a href="#header" class="popup__close">X</a>
+                  <a href="#header" class="popup__close">&#215;</a>
                   <div class="item">
                     <label for="first_name">Введите Ваше имя</label>
                     <input type="text" id="username" name="username" required />*
@@ -413,8 +413,8 @@
                     Выбрать дату и время
                   </div>
                   <button type="submit" class="booking">Записаться</button>
+                  <a href="#popup_2" class="popup__open">Подтвердить запись</a>
                 </form>
-                <a href="#popup_2" class="popup__open">Подтвердить запись</a>
               </div>
             </div>
           </div>
@@ -517,50 +517,7 @@
           </div>
         </div>
       </div>
-      </section>
-
-      <!-- блок 4 Галерея мастеров -->
-      <section>
-        <div class="content-container"></div>
-      </section>
-
-      <!-- блок 5 Услуги и цены – калькулятор -->
-      <section>
-        <div class="content-container"></div>
-      </section>
-
-      <!-- блок 6 Стоимость услуг – прайс -->
-      <section>
-        <div class="content-container"></div>
-      </section>
-
-      <!-- блок 7 Подарочные сертификаты -->
-      <section>
-        <div class="content-container"></div>
-      </section>
-
-      <!-- блок 8 Контакты – карта -->
-      <section>
-        <div class="content-container"></div>
-      </section>
-      </main>
-
-      <footer>
-        <div class="content-container"></div>
-        <div class="footer__container">
-          <div class="flex-column navbar navbar-expand-lg">
-            <div class="footer__nav-brand navbar m-auto">
-              <a class="navbar-brand" href="#">Beauty <br />Nails</a>
-            </div>
-            <div class="footer__nav-link navbar m-auto">
-              <a class="nav-item nav-link" href="#">УСЛУГИ И ЦЕНЫ</a>
-              <a class="nav-item nav-link" href="#">ОТЗЫВЫ</a>
-              <a class="nav-item nav-link" href="#">МАГАЗИН</a>
-              <a class="nav-item nav-link" href="#">КОНТАКТЫ</a>
-            </div>
-          </div>
-        </div>
-      </footer>
+    </footer>
   </div>
 
   <!-- Скрипты -->
@@ -573,6 +530,7 @@
 
   <!-- <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script> -->
   <script src="index.js"></script>
+  <script src="booking.js"></script>
 </body>
 
 </html>
