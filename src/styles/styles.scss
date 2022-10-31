@@ -14,7 +14,7 @@ $card-body-bg:#E5EEF6;
 $default-font: "Montserrat", Arial, sans-serif;
 $main-fsz: rem(16);
 
-$main-text: #191919;
+$main-text: #16191E;
 $card-text:#83868c;
 $attention-text:#F5FF00;
 
@@ -36,8 +36,10 @@ body {
 }
 
 .content-container {
-    max-width: 1160px;
+    max-width: 1200px;
     margin: 0px auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 img {
@@ -330,3 +332,6 @@ footer {
         color: #16191E;
     }
 }
+
+@import '_services-prices';
+
