@@ -4,45 +4,60 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <link rel="stylesheet" href="./styles/normalize.css" />
 
-  <!-- <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>" /> -->
-  <link rel="stylesheet" href="./styles/styles.css" />
+    <!-- <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>" /> -->
+    <link rel="stylesheet" href="./styles/styles.css" />
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
 
     <title>Beauty Nails</title>
   </head>
 
-<body>
-  <!-- класс wrapper делает все блоки flex -->
-  <div class="wrapper">
-    <header id="header">
-      <!-- класс content-container ограничивает ширину внутреннего содержания блока и ставит по центру-->
-      <!-- <div class="content-container"></div> -->
-      <div class="header__nav-container" id="header">
-        <nav class="header__nav navbar navbar-expand-lg mb-5">
-          <a class="header__nav-brand navbar-brand mr-5" href="#">Beauty <br />Nails</a>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="header__nav-link navbar-nav mr-auto">
-              <a class="nav-item nav-link mr-1" href="#">УСЛУГИ И ЦЕНЫ</a>
-              <a class="nav-item nav-link mr-1" href="#">ОТЗЫВЫ</a>
-              <a class="nav-item nav-link mr-1" href="#">МАГАЗИН</a>
-              <a class="nav-item nav-link mr-1" href="#">КОНТАКТЫ</a>
+  <body>
+    <!-- класс wrapper делает все блоки flex -->
+    <div class="wrapper">
+      <header id="header">
+        <!-- класс content-container ограничивает ширину внутреннего содержания блока и ставит по центру-->
+        <!-- <div class="content-container"></div> -->
+        <div class="header__nav-container" id="header">
+          <nav class="header__nav navbar navbar-expand-lg mb-5">
+            <a class="header__nav-brand navbar-brand mr-5" href="#"
+              >Beauty <br />Nails</a
+            >
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="header__nav-link navbar-nav mr-auto">
+                <a class="nav-item nav-link mr-1" href="#">УСЛУГИ И ЦЕНЫ</a>
+                <a class="nav-item nav-link mr-1" href="#">ОТЗЫВЫ</a>
+                <a class="nav-item nav-link mr-1" href="#">МАГАЗИН</a>
+                <a class="nav-item nav-link mr-1" href="#">КОНТАКТЫ</a>
+              </div>
+              <a class="header__nav-phone nav-item nav-link" href="#"
+                >+9 (999) 999-99-99</a
+              >
             </div>
-            <a class="header__nav-phone nav-item nav-link" href="#">+9 (999) 999-99-99</a>
-          </div>
-          <div class="navbar navbar-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
-        </nav>
-      </div>
-    </header>
+            <div class="navbar navbar-light">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+          </nav>
+        </div>
+      </header>
 
       <!-- блок 1 – название и баннер -->
       <main>
@@ -214,56 +229,58 @@
                     <!-- <hr> -->
                     <!-- Педикюр + покрытие + снятие-->
 
-                  <!-- Педикюр + укрепление ногтевой пластины-->
-                  <div class="accordion" id="accordion-8">
-                    <div class="accordion__item accordion__item_show">
-                      <div class="accordion__header">
-                        <p class="service__title_item">
-                          Педикюр + укрепление ногтевой пластины
-                        </p>
-                      </div>
-                      <div class="accordion__body">
-                        <div class="service__list_pedicure-strengthening">
-                          <div class="card__menu">
-                            <span class="service__text"></span>
-                            <span class="service__text"></span>
+                    <!-- Педикюр + укрепление ногтевой пластины-->
+                    <div class="accordion" id="accordion-8">
+                      <div class="accordion__item accordion__item_show">
+                        <div class="accordion__header">
+                          <p class="service__title_item">
+                            Педикюр + укрепление ногтевой пластины
+                          </p>
+                        </div>
+                        <div class="accordion__body">
+                          <div class="service__list_pedicure-strengthening">
+                            <div class="card__menu">
+                              <span class="service__text"></span>
+                              <span class="service__text"></span>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <!-- <hr> -->
-              <!-- Педикюр + укрепление ногтевой пластины-->
-              <div class="slide">
-                <label for="slide2">
-                  <p class="slide_text">
-                    <span>⬇⬇⬇</span> Посмотреть цены на моноуслуги<span>⬇⬇⬇</span>
-                  </p>
-                </label>
-                <input type="checkbox" id="slide2" />
-                <div class="close__all">
-                  <h3 class="service__title">Моноуслуги</h3>
-                  <!-- <hr> -->
-                  <!-- Маникюр-->
-                  <div class="accordion" id="accordion-9">
-                    <div class="accordion__item accordion__item_show">
-                      <div class="accordion__header">
-                        <p class="service__title_item">Маникюр</p>
-                      </div>
-                      <div class="accordion__body">
-                        <div class="service__list_manicure">
-                          <div class="card__menu">
-                            <span class="service__text"></span>
-                            <span class="service__text"></span>
+                <!-- <hr> -->
+                <!-- Педикюр + укрепление ногтевой пластины-->
+                <div class="slide">
+                  <label for="slide2">
+                    <p class="slide_text">
+                      <span>⬇⬇⬇</span> Посмотреть цены на моноуслуги<span
+                        >⬇⬇⬇</span
+                      >
+                    </p>
+                  </label>
+                  <input type="checkbox" id="slide2" />
+                  <div class="close__all">
+                    <h3 class="service__title">Моноуслуги</h3>
+                    <!-- <hr> -->
+                    <!-- Маникюр-->
+                    <div class="accordion" id="accordion-9">
+                      <div class="accordion__item accordion__item_show">
+                        <div class="accordion__header">
+                          <p class="service__title_item">Маникюр</p>
+                        </div>
+                        <div class="accordion__body">
+                          <div class="service__list_manicure">
+                            <div class="card__menu">
+                              <span class="service__text"></span>
+                              <span class="service__text"></span>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <!-- <hr> -->
-                  <!-- Маникюр-->
+                    <!-- <hr> -->
+                    <!-- Маникюр-->
 
                     <!-- Педикюр-->
                     <div class="accordion" id="accordion-10">
@@ -343,30 +360,31 @@
                     <!-- <hr> -->
                     <!-- Уход-->
 
-                  <!-- Моделирование и коррекция-->
-                  <div class="accordion" id="accordion-14">
-                    <div class="accordion__item accordion__item_show">
-                      <div class="accordion__header">
-                        <p class="service__title_item">
-                          Моделирование и коррекция
-                        </p>
-                      </div>
-                      <div class="accordion__body">
-                        <div class="service__list_correction">
-                          <div class="card__menu">
-                            <span class="service__text"></span>
-                            <span class="service__text"></span>
-                          </div>
+                    <!-- Моделирование и коррекция-->
+                    <div class="accordion" id="accordion-14">
+                      <div class="accordion__item accordion__item_show">
+                        <div class="accordion__header">
+                          <p class="service__title_item">
+                            Моделирование и коррекция
+                          </p>
                         </div>
-                        <p class="text_note">
-                          *в стоимость входит маникюр. Покрытие гель-лаком в
-                          стоимость не входит
-                        </p>
+                        <div class="accordion__body">
+                          <div class="service__list_correction">
+                            <div class="card__menu">
+                              <span class="service__text"></span>
+                              <span class="service__text"></span>
+                            </div>
+                          </div>
+                          <p class="text_note">
+                            *в стоимость входит маникюр. Покрытие гель-лаком в
+                            стоимость не входит
+                          </p>
+                        </div>
                       </div>
                     </div>
+                    <!-- <hr> -->
+                    <!-- Моделирование и коррекция-->
                   </div>
-                  <!-- <hr> -->
-                  <!-- Моделирование и коррекция-->
                 </div>
               </div>
             </div>
@@ -447,7 +465,42 @@
 
         <!-- блок 4 Галерея мастеров -->
         <section>
-          <div class="content-container"></div>
+          <div class="content-container">
+            <div class="slider">
+              <div class="slider_item">
+                <a class="previous" onclick="previousSlide()">&#10094;</a>
+                <div class="item_col">
+                  <h3>Мария Усманова</h3>
+                  <p>Маникюр, педикюр</p>
+                  <button class="btn">Записаться</button>
+                </div>
+                <img src="images/master.jpg" alt="" />
+                <a class="next" onclick="nextSlide()">&#10095;</a>
+              </div>
+
+              <div class="slider_item">
+                <a class="previous" onclick="previousSlide()">&#10094;</a>
+                <div class="item_col">
+                  <h3>Ирина Петрова</h3>
+                  <p>Маникюр, педикюр, наращивание ногтей</p>
+                  <button class="btn">Записаться</button>
+                </div>
+                <img src="images/master2.jpg" alt="" />
+                <a class="next" onclick="nextSlide()">&#10095;</a>
+              </div>
+
+              <div class="slider_item">
+                <a class="previous" onclick="previousSlide()">&#10094;</a>
+                <div class="item_col">
+                  <h3>Татьяна Лютова</h3>
+                  <p>Маникюр, педикюр, наращивание ногтей</p>
+                  <button class="btn">Записаться</button>
+                </div>
+                <img src="images/master3.jpg" alt="" />
+                <a class="next" onclick="nextSlide()">&#10095;</a>
+              </div>
+            </div>
+          </div>
         </section>
 
         <!-- блок 5 Услуги и цены – калькулятор -->
@@ -456,14 +509,14 @@
             <h2 class="services-prices__title">Услуги и цены</h2>
             <div class="services-prices__content">
               <div class="services-prices__content_flex">
-                <div class="services-prices__calculator calculator">
-                  <p class="calculator__title">Маникюр</p>
-                  <div class="calculator__box">
-                    <form action="" class="calculator__form">
+                <div class="services-prices__calc calc">
+                  <p class="calc__title">Маникюр</p>
+                  <div class="calc__box">
+                    <form action="" class="calc__form" onchange="getPrice()">
                       <div class="form__select">
                         Выберите маникюр
-                        <select name="" class="select">
-                          <option value="2000">Классический</option>
+                        <select name="" class="select-val">
+                          <option value="2000" selected>Классический</option>
                           <option value="2200">Комбинированный</option>
                           <option value="2500">Аппаратный</option>
                         </select>
@@ -475,177 +528,46 @@
                             type="checkbox"
                             name=""
                             value="200"
-                            class="price"
+                            class="select-val"
                             id="remove"
-                          /><label class="gender-label" for="remove"
-                            >снятие</label
-                          ><br />
+                          /><label class="" for="remove">снятие</label><br />
 
                           <input
                             type="checkbox"
                             name="package"
                             value="500"
-                            class="price"
+                            class="select-val"
                             id="alignment"
                           />
-                          <label class="gender-label" for="alignment"
-                            >выравнивание</label
-                          >
+                          <label class="" for="alignment">выравнивание</label>
                         </div>
                         Выберите покрытие
 
-                        <select name="" class="select">
+                        <select name="" class="select-val">
                           <option value="0">Без покрытия</option>
                           <option value="200">Первое</option>
                           <option value="300">Второе</option>
                         </select>
-                        Дизайн
-                        <select name="" class="select">
+                        Добавим дизайн?
+                        <select name="" class="select-val">
+                          <option value="0">Нет</option>
                           <option value="300">Френч</option>
                           <option value="600">Дизайн</option>
                         </select>
                       </div>
+                      <div class="calc__result">
+                        <p>Стоимость услуги:</p>
+                        <p id="js-result-sum">2000 руб.</p>
+                      </div>
                     </form>
+                    <a href="#popup" class="popup__open">Записаться</a>
                   </div>
                 </div>
-                <div class="services-prices__img">
-                  <!-- <img src="src/images/hands.jpg" alt="" /> -->
-                </div>
+                <div class="services-prices__img"></div>
               </div>
             </div>
           </div>
         </section>
-
-        <!-- блок 6 Стоимость услуг – прайс -->
-        <section>
-          <div class="content-container"></div>
-        </section>
-
-        <!-- блок 7 Подарочные сертификаты -->
-        <section>
-          <div class="content-container"></div>
-        </section>
-
-        <!-- блок 8 Контакты – карта -->
-        <section>
-          <div class="content-container"></div>
-        </section>
-      </main>
-
-      <footer>
-        <div class="content-container"></div>
-        <div class="footer__container">
-          <div class="flex-column navbar navbar-expand-lg">
-            <div class="footer__nav-brand navbar m-auto">
-              <a class="navbar-brand" href="#">Beauty <br />Nails</a>
-            </div>
-            <div class="footer__nav-link navbar m-auto">
-              <a class="nav-item nav-link" href="#">УСЛУГИ И ЦЕНЫ</a>
-              <a class="nav-item nav-link" href="#">ОТЗЫВЫ</a>
-              <a class="nav-item nav-link" href="#">МАГАЗИН</a>
-              <a class="nav-item nav-link" href="#">КОНТАКТЫ</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- блок 3 Выберите мастера -->
-      <section>
-        <div class="content-container">
-          <!-- Запись -->
-          <a href="#popup" class="popup__open">Записаться</a>
-
-          <div class="popup" id="popup">
-            <div class="popup__body">
-              <div class="popup__content">
-                <form action="" class="popup__content" id="booking">
-                  <a href="#header" class="popup__close">X</a>
-                  <div class="item">
-                    <label for="first_name">Введите Ваше имя</label>
-                    <input type="text" id="username" name="username" required />*
-                  </div>
-                  <div class="item">
-                    <label for="phone">Введите Ваш номер телефона</label>
-                    <input type="tel" id="phone" maxlength="11" minlength="11" name="phone" required />*
-                  </div>
-                  <select name="person" id="master" class="choose_master" onchange="selectedMaster(this)">
-                    <option value="none" default>Выберите мастера:</option>
-                    <option value="petrova">Петрова</option>
-                    <option value="ivanova">Иванова</option>
-                    <option value="sidorova">Сидорова</option>
-                  </select>
-
-                  <select name="procedure" id="type" class="choose_type" style="display: none"
-                    onchange="selectedType(this)"></select>
-
-                  <div class="choose_date" style="display: none">
-                    Выбрать дату и время
-                  </div>
-                  <button type="submit" class="booking">Записаться</button>
-                </form>
-                <a href="#popup_2" class="popup__open">Подтвердить запись</a>
-              </div>
-            </div>
-          </div>
-          <!-- Подтверждение -->
-          <div class="popup" id="popup_2">
-            <div class="popup__body">
-              <div class="popup__content">
-                <a href="#header" class="popup__close close-popup-js">X</a>
-                <div class="confirmation"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- блок 4 Галерея мастеров -->
-      <section>
-        <div class="content-container">
-          <div class="slider">
-            <div class="slider_item">
-              <a class="previous" onclick="previousSlide()">&#10094;</a>
-              <div class="item_col">
-                <h3>Мария Усманова</h3>
-                <p>Маникюр, педикюр</p>
-                <button class="btn">Записаться</button>
-              </div>
-              <img src="images/master.jpg" alt="">
-              <a class="next" onclick="nextSlide()">&#10095;</a>
-            </div>
-
-            <div class="slider_item">
-              <a class="previous" onclick="previousSlide()">&#10094;</a>
-              <div class="item_col">
-                <h3>Ирина Петрова</h3>
-                <p>Маникюр, педикюр, наращивание ногтей</p>
-                <button class="btn">Записаться</button>
-              </div>
-              <img src="images/master2.jpg" alt="">
-              <a class="next" onclick="nextSlide()">&#10095;</a>
-            </div>
-
-            <div class="slider_item">
-              <a class="previous" onclick="previousSlide()">&#10094;</a>
-              <div class="item_col">
-                <h3>Татьяна Лютова</h2>
-                  <p>Маникюр, педикюр, наращивание ногтей</p>
-                  <button class="btn">Записаться</button>
-              </div>
-              <img src="images/master3.jpg" alt="">
-              <a class="next" onclick="nextSlide()">&#10095;</a>
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
-
-      <!-- блок 5 Услуги и цены – калькулятор -->
-      <section>
-        <div class="content-container"></div>
-      </section>
 
         <!-- блок 6 Стоимость услуг – прайс -->
         <section>
@@ -681,19 +603,21 @@
       </footer>
     </div>
 
-  <!-- Скрипты -->
-  <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
-  </script> -->
+    <!-- Скрипты -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script> -->
-  <script src="index.js"></script>
+    <!-- <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script> -->
 
-
-
-</body>
-
+    <script src="index.js"></script>
+    <script src="calc.js"></script>
+  </body>
 </html>
