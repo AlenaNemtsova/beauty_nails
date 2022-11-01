@@ -24,11 +24,21 @@ img {
 }
 
 /* Услуги и цены */
-.container__service {
+.container__price {
   height: 100%;
   padding-left: 140px;
   padding-right: 140px;
   background: #E6E9EE;
+}
+
+.container__price-header span {
+  display: inline;
+  background-color: white;
+  box-shadow: -10px 0 0 white, 10px 0 0 white;
+  padding: 5px 0;
+  color: #191919;
+  border-radius: 50px;
+  font-weight: 300;
 }
 
 .card__menu {
@@ -197,7 +207,7 @@ img {
     font-size: 0.8em;
   }
   .card__price {
-    min-width: 55px;
+    min-width: 85px;
     font-size: 0.8em;
     border-radius: 30px;
     padding: 12px;
@@ -227,7 +237,7 @@ img {
     font-size: 0.8em;
   }
   .card__price {
-    min-width: 45px;
+    min-width: 75px;
     font-size: 0.6em;
     border-radius: 30px;
     padding: 12px;
@@ -323,8 +333,7 @@ footer {
 }
 
 .slider .item img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 50%;
   height: 400px;
 }
