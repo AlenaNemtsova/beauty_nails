@@ -1,5 +1,5 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap");
+
 body {
   min-width: 320px;
   font-weight: 400;
@@ -33,23 +33,19 @@ img {
 
 .card__menu {
   display: grid;
-  grid-template-columns: 4fr 1fr;
+  grid-template-columns: 6fr 1fr;
 }
 
 .card__item {
   display: grid;
-  grid-template-columns: 4fr 1fr;
+  grid-template-columns: 6fr 1fr;
 }
 
 .service__title {
-  background-image: url(/assets/images/line_services_title.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover;
   font-family: Montserrat;
   font-weight: 400;
   text-transform: uppercase;
+  font-size: 1.1em;
   color: #000;
   padding-left: 10px;
 }
@@ -58,12 +54,13 @@ img {
   display: inline;
   background-color: white;
   box-shadow: -10px 0 0 white, 10px 0 0 white;
-  padding: 10px 0;
+  padding: 5px 0;
   color: #191919;
   border-radius: 50px;
 }
 
 .service__title_item {
+  padding-top: 0.6rem;
   font-family: Montserrat;
   font-weight: 400;
   font-size: 1.2rem;
@@ -81,7 +78,7 @@ img {
 }
 
 .card__price {
-  width: 75px;
+  min-width: 75px;
   height: 0.2px;
   font-family: Montserrat;
   font-size: 500;
@@ -170,14 +167,90 @@ img {
   display: none;
 }
 
-.slide [type=checkbox]:checked ~ div.close__all {
+.slide [type=checkbox]:checked~div.close__all {
   display: block;
 }
 
 .slide_text {
   font-family: Montserrat;
-  font-size: 15px;
+  font-size: 1.3em;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 1023px) {
+  .slide_text {
+    font-size: 1.1em;
+  }
+
+  .service__title_item {
+    font-size: 0.95rem;
+  }
+
+  .accordion__header {
+    padding: 0.5rem 0.8rem;
+  }
+
+  .service__title {
+    font-size: 0.9rem;
+  }
+
+  .service__title span {
+    padding: 5px 0;
+  }
+
+  .card__name {
+    font-size: 0.8em;
+  }
+
+  .card__price {
+    min-width: 55px;
+    font-size: 0.8em;
+    border-radius: 30px;
+    padding: 12px;
+    margin-top: 15px;
+  }
+
+  .text_note {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .slide_text {
+    font-size: 1em;
+  }
+
+  .service__title_item {
+    font-size: 0.8rem;
+  }
+
+  .accordion__header {
+    padding: 0.3rem 0.6rem;
+  }
+
+  .service__title {
+    font-size: 0.7rem;
+  }
+
+  .service__title span {
+    padding: 5px 0;
+  }
+
+  .card__name {
+    font-size: 0.8em;
+  }
+
+  .card__price {
+    min-width: 45px;
+    font-size: 0.6em;
+    border-radius: 30px;
+    padding: 12px;
+    margin-top: 15px;
+  }
+
+  .text_note {
+    font-size: 0.5rem;
+  }
 }
 
 /* Запись к мастеру */
@@ -192,12 +265,14 @@ img {
   visibility: hidden;
   transition: 0.5s all;
 }
+
 .popup__body {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 30px 10px;
 }
+
 .popup__content {
   position: relative;
   background-color: #E5EEF6;
@@ -205,6 +280,7 @@ img {
   min-width: 800px;
   padding: 30px;
 }
+
 .popup__close {
   position: absolute;
   top: 10px;
@@ -214,6 +290,7 @@ img {
   text-decoration: none;
   cursor: pointer;
 }
+
 .popup.open {
   opacity: 1;
   visibility: visible;
@@ -232,7 +309,8 @@ img {
 }
 
 /* футер и хедер */
-.header__nav, .footer__container {
+.header__nav,
+.footer__container {
   max-width: 1600px;
   margin: 0 auto;
   font-family: "Montserrat", sans-serif;
@@ -245,9 +323,11 @@ img {
 .header__nav-brand {
   font-size: 24px;
 }
+
 .header__nav a {
   color: #16191E;
 }
+
 .header__nav-phone {
   color: #F5FF00;
 }
@@ -319,12 +399,13 @@ footer {
 
 .slider .item img {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 50%;
   height: 400px;
 }
 
-.previous, .next {
+.previous,
+.next {
   align-self: center;
   cursor: pointer;
 }
@@ -332,6 +413,7 @@ footer {
 .services-prices {
   background-color: #E6E9EE;
 }
+
 .services-prices__title {
   text-align: center;
   margin: 0 auto;
@@ -342,18 +424,22 @@ footer {
   padding-top: 120px;
   margin-bottom: 50px;
 }
+
 .services-prices__content {
   width: 100%;
   height: 600px;
   background: white;
 }
+
 .services-prices__content_flex {
   display: flex;
   padding: 35px;
 }
+
 .services-prices__calculator {
   width: 50%;
 }
+
 .services-prices__img {
   width: 50%;
   height: 300px;
@@ -364,11 +450,15 @@ footer {
 .calculator {
   padding-left: 2rem;
 }
+
 .calculator__title {
   font-size: 30px;
   font-weight: 400;
   color: #16191E;
 }
+
 .calculator__box {
   border: 1px solid red;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*# sourceMappingURL=styles.css.map */
