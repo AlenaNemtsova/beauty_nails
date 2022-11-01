@@ -292,16 +292,16 @@ img {
 }
 
 .header__nav-link a:hover {
-    border: 1px solid $yellow-color;
+    border: 1px solid $attention-text;
     border-radius: 30px;
-    background-color: $yellow-color;
+    background-color: $attention-text;
     color: #16191E;
 }
 
 .header__nav-phone:hover {
-    border: 1px solid $yellow-color;
+    border: 1px solid $attention-text;
     border-radius: 30px;
-    background-color: $yellow-color; 
+    background-color: $attention-text; 
     color: #16191E;
 }
 

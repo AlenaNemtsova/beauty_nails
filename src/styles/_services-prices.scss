@@ -24,7 +24,7 @@
         }
     }
 
-    &__calculator {
+    &__calc {
         width: 50%;
         // flex-shrink: 0;
     }
@@ -33,7 +33,7 @@
         width: 50%;
         height: 300px;
         max-height: 530px;
-        // background-image: url("../images/hands.jpg");
+        background-image: url("../images/hands.jpg");
         background-color: #d8b9b9; 
         
     }
@@ -41,7 +41,7 @@
 
 }
 
-.calculator {
+.calc {
     padding-left: 2rem;
     
     &__title {
