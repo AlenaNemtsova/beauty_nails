@@ -203,11 +203,6 @@ img {
     padding: 12px;
     margin-top: 15px;
   }
-  .header__nav, .footer__container {
-    max-width: 1600px;
-    margin: 0 auto;
-    font-family: "Montserrat", sans-serif;
-  }
   .text_note {
     font-size: 0.7rem;
   }
@@ -222,41 +217,77 @@ img {
   .accordion__header {
     padding: 0.3rem 0.6rem;
   }
-  .accordion__header .header__nav-brand:hover {
-    color: #16191E;
-  }
-  .accordion__header .header__nav-link a:hover {
-    border: 1px solid #F5FF00;
-    border-radius: 30px;
-    background-color: #F5FF00;
-    color: #16191E;
-  }
-  .accordion__header .header__nav-phone:hover {
-    border: 1px solid #F5FF00;
-    border-radius: 30px;
-    background-color: #F5FF00;
-    color: #16191E;
-  }
-  .accordion__header .service__title {
+  .service__title {
     font-size: 0.7rem;
   }
-  .accordion__header .service__title span {
+  .service__title span {
     padding: 5px 0;
   }
-  .accordion__header .card__name {
+  .card__name {
     font-size: 0.8em;
   }
-  .accordion__header .card__price {
+  .card__price {
     min-width: 45px;
     font-size: 0.6em;
     border-radius: 30px;
     padding: 12px;
     margin-top: 15px;
   }
-  .accordion__header .text_note {
+  .text_note {
     font-size: 0.5rem;
   }
 }
+.header__nav, .footer__container {
+  max-width: 1600px;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header__nav-container {
+  background-color: #E6E9EE;
+}
+
+.header__nav-brand {
+  font-size: 24px;
+}
+.header__nav a {
+  color: #16191E;
+}
+.header__nav-phone {
+  color: #F5FF00;
+}
+
+.header__nav-brand:hover {
+  color: #16191E;
+}
+
+.header__nav-link a:hover {
+  border: 1px solid #F5FF00;
+  border-radius: 30px;
+  background-color: #F5FF00;
+  color: #16191E;
+}
+
+.header__nav-phone:hover {
+  border: 1px solid #F5FF00;
+  border-radius: 30px;
+  background-color: #F5FF00;
+  color: #16191E;
+}
+
+footer {
+  background-color: #E6E9EE;
+}
+
+.footer__nav-brand a {
+  color: #16191E;
+  font-size: 24px;
+}
+
+.footer__nav-link a {
+  color: #16191E;
+}
+
 .footer__container a:hover {
   color: #16191E;
 }
