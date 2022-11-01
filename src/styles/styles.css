@@ -240,7 +240,7 @@ img {
 
 /* футер и хедер */
 .header__nav, .footer__container {
-  max-width: 1160px;
+  max-width: 1600px;
   margin: 0 auto;
   font-family: "Montserrat", sans-serif;
 }
@@ -259,16 +259,22 @@ img {
   color: #F5FF00;
 }
 
+.header__nav-brand:hover {
+  color: #16191E;
+}
+
 .header__nav-link a:hover {
   border: 1px solid #F5FF00;
   border-radius: 30px;
   background-color: #F5FF00;
+  color: #16191E;
 }
 
 .header__nav-phone:hover {
   border: 1px solid #F5FF00;
   border-radius: 30px;
   background-color: #F5FF00;
+  color: #16191E;
 }
 
 footer {
@@ -282,6 +288,52 @@ footer {
 
 .footer__nav-link a {
   color: #16191E;
+}
+
+.footer__container a:hover {
+  color: #16191E;
+}
+
+.slider {
+  margin: 100px;
+  padding: 50px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-evenly;
+  height: 100%;
+  color: #16191E;
+}
+
+.item_col {
+  align-self: center;
+  text-align: center;
+}
+
+.btn {
+  padding: 10px;
+  background-color: #E8F01A;
+  color: #E8F01A;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #E8F01A;
+  transition: 0.5s;
+}
+
+.slider .item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 50%;
+  height: 400px;
+}
+
+.previous, .next {
+  align-self: center;
+  cursor: pointer;
 }
 
 .services-prices {

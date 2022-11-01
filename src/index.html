@@ -30,18 +30,18 @@
   <div class="wrapper">
     <header id="header">
       <!-- класс content-container ограничивает ширину внутреннего содержания блока и ставит по центру-->
-      <div class="content-container"></div>
+      <!-- <div class="content-container"></div> -->
       <div class="header__nav-container" id="header">
         <nav class="header__nav navbar navbar-expand-lg mb-5">
           <a class="header__nav-brand navbar-brand mr-5" href="#">Beauty <br />Nails</a>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="header__nav-link navbar-nav">
-              <a class="nav-item nav-link mr-1 ml-5" href="#">УСЛУГИ И ЦЕНЫ</a>
+            <div class="header__nav-link navbar-nav mr-auto">
+              <a class="nav-item nav-link mr-1" href="#">УСЛУГИ И ЦЕНЫ</a>
               <a class="nav-item nav-link mr-1" href="#">ОТЗЫВЫ</a>
               <a class="nav-item nav-link mr-1" href="#">МАГАЗИН</a>
               <a class="nav-item nav-link mr-1" href="#">КОНТАКТЫ</a>
             </div>
-            <a class="header__nav-phone nav-item nav-link ml-auto" href="#">+9 (999) 999-99-99</a>
+            <a class="header__nav-phone nav-item nav-link" href="#">+9 (999) 999-99-99</a>
           </div>
           <div class="navbar navbar-light">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -378,6 +378,7 @@
               </div>
             </div>
           </div>
+
       </section>
 
       <!-- блок 3 Выберите мастера -->
@@ -427,12 +428,49 @@
               </div>
             </div>
           </div>
+
         </div>
       </section>
 
       <!-- блок 4 Галерея мастеров -->
       <section>
-        <div class="content-container"></div>
+        <div class="content-container">
+          <div class="slider">
+            <div class="slider_item">
+              <a class="previous" onclick="previousSlide()">&#10094;</a>
+              <div class="item_col">
+                <h3>Мария Усманова</h3>
+                <p>Маникюр, педикюр</p>
+                <button class="btn">Записаться</button>
+              </div>
+              <img src="images/master.jpg" alt="">
+              <a class="next" onclick="nextSlide()">&#10095;</a>
+            </div>
+
+            <div class="slider_item">
+              <a class="previous" onclick="previousSlide()">&#10094;</a>
+              <div class="item_col">
+                <h3>Ирина Петрова</h3>
+                <p>Маникюр, педикюр, наращивание ногтей</p>
+                <button class="btn">Записаться</button>
+              </div>
+              <img src="images/master2.jpg" alt="">
+              <a class="next" onclick="nextSlide()">&#10095;</a>
+            </div>
+
+            <div class="slider_item">
+              <a class="previous" onclick="previousSlide()">&#10094;</a>
+              <div class="item_col">
+                <h3>Татьяна Лютова</h2>
+                  <p>Маникюр, педикюр, наращивание ногтей</p>
+                  <button class="btn">Записаться</button>
+              </div>
+              <img src="images/master3.jpg" alt="">
+              <a class="next" onclick="nextSlide()">&#10095;</a>
+            </div>
+
+          </div>
+        </div>
       </section>
 
       <!-- блок 5 Услуги и цены – калькулятор -->
@@ -480,10 +518,7 @@
               </div>
               <div class="services-prices__img">
                 <!-- <img src="src/images/hands.jpg" alt="" /> -->
-              </div>
-            </div>
-          </div>
-        </div>
+
       </section>
 
       <!-- блок 6 Стоимость услуг – прайс -->
@@ -503,7 +538,7 @@
     </main>
 
     <footer>
-      <div class="content-container"></div>
+      <!-- <div class="content-container"></div> -->
       <div class="footer__container">
         <div class="flex-column navbar navbar-expand-lg">
           <div class="footer__nav-brand navbar m-auto">
@@ -531,6 +566,7 @@
   <!-- <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script> -->
   <script src="index.js"></script>
   <script src="booking.js"></script>
+
 </body>
 
 </html>
