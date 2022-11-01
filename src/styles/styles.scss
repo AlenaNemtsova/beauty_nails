@@ -227,6 +227,7 @@ img {
     text-transform: uppercase;
 }
 
+
 //изменения после вебпака ПЕРЕНЕСТИ ДАНИЯ
 @media screen and (max-width:1023px) {
 
@@ -238,10 +239,9 @@ img {
         font-size: 0.95rem;
     }
 
-
-.accordion__header {
-    padding: 0.5rem 0.8rem;
-}
+    .accordion__header {
+        padding: 0.5rem 0.8rem;
+    }
 
     .service__title {
         font-size: 0.9rem;
@@ -263,16 +263,12 @@ img {
         padding:12px;
         margin-top: 15px;
     }
-.header__nav, .footer__container {
-    max-width: 1600px;
-    margin: 0 auto;
-    font-family: 'Montserrat', sans-serif;
-}
 
     .text_note {
         font-size: 0.7rem;
     }
 }
+
 
 @media screen and (max-width:767px) {
 
@@ -284,26 +280,9 @@ img {
         font-size: 0.8rem;
     }
 
-
-.accordion__header {
-    padding: 0.3rem 0.6rem;
-.header__nav-brand:hover {
-    color: #16191E;
-}
-
-.header__nav-link a:hover {
-    border: 1px solid $yellow-color;
-    border-radius: 30px;
-    background-color: $yellow-color;
-    color: #16191E;
-}
-
-.header__nav-phone:hover {
-    border: 1px solid $yellow-color;
-    border-radius: 30px;
-    background-color: $yellow-color; 
-    color: #16191E;
-}
+    .accordion__header {
+        padding: 0.3rem 0.6rem;
+    }
 
     .service__title {
         font-size: 0.7rem;
@@ -330,8 +309,64 @@ img {
         font-size: 0.5rem;
     }
 }
+
+.header__nav, .footer__container {
+    max-width: 1600px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
 }
 
+.header__nav-container {
+    background-color: #E6E9EE;
+}
+
+.header__nav {
+    &-brand {
+            font-size: 24px;
+        }
+    & a {
+        color: #16191E;
+    }
+    &-phone {
+    color: $btn-price-main;
+    }
+}
+
+.header__nav-brand:hover {
+    color: #16191E;
+}
+
+.header__nav-link a:hover {
+    border: 1px solid $attention-text;
+    border-radius: 30px;
+    background-color: $attention-text;
+    color: #16191E;
+}
+
+.header__nav-phone:hover {
+    border: 1px solid $attention-text;
+    border-radius: 30px;
+    background-color: $attention-text; 
+    color: #16191E;
+}
+
+footer {
+    background-color: #E6E9EE;
+    
+}
+
+.footer__nav-brand {
+    & a {
+        color: #16191E;
+        font-size: 24px; 
+    }      
+}
+
+.footer__nav-link {
+    & a {
+        color: #16191E;
+    }
+}
 
 .footer__container a:hover {
     color: #16191E;    
