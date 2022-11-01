@@ -233,7 +233,7 @@ img {
 
 /* футер и хедер */
 .header__nav, .footer__container {
-  max-width: 1600px;
+  max-width: 90%;
   margin: 0 auto;
   font-family: "Montserrat", sans-serif;
 }
@@ -292,12 +292,16 @@ footer {
 }
 
 .slider {
-  margin: 100px;
+  margin: 0px 100px;
   padding: 50px;
 }
 
 .slider__container {
   background-color: #E6E9EE;
+  padding-top: 50px;
+}
+.slider__container h1 {
+  text-align: center;
 }
 
 .item {
@@ -331,7 +335,7 @@ footer {
      object-fit: cover;
   width: 60%;
   height: 400px;
-  margin: 50px;
+  margin: 0px 50px;
 }
 
 .previous, .next {

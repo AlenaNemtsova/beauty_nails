@@ -30,14 +30,14 @@
       <!-- класс content-container ограничивает ширину внутреннего содержания блока и ставит по центру-->
       <!-- <div class="content-container"></div> -->
       <div class="header__nav-container" id="header">
-        <nav class="header__nav navbar navbar-expand-xl mb-5">
+        <nav class="header__nav navbar navbar-expand-lg mb-5">
           <a class="header__nav-brand navbar-brand mr-5" href="#">Beauty <br />Nails</a>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="header__nav-link navbar-nav mr-auto">
-              <a class="nav-item nav-link mr-4" href="#">УСЛУГИ И ЦЕНЫ</a>
-              <a class="nav-item nav-link mr-4" href="#">ОТЗЫВЫ</a>
-              <a class="nav-item nav-link mr-4" href="#">МАГАЗИН</a>
-              <a class="nav-item nav-link mr-4" href="#">КОНТАКТЫ</a>
+              <a class="nav-item nav-link mr-4 p-2" href="#">УСЛУГИ И ЦЕНЫ</a>
+              <a class="nav-item nav-link mr-4 p-2" href="#">ОТЗЫВЫ</a>
+              <a class="nav-item nav-link mr-4 p-2" href="#">МАГАЗИН</a>
+              <a class="nav-item nav-link mr-4 p-2" href="#">КОНТАКТЫ</a>
             </div>
             <a class="header__nav-phone nav-item nav-link" href="#">+9 (999) 999-99-99</a>
           </div>
@@ -376,126 +376,126 @@
               </div>
             </div>
           </div>
-          <<<<<<< HEAD=======</section> <!-- блок 3 Выберите мастера -->
-            <section>
-              <div class="content-container">
-                <!-- Запись -->
-                <a href="#popup" class="popup__open">Записаться</a>
+      </section> <!-- блок 3 Выберите мастера -->
+      <section>
+        <div class="content-container">
+          <!-- Запись -->
+          <a href="#popup" class="popup__open">Записаться</a>
 
-                <div class="popup" id="popup">
-                  <div class="popup__body">
-                    <div class="popup__content">
-                      <form action="" class="popup__content" id="booking">
-                        <a href="#header" class="popup__close">X</a>
-                        <div class="item">
-                          <label for="first_name">Введите Ваше имя</label>
-                          <input type="text" id="username" name="username" required />*
-                        </div>
-                        <div class="item">
-                          <label for="phone">Введите Ваш номер телефона</label>
-                          <input type="tel" id="phone" maxlength="11" minlength="11" name="phone" required />*
-                        </div>
-                        <select name="person" id="master" class="choose_master" onchange="selectedMaster(this)">
-                          <option value="none" default>Выберите мастера:</option>
-                          <option value="petrova">Петрова</option>
-                          <option value="ivanova">Иванова</option>
-                          <option value="sidorova">Сидорова</option>
-                        </select>
-
-                        <select name="procedure" id="type" class="choose_type" style="display: none"
-                          onchange="selectedType(this)"></select>
-
-                        <div class="choose_date" style="display: none">
-                          Выбрать дату и время
-                        </div>
-                        <button type="submit" class="booking">Записаться</button>
-                      </form>
-                      <a href="#popup_2" class="popup__open">Подтвердить запись</a>
-                    </div>
+          <div class="popup" id="popup">
+            <div class="popup__body">
+              <div class="popup__content">
+                <form action="" class="popup__content" id="booking">
+                  <a href="#header" class="popup__close">X</a>
+                  <div class="item">
+                    <label for="first_name">Введите Ваше имя</label>
+                    <input type="text" id="username" name="username" required />*
                   </div>
-                </div>
-                <!-- Подтверждение -->
-                <div class="popup" id="popup_2">
-                  <div class="popup__body">
-                    <div class="popup__content">
-                      <a href="#header" class="popup__close close-popup-js">X</a>
-                      <div class="confirmation"></div>
-                    </div>
+                  <div class="item">
+                    <label for="phone">Введите Ваш номер телефона</label>
+                    <input type="tel" id="phone" maxlength="11" minlength="11" name="phone" required />*
                   </div>
-                </div>
+                  <select name="person" id="master" class="choose_master" onchange="selectedMaster(this)">
+                    <option value="none" default>Выберите мастера:</option>
+                    <option value="petrova">Петрова</option>
+                    <option value="ivanova">Иванова</option>
+                    <option value="sidorova">Сидорова</option>
+                  </select>
+
+                  <select name="procedure" id="type" class="choose_type" style="display: none"
+                    onchange="selectedType(this)"></select>
+
+                  <div class="choose_date" style="display: none">
+                    Выбрать дату и время
+                  </div>
+                  <button type="submit" class="booking">Записаться</button>
+                </form>
+                <a href="#popup_2" class="popup__open">Подтвердить запись</a>
               </div>
-            </section>
+            </div>
+          </div>
+          <!-- Подтверждение -->
+          <div class="popup" id="popup_2">
+            <div class="popup__body">
+              <div class="popup__content">
+                <a href="#header" class="popup__close close-popup-js">X</a>
+                <div class="confirmation"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <!-- блок 4 Галерея мастеров -->
-            <section>
-              <div class="content-container"></div>
-            </section>
+      <!-- блок 4 Галерея мастеров -->
+      <section>
+        <div class="content-container"></div>
+      </section>
 
-            <!-- блок 5 Услуги и цены – калькулятор -->
-            <section class="services-prices">
-              <div class="content-container">
-                <h2 class="services-prices__title">Услуги и цены</h2>
-                <div class="services-prices__content">
-                  <div class="services-prices__content_flex">
-                    <div class="services-prices__calculator calculator">
-                      <p class="calculator__title">Маникюр</p>
-                      <div class="calculator__box">
-                        <form action="" class="calculator__form">
-                          <div class="form__select">
-                            Выберите маникюр
-                            <select name="" class="select">
-                              <option value="2000">Классический</option>
-                              <option value="2200">Комбинированный</option>
-                              <option value="2500">Аппаратный</option>
-                            </select>
+      <!-- блок 5 Услуги и цены – калькулятор -->
+      <section class="services-prices">
+        <div class="content-container">
+          <h2 class="services-prices__title">Услуги и цены</h2>
+          <div class="services-prices__content">
+            <div class="services-prices__content_flex">
+              <div class="services-prices__calculator calculator">
+                <p class="calculator__title">Маникюр</p>
+                <div class="calculator__box">
+                  <form action="" class="calculator__form">
+                    <div class="form__select">
+                      Выберите маникюр
+                      <select name="" class="select">
+                        <option value="2000">Классический</option>
+                        <option value="2200">Комбинированный</option>
+                        <option value="2500">Аппаратный</option>
+                      </select>
 
-                            <div>
-                              Дополнительно
+                      <div>
+                        Дополнительно
 
-                              <input type="checkbox" name="" value="200" class="price" id="remove" /><label
-                                class="gender-label" for="remove">снятие</label><br />
+                        <input type="checkbox" name="" value="200" class="price" id="remove" /><label
+                          class="gender-label" for="remove">снятие</label><br />
 
-                              <input type="checkbox" name="package" value="500" class="price" id="alignment" />
-                              <label class="gender-label" for="alignment">выравнивание</label>
-                            </div>
-                            Выберите покрытие
-
-                            <select name="" class="select">
-                              <option value="0">Без покрытия</option>
-                              <option value="200">Первое</option>
-                              <option value="300">Второе</option>
-                            </select>
-                            Дизайн
-                            <select name="" class="select">
-                              <option value="300">Френч</option>
-                              <option value="600">Дизайн</option>
-                            </select>
-                          </div>
-                        </form>
+                        <input type="checkbox" name="package" value="500" class="price" id="alignment" />
+                        <label class="gender-label" for="alignment">выравнивание</label>
                       </div>
+                      Выберите покрытие
+
+                      <select name="" class="select">
+                        <option value="0">Без покрытия</option>
+                        <option value="200">Первое</option>
+                        <option value="300">Второе</option>
+                      </select>
+                      Дизайн
+                      <select name="" class="select">
+                        <option value="300">Френч</option>
+                        <option value="600">Дизайн</option>
+                      </select>
                     </div>
-                    <div class="services-prices__img">
-                      <!-- <img src="src/images/hands.jpg" alt="" /> -->
-                    </div>
-                  </div>
+                  </form>
                 </div>
               </div>
-            </section>
+              <div class="services-prices__img">
+                <!-- <img src="src/images/hands.jpg" alt="" /> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <!-- блок 6 Стоимость услуг – прайс -->
-            <section>
-              <div class="content-container"></div>
-            </section>
+      <!-- блок 6 Стоимость услуг – прайс -->
+      <section>
+        <div class="content-container"></div>
+      </section>
 
-            <!-- блок 7 Подарочные сертификаты -->
-            <section>
-              <div class="content-container"></div>
-            </section>
+      <!-- блок 7 Подарочные сертификаты -->
+      <section>
+        <div class="content-container"></div>
+      </section>
 
-            <!-- блок 8 Контакты – карта -->
-            <section>
-              <div class="content-container"></div>
-            </section>
+      <!-- блок 8 Контакты – карта -->
+      <section>
+        <div class="content-container"></div>
+      </section>
     </main>
 
     </section>
@@ -553,6 +553,7 @@
     <!-- блок 4 Галерея мастеров -->
     <section>
       <div class="slider__container">
+        <h1>Выберите своего мастера</h1>
         <div class="content-container">
           <div class="slider">
             <div class="slider_item">
