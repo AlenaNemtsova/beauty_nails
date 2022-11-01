@@ -11,8 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,200&display=swap"
     rel="stylesheet" />
 
-  <!-- <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>" /> -->
-  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>" />
 
   <!-- от Милы  -->
   <link
@@ -30,18 +29,18 @@
   <div class="wrapper">
     <header id="header">
       <!-- класс content-container ограничивает ширину внутреннего содержания блока и ставит по центру-->
-      <!-- <div class="content-container"></div> -->
+      <div class="content-container"></div>
       <div class="header__nav-container" id="header">
         <nav class="header__nav navbar navbar-expand-lg mb-5">
           <a class="header__nav-brand navbar-brand mr-5" href="#">Beauty <br />Nails</a>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="header__nav-link navbar-nav mr-auto">
-              <a class="nav-item nav-link mr-1" href="#">УСЛУГИ И ЦЕНЫ</a>
+            <div class="header__nav-link navbar-nav">
+              <a class="nav-item nav-link mr-1 ml-5" href="#">УСЛУГИ И ЦЕНЫ</a>
               <a class="nav-item nav-link mr-1" href="#">ОТЗЫВЫ</a>
               <a class="nav-item nav-link mr-1" href="#">МАГАЗИН</a>
               <a class="nav-item nav-link mr-1" href="#">КОНТАКТЫ</a>
             </div>
-            <a class="header__nav-phone nav-item nav-link" href="#">+9 (999) 999-99-99</a>
+            <a class="header__nav-phone nav-item nav-link ml-auto" href="#">+9 (999) 999-99-99</a>
           </div>
           <div class="navbar navbar-light">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -251,7 +250,7 @@
                 </label>
                 <input type="checkbox" id="slide2" />
                 <div class="close__all">
-                  <h3 class="service__title">Моноуслуги</h3>
+                  <h3 class="service__title"><span>Моноуслуги</span></h3>
                   <!-- <hr> -->
                   <!-- Маникюр-->
                   <div class="accordion" id="accordion-9">
@@ -378,184 +377,6 @@
               </div>
             </div>
           </div>
-<<<<<<< HEAD
-=======
-        </section>
-
-        <!-- блок 3 Выберите мастера -->
-        <section>
-          <div class="content-container">
-            <!-- Запись -->
-            <a href="#popup" class="popup__open">Записаться</a>
-
-            <div class="popup" id="popup">
-              <div class="popup__body">
-                <div class="popup__content">
-                  <form action="" class="popup__content" id="booking">
-                    <a href="#header" class="popup__close">X</a>
-                    <div class="item">
-                      <label for="first_name">Введите Ваше имя</label>
-                      <input
-                        type="text"
-                        id="username"
-                        name="username"
-                        required
-                      />*
-                    </div>
-                    <div class="item">
-                      <label for="phone">Введите Ваш номер телефона</label>
-                      <input
-                        type="tel"
-                        id="phone"
-                        maxlength="11"
-                        minlength="11"
-                        name="phone"
-                        required
-                      />*
-                    </div>
-                    <select
-                      name="person"
-                      id="master"
-                      class="choose_master"
-                      onchange="selectedMaster(this)"
-                    >
-                      <option value="none" default>Выберите мастера:</option>
-                      <option value="petrova">Петрова</option>
-                      <option value="ivanova">Иванова</option>
-                      <option value="sidorova">Сидорова</option>
-                    </select>
-
-                    <select
-                      name="procedure"
-                      id="type"
-                      class="choose_type"
-                      style="display: none"
-                      onchange="selectedType(this)"
-                    ></select>
-
-                    <div class="choose_date" style="display: none">
-                      Выбрать дату и время
-                    </div>
-                    <button type="submit" class="booking">Записаться</button>
-                  </form>
-                  <a href="#popup_2" class="popup__open">Подтвердить запись</a>
-                </div>
-              </div>
-            </div>
-            <!-- Подтверждение -->
-            <div class="popup" id="popup_2">
-              <div class="popup__body">
-                <div class="popup__content">
-                  <a href="#header" class="popup__close close-popup-js">X</a>
-                  <div class="confirmation"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- блок 4 Галерея мастеров -->
-        <section>
-          <div class="content-container"></div>
-        </section>
-
-        <!-- блок 5 Услуги и цены – калькулятор -->
-        <section class="services-prices">
-          <div class="content-container">
-            <h2 class="services-prices__title">Услуги и цены</h2>
-            <div class="services-prices__content">
-              <div class="services-prices__content_flex">
-                <div class="services-prices__calculator calculator">
-                  <p class="calculator__title">Маникюр</p>
-                  <div class="calculator__box">
-                    <form action="" class="calculator__form">
-                      <div class="form__select">
-                        Выберите маникюр
-                        <select name="" class="select">
-                          <option value="2000">Классический</option>
-                          <option value="2200">Комбинированный</option>
-                          <option value="2500">Аппаратный</option>
-                        </select>
-
-                        <div>
-                          Дополнительно
-
-                          <input
-                            type="checkbox"
-                            name=""
-                            value="200"
-                            class="price"
-                            id="remove"
-                          /><label class="gender-label" for="remove"
-                            >снятие</label
-                          ><br />
-
-                          <input
-                            type="checkbox"
-                            name="package"
-                            value="500"
-                            class="price"
-                            id="alignment"
-                          />
-                          <label class="gender-label" for="alignment"
-                            >выравнивание</label
-                          >
-                        </div>
-                        Выберите покрытие
-
-                        <select name="" class="select">
-                          <option value="0">Без покрытия</option>
-                          <option value="200">Первое</option>
-                          <option value="300">Второе</option>
-                        </select>
-                        Дизайн
-                        <select name="" class="select">
-                          <option value="300">Френч</option>
-                          <option value="600">Дизайн</option>
-                        </select>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-                <div class="services-prices__img">
-                  <!-- <img src="src/images/hands.jpg" alt="" /> -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- блок 6 Стоимость услуг – прайс -->
-        <section>
-          <div class="content-container"></div>
-        </section>
-
-        <!-- блок 7 Подарочные сертификаты -->
-        <section>
-          <div class="content-container"></div>
-        </section>
-
-        <!-- блок 8 Контакты – карта -->
-        <section>
-          <div class="content-container"></div>
-        </section>
-      </main>
-
-      <footer>
-        <div class="content-container"></div>
-        <div class="footer__container">
-          <div class="flex-column navbar navbar-expand-lg">
-            <div class="footer__nav-brand navbar m-auto">
-              <a class="navbar-brand" href="#">Beauty <br />Nails</a>
-            </div>
-            <div class="footer__nav-link navbar m-auto">
-              <a class="nav-item nav-link" href="#">УСЛУГИ И ЦЕНЫ</a>
-              <a class="nav-item nav-link" href="#">ОТЗЫВЫ</a>
-              <a class="nav-item nav-link" href="#">МАГАЗИН</a>
-              <a class="nav-item nav-link" href="#">КОНТАКТЫ</a>
-            </div>
-          </div>
->>>>>>> main
         </div>
       </section>
 
@@ -611,45 +432,7 @@
 
       <!-- блок 4 Галерея мастеров -->
       <section>
-        <div class="content-container">
-          <div class="slider">
-            <div class="slider_item">
-              <a class="previous" onclick="previousSlide()">&#10094;</a>
-              <div class="item_col">
-                <h3>Мария Усманова</h3>
-                <p>Маникюр, педикюр</p>
-                <button class="btn">Записаться</button>
-              </div>
-              <img src="images/master.jpg" alt="">
-              <a class="next" onclick="nextSlide()">&#10095;</a>
-            </div>
-
-            <div class="slider_item">
-              <a class="previous" onclick="previousSlide()">&#10094;</a>
-              <div class="item_col">
-                <h3>Ирина Петрова</h3>
-                <p>Маникюр, педикюр, наращивание ногтей</p>
-                <button class="btn">Записаться</button>
-              </div>
-              <img src="images/master2.jpg" alt="">
-              <a class="next" onclick="nextSlide()">&#10095;</a>
-            </div>
-
-            <div class="slider_item">
-              <a class="previous" onclick="previousSlide()">&#10094;</a>
-              <div class="item_col">
-                <h3>Татьяна Лютова</h2>
-                  <p>Маникюр, педикюр, наращивание ногтей</p>
-                  <button class="btn">Записаться</button>
-              </div>
-              <img src="images/master3.jpg" alt="">
-              <a class="next" onclick="nextSlide()">&#10095;</a>
-            </div>
-
-          </div>
-
-        </div>
-
+        <div class="content-container"></div>
       </section>
 
       <!-- блок 5 Услуги и цены – калькулятор -->
@@ -699,11 +482,7 @@
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
   </script>
 
-  <!-- <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script> -->
-  <script src="index.js"></script>
-
-
-
+  <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>
 
 </html>
