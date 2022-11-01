@@ -1,7 +1,5 @@
 'use strict'
 
-// import "normalize.css";
-// import "./styles/styles.css";
 
 //JSON для комбинированных услуг
 //Маникюр + покрытие
@@ -632,7 +630,6 @@ new ItcAccordion('#accordion-13', {
 new ItcAccordion('#accordion-14', {
     alwaysOpen: false
 });
-
 
 // слайдер
 let slideIndex = 1;

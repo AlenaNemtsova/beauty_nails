@@ -1,10 +1,11 @@
+
 //шрифт montserrat 200/300/400/500
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
 
-@import "_booking"; 
+@import "booking"; 
 // @import "services-prices.scss";
 
-@import '_services-prices';
+@import 'services-prices';
 
 //переменные 
 //для элементов
@@ -62,32 +63,33 @@ img {
 
 .card__menu {
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 6fr 1fr;
     // background-color: #f6d365;
 }
 
 .card__item {
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 6fr 1fr;
     // padding: 5px;
     // margin-top: 5px;
 }
 
 .service__title {
-    background-image: url(/assets/images/line_services_title.png);
-    // height: 5px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    // background-image: url(/assets/images/line_services_title.png);
+    // // height: 5px;
+    // background-repeat: no-repeat;
+    // background-position: center center;
+    // background-attachment: fixed;
+    // -webkit-background-size: cover;
+    // -moz-background-size: cover;
+    // -o-background-size: cover;
+    // background-size: cover;
     font-family: Montserrat;
     font-weight: 400;
     text-transform: uppercase;
     // text-align: center;
     // font-size: 50px;
+    font-size: 1.1em;
     color: #000;
     padding-left: 10px;
     // line-height: 59px;
@@ -97,13 +99,14 @@ img {
     display: inline;
     background-color: white;
     box-shadow: -10px 0 0 white, 10px 0 0 white;
-    padding: 10px 0;
+    padding: 5px 0;
     color: #191919;
     // font-size: 45px;
     border-radius: 50px;
 }
 
 .service__title_item {
+    padding-top: 0.6rem;
     font-family: Montserrat;
     font-weight: 400;
     font-size: 1.2rem;
@@ -122,7 +125,7 @@ img {
 }
 
 .card__price {
-    width: 75px;
+    min-width: 75px;
     height: 0.2px;
     font-family: Montserrat;
     font-size: 500;
@@ -146,7 +149,7 @@ img {
     font-weight: 200;
 }
 
-//аккордеон для прайса
+///аккордеон для прайса
 .accordion {
     padding: 0.5%;
 }
@@ -225,12 +228,92 @@ img {
 
 .slide_text {
     font-family: Montserrat;
-    font-size: 15px;
+    font-size: 1.3em;
     text-transform: uppercase;
 }
 
-/* футер и хедер */
-$yellow-color: #F5FF00;
+
+//изменения после вебпака ПЕРЕНЕСТИ ДАНИЯ
+@media screen and (max-width:1023px) {
+
+    .slide_text {
+        font-size: 1.1em;
+    }
+
+    .service__title_item {
+        font-size: 0.95rem;
+    }
+
+    .accordion__header {
+        padding: 0.5rem 0.8rem;
+    }
+
+    .service__title {
+        font-size: 0.9rem;
+    }
+
+    .service__title span {
+        padding: 5px 0;
+    }
+
+    .card__name {
+        font-size: 0.8em;
+    }
+
+    .card__price {
+        min-width: 55px;
+        // height: 0.2px;
+        font-size: 0.8em;
+        border-radius: 30px;
+        padding:12px;
+        margin-top: 15px;
+    }
+
+    .text_note {
+        font-size: 0.7rem;
+    }
+}
+
+
+@media screen and (max-width:767px) {
+
+    .slide_text {
+        font-size: 1em;
+    }
+
+    .service__title_item {
+        font-size: 0.8rem;
+    }
+
+    .accordion__header {
+        padding: 0.3rem 0.6rem;
+    }
+
+    .service__title {
+        font-size: 0.7rem;
+    }
+
+    .service__title span {
+        padding: 5px 0;
+    }
+
+    .card__name {
+        font-size: 0.8em;
+    }
+
+    .card__price {
+        min-width: 45px;
+        // height: 0.2px;
+        font-size: 0.6em;
+        border-radius: 30px;
+        padding:12px;
+        margin-top: 15px;
+    }
+
+    .text_note {
+        font-size: 0.5rem;
+    }
+}
 
 .header__nav, .footer__container {
     max-width: 1600px;
@@ -250,7 +333,7 @@ $yellow-color: #F5FF00;
         color: #16191E;
     }
     &-phone {
-    color: $yellow-color;
+    color: $btn-price-main;
     }
 }
 
@@ -259,16 +342,16 @@ $yellow-color: #F5FF00;
 }
 
 .header__nav-link a:hover {
-    border: 1px solid $yellow-color;
+    border: 1px solid $attention-text;
     border-radius: 30px;
-    background-color: $yellow-color;
+    background-color: $attention-text;
     color: #16191E;
 }
 
 .header__nav-phone:hover {
-    border: 1px solid $yellow-color;
+    border: 1px solid $attention-text;
     border-radius: 30px;
-    background-color: $yellow-color; 
+    background-color: $attention-text; 
     color: #16191E;
 }
 
@@ -289,7 +372,6 @@ footer {
         color: #16191E;
     }
 }
-
 
 .footer__container a:hover {
     color: #16191E;    
@@ -337,5 +419,4 @@ footer {
 }
 
 
-
-
+@import 'services-prices';
