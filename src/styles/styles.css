@@ -16,18 +16,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px 10px;
+  padding: 2rem 1rem;
 }
 .popup__content {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(5, 1fr); */
   position: relative;
   min-width: 600px;
   padding: 30px;
   background-color: #E5EEF6;
   color: #16191E;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 .popup__close {
   position: absolute;
@@ -51,18 +54,23 @@
   transition: 0.5s all;
 }
 
-.booking {
+.confirm {
   /* width: 155px;
   height: 55px; */
   width: 400px;
-  height: 70px;
+  height: 50px;
   margin: 0.5em auto;
-  border-radius: 30px;
+  border-radius: 10px;
   background-color: #F5FF00;
   border: 1px solid #F5FF00;
   color: #16191E;
-  font-size: 1.5em;
+  font-size: 1.2em;
   text-transform: uppercase;
+  text-align: center;
+  padding: 0.5rem;
+}
+.confirm:focus, .confirm:hover {
+  text-decoration: none;
 }
 
 .option {
@@ -72,7 +80,7 @@
   border-radius: 30px;
   border-color: #F5FF00;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .master {
@@ -115,12 +123,32 @@
   margin: 0.2em auto;
 }
 
-.input {
-  width: 400px;
+.input,
+.choose_master {
+  width: 250px;
   height: 50px;
   margin: 0.5em auto;
+  text-align: center;
   border-radius: 10px;
   border: 2px solid #E6E9EE;
+}
+
+.input:-webkit-autofill,
+.input:-webkit-autofill:hover,
+.input:-webkit-autofill:focus,
+.input:-webkit-autofill:active {
+  box-shadow: 0 0 0 30px white inset;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-items: start;
+}
+
+.confirmation {
+  font-size: 1.2em;
+  line-height: 1.5em;
 }
 
 .services-prices {

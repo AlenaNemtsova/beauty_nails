@@ -393,46 +393,52 @@
                 <form action="" class="popup__content" id="booking">
                   <a href="#header" class="popup__close">&#215;</a>
                   <div class="item">
-                    <!-- <label for="first_name">Введите Ваше имя</label> -->
-                    <input type="text" id="username" class="input" name="username" placeholder="Введите Ваше имя"
-                      required />
+                    <label for="first_name">Введите Ваше имя</label>
+                    <input type="text" id="username" class="input" name="username" required />
                   </div>
                   <div class="item">
-                    <!-- <label for="phone">Введите Ваш номер телефона</label> -->
-                    <input type="tel" id="phone" class="input" maxlength="11" minlength="11" name="phone"
-                      placeholder="Введите Ваш номер телефона" required />
+                    <label for="phone">Введите Ваш номер телефона</label>
+                    <input type="tel" id="phone" class="input" maxlength="11" minlength="11" name="phone" required />
                   </div>
-                  <!--  <div class="item">
-                    <select name="person" id="master" class="choose_master" onchange="selectedMaster(this)">
-                      <option value="none" class="option" default>Выбрать специалиста</option>
+                  <div class="item">
+                    <label for="master">Выбрать специалиста</label>
+                    <!-- <select name="person" id="master" class="choose_master" onchange="selectedMaster(this)"> -->
+                    <select name="person" id="master" class="choose_master">
+                      <option value="none" class="option" default></option>
                       <option value="Мария Усманова" class="option">Мария Усманова</option>
                       <option value="Ирина Петрова" class="option">Ирина Петрова</option>
                       <option value="Татьяна Лютова" class="option">Татьяна Лютова</option>
                     </select>
                   </div>
-                  <div class="item">
-                    <select name="procedure" id="type" class="choose_type" style="display: none"
-                      onchange="selectedType(this)"></select>
-                  </div>
-                  <div class="choose_date" style="display: none">
-                    Выбрать дату и время
-                  </div> -->
-
 
                   <div class="item">
-                    <button class="option choose_master" onclick="showMaster()">Выбрать специалиста</button>
+                    <label>Выбрать услуги</label>
+                    <div class="choose_type">
+                      <div>
+                        <input type="checkbox" name="procedure" id="manicure" value="маникюр">
+                        <label for="manicure">Маникюр</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="procedure" id="pedicure" value="педикюр">
+                        <label for="pedicure">Педикюр</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="procedure" id="grow_nails" value="наращивание ногтей">
+                        <label for="grow_nails">Наращивание ногтей</label>
+                      </div>
+                    </div>
                   </div>
-                  <div class="persons"></div>
                   <div class="item">
-                    <button class="option choose_type" onclick="showType()">Выбрать услуги</button>
+                    <div class="choose_date">
+                      Выбрать дату
+                    </div>
                   </div>
-                  <div class="types"></div>
                   <div class="item">
-                    <button class="option choose_time" onclick="showTime()">Выбрать дату и время</button>
+                    <div class="choose_date" style="display: none">
+                      Выбрать время
+                    </div>
                   </div>
-
-                  <button type="submit" class="booking">Записаться</button>
-                  <a href="#popup_2" class="popup__open">Подтвердить запись</a>
+                  <a href="#popup_2" class="popup__open confirm">Записаться</a>
                 </form>
               </div>
             </div>
@@ -441,7 +447,7 @@
           <div class="popup" id="popup_2">
             <div class="popup__body">
               <div class="popup__content">
-                <a href="#header" class="popup__close close-popup-js">X</a>
+                <a href="#header" class="popup__close close-popup-js">&#215;</a>
                 <div class="confirmation"></div>
               </div>
             </div>

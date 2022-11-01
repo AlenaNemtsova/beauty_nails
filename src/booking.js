@@ -46,7 +46,7 @@ const popupClose = (popupActive) => {
 }
 
 //выбор мастера и услуги
-/* let types = ["Выбрать услуги", "Маникюр", "Педикюр"];
+/* let types = ["Выбрать услуги", "Маникюр", "Педикюр", "Наращивание ногтей"];
 
 const selectedType = (sender) => {
     if (sender.options[sender.selectedIndex].value == 'none') {
@@ -72,7 +72,8 @@ const selectedMaster = (sender) => {
     document.querySelector('.choose_type').innerHTML = typesString;
     selectedType();
 } */
-const masters_json =`[
+
+/* const masters_json =`[
     {
         "person": "Мария Усманова",
         "procedure": "Маникюр, педикюр",
@@ -131,12 +132,12 @@ const showType=()=>{
         `
     };
     document.querySelector('.types').innerHTML = content;
-}
+} */
 
 
 
 //отправка формы
-document.querySelector('.booking').addEventListener('click', (e) => {
+document.querySelector('.confirm').addEventListener('click', (e) => {
     e.preventDefault();
 
     fetch('https://httpbin.org/post', {
@@ -146,9 +147,13 @@ document.querySelector('.booking').addEventListener('click', (e) => {
         .then(response => response.json())
         .then(data => {
             console.log(data);
-            document.querySelector('.confirmation').textContent = `${data.form.username}, вы записаны к ${data.form.person} на  на сеанс ${data.form.procedure}`
+            document.querySelector('.confirmation').innerHTML = `
+            <span>${data.form.username}</span>, Вы записаны на <span>20 ноября</span><span>18-30</span> на процедуры:
+                  <span>${data.form.procedure}</span>.<br> Ваш мастер: <span>${data.form.person}</span>
+            `
         })
         .catch(err => console.log(err));
+
 })
 
 //стилизовать ссылки под кнопки
