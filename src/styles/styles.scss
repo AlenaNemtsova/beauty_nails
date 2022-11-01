@@ -2,6 +2,11 @@
 //шрифт montserrat 200/300/400/500
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
 
+@import "booking"; 
+// @import "services-prices.scss";
+
+@import 'services-prices';
+
 //переменные 
 //для элементов
 $btn-price-main: #F5FF00;
