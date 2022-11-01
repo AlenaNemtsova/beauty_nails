@@ -389,30 +389,48 @@
 
           <div class="popup" id="popup">
             <div class="popup__body">
-              <div class="popup__content">
+              <div class="">
                 <form action="" class="popup__content" id="booking">
                   <a href="#header" class="popup__close">&#215;</a>
                   <div class="item">
-                    <label for="first_name">Введите Ваше имя</label>
-                    <input type="text" id="username" name="username" required />*
+                    <!-- <label for="first_name">Введите Ваше имя</label> -->
+                    <input type="text" id="username" class="input" name="username" placeholder="Введите Ваше имя"
+                      required />
                   </div>
                   <div class="item">
-                    <label for="phone">Введите Ваш номер телефона</label>
-                    <input type="tel" id="phone" maxlength="11" minlength="11" name="phone" required />*
+                    <!-- <label for="phone">Введите Ваш номер телефона</label> -->
+                    <input type="tel" id="phone" class="input" maxlength="11" minlength="11" name="phone"
+                      placeholder="Введите Ваш номер телефона" required />
                   </div>
-                  <select name="person" id="master" class="choose_master" onchange="selectedMaster(this)">
-                    <option value="none" default>Выберите мастера:</option>
-                    <option value="petrova">Петрова</option>
-                    <option value="ivanova">Иванова</option>
-                    <option value="sidorova">Сидорова</option>
-                  </select>
-
-                  <select name="procedure" id="type" class="choose_type" style="display: none"
-                    onchange="selectedType(this)"></select>
-
+                  <!--  <div class="item">
+                    <select name="person" id="master" class="choose_master" onchange="selectedMaster(this)">
+                      <option value="none" class="option" default>Выбрать специалиста</option>
+                      <option value="Мария Усманова" class="option">Мария Усманова</option>
+                      <option value="Ирина Петрова" class="option">Ирина Петрова</option>
+                      <option value="Татьяна Лютова" class="option">Татьяна Лютова</option>
+                    </select>
+                  </div>
+                  <div class="item">
+                    <select name="procedure" id="type" class="choose_type" style="display: none"
+                      onchange="selectedType(this)"></select>
+                  </div>
                   <div class="choose_date" style="display: none">
                     Выбрать дату и время
+                  </div> -->
+
+
+                  <div class="item">
+                    <button class="option choose_master" onclick="showMaster()">Выбрать специалиста</button>
                   </div>
+                  <div class="persons"></div>
+                  <div class="item">
+                    <button class="option choose_type" onclick="showType()">Выбрать услуги</button>
+                  </div>
+                  <div class="types"></div>
+                  <div class="item">
+                    <button class="option choose_time" onclick="showTime()">Выбрать дату и время</button>
+                  </div>
+
                   <button type="submit" class="booking">Записаться</button>
                   <a href="#popup_2" class="popup__open">Подтвердить запись</a>
                 </form>
@@ -428,7 +446,6 @@
               </div>
             </div>
           </div>
-
         </div>
       </section>
 

@@ -1,3 +1,22 @@
+//переменные 
+//для элементов
+$btn-price-main: #F5FF00;
+$btn-price-hover: #E8F01A;
+$page-bg-white: #ffffff;
+$page-bg-grey: #E6E9EE;
+$card-title-bg: #16191E;
+$card-body-bg:#E5EEF6;
+
+//для текста
+$default-font: "Montserrat",
+Arial,
+sans-serif;
+$main-fsz: rem(16);
+
+$main-text: #16191E;
+$card-text:#83868c;
+$attention-text:#F5FF00;
+
 /* Запись к мастеру */
 .popup {
     position: fixed;
@@ -18,11 +37,15 @@
     }
 
     &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         position: relative;
+        min-width: 600px;
+        padding: 30px;
         background-color: $card-body-bg;
         color: $main-text;
-        min-width: 800px;
-        padding: 30px;
+        overflow-y: scroll;
     }
 
     &__close {
@@ -49,13 +72,83 @@
         transition: 0.5s all;
     }
 }
-.booking{
-    width: 155px;
-    height: 55px;
+
+.booking {
+    /* width: 155px;
+    height: 55px; */
+    width: 400px;
+    height: 70px;
+    margin: 0.5em auto;
     border-radius: 30px;
     background-color: $btn-price-main;
     border: 1px solid $btn-price-main;
     color: $main-text;
-    font-size: $main-fsz;
+    font-size: 1.5em;
     text-transform: uppercase;
 }
+
+.option {
+    width: 400px;
+    height: 70px;
+    margin: 0.5em auto;
+    border-radius: 30px;
+    border-color: $btn-price-main;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.master {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: start;
+    align-items: center;
+    width: 400px;
+    height: 100px;
+    margin: 0.5em auto;
+    border-radius: 30px;
+    border-color: $page-bg-grey;
+    background-color: $page-bg-white;
+}
+
+.ava {
+    grid-column: 1/2;
+    justify-self: center;
+    max-height: 80px;
+    border-radius: 50%;
+}
+
+.text {
+    grid-column: 2/3;
+}
+
+.type {
+    display: flex;
+    /* align-items: center; */
+    width: 400px;
+    height: 50px;
+    margin: 0.5em auto;
+    border-radius: 10px;
+    background-color: $page-bg-white;
+    border: 2px solid $page-bg-grey;
+    font-size: 1.5em;
+
+    &_name {
+        text-align: center;
+        margin: 0.2em auto;
+    }
+}
+
+.input {
+    width: 400px;
+    height: 50px;
+    margin: 0.5em auto;
+    border-radius: 10px;
+    border: 2px solid $page-bg-grey;
+}
+
+//написать стили для инпутов
+//повторное нажатие на кнопку - скрывает контент
+//выбор мастера или процедуры - изменение фона + скрытие других опций
+//передача данных в отправку  - формирование объекта с данными
+//дата и время - как?
+//валидация формы

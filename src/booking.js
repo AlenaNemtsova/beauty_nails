@@ -46,7 +46,7 @@ const popupClose = (popupActive) => {
 }
 
 //выбор мастера и услуги
-let types = ["Выбрать услуги", "Маникюр", "Педикюр"];
+/* let types = ["Выбрать услуги", "Маникюр", "Педикюр"];
 
 const selectedType = (sender) => {
     if (sender.options[sender.selectedIndex].value == 'none') {
@@ -71,7 +71,69 @@ const selectedMaster = (sender) => {
     }
     document.querySelector('.choose_type').innerHTML = typesString;
     selectedType();
+} */
+const masters_json =`[
+    {
+        "person": "Мария Усманова",
+        "procedure": "Маникюр, педикюр",
+        "ava_url": "./images/mariya_ava.jpg"
+    },
+    {
+        "person": "Ирина Петрова",
+        "procedure": "Маникюр, педикюр, наращивание ногтей",
+        "ava_url": "./images/irina_ava.jpg" 
+    },
+    {
+        "person": "Татьяна Лютова",
+        "procedure": "Маникюр, педикюр, наращивание ногтей",
+        "ava_url": "./images/tatiana_ava.jpg"
+    }
+]`;
+
+const procedures_json=`[
+    {
+    "type": "Маникюр" 
+    },
+    {
+    "type": "Педикюр" 
+    },
+    {
+    "type": "Наращивание ногтей" 
+    }
+]`;
+
+const showMaster=()=>{
+    let masters = JSON.parse(masters_json);
+    console.log(masters);
+    let content = ''; 
+    for (let master of masters){
+        content +=`
+        <div class="master">
+            <img src="${master.ava_url}" alt="${master.person}" class="ava">
+            <div class="text">
+                <h5>${master.procedure}</h5>
+                <h4>${master.person}</h4>
+            </div>
+        </div>
+        `
+    };
+document.querySelector('.persons').innerHTML = content;
 }
+
+const showType=()=>{
+    let procedures = JSON.parse(procedures_json);
+    let content = ''; 
+    for (let procedure of procedures){
+        content +=`
+        <div class="type">
+            <p class="type_name">${procedure.type}</p>
+        </div>
+        `
+    };
+    document.querySelector('.types').innerHTML = content;
+}
+
+
 
 //отправка формы
 document.querySelector('.booking').addEventListener('click', (e) => {
