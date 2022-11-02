@@ -66,15 +66,19 @@
             <div class="popup__body">
               <div class="">
                 <form action="" class="popup__content" id="booking">
+                  
                   <a href="#header" class="popup__close">&#215;</a>
+
                   <div class="item">
                     <label for="first_name">Введите Ваше имя</label>
                     <input type="text" id="username" class="input" name="username" required />
                   </div>
+                  
                   <div class="item">
                     <label for="phone">Введите Ваш номер телефона</label>
                     <input type="tel" id="phone" class="input" maxlength="11" minlength="11" name="phone" required />
                   </div>
+
                   <div class="item">
                     <label for="master">Выбрать специалиста</label>
                     <!-- <select name="person" id="master" class="choose_master" onchange="selectedMaster(this)"> -->
@@ -103,16 +107,20 @@
                       </div>
                     </div>
                   </div>
+
                   <div class="item">
+                    <label for="">Выбрать дату</label>
                     <div class="choose_date">
-                      Выбрать дату
+                      <input type="date" class="form-control" id="date" name="date" required>
                     </div>
                   </div>
+
                   <div class="item">
                     <div class="choose_date" style="display: none">
                       Выбрать время
                     </div>
                   </div>
+
                   <a href="#popup_2" class="popup__open confirm">Записаться</a>
                 </form>
               </div>

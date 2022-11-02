@@ -139,22 +139,27 @@ const showType=()=>{
 //отправка формы
 document.querySelector('.confirm').addEventListener('click', (e) => {
     e.preventDefault();
-
+ 
     fetch('https://httpbin.org/post', {
-        method: 'POST',
-        body: new FormData(booking)
-    })
+            method: 'POST',
+            body: new FormData(booking)
+        })
         .then(response => response.json())
         .then(data => {
             console.log(data);
             document.querySelector('.confirmation').innerHTML = `
-            <span>${data.form.username}</span>, Вы записаны на <span>20 ноября</span><span>18-30</span> на процедуры:
+            <span>${data.form.username}</span>, Вы записаны на <span>18-30</span> <span>${formatDate(data.form.date)}</span> на процедуры:
                   <span>${data.form.procedure}</span>.<br> Ваш мастер: <span>${data.form.person}</span>
             `
         })
         .catch(err => console.log(err));
-
+ 
 })
+ 
+const formatDate = (dateStr) => {
+    let day = dateStr.split('-').reverse().join('.');
+    return day;
+}
 
 //стилизовать ссылки под кнопки
 //при нажатии на любую кнопку записаться должно всплывать модальное окно
