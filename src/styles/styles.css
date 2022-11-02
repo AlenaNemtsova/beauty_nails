@@ -226,6 +226,10 @@
 }
 
 body {
+  scroll-behavior: smooth;
+}
+
+body {
   min-width: 320px;
   font-weight: 400;
   font-family: "Montserrat", Arial, sans-serif;
