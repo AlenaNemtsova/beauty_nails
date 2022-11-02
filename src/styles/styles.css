@@ -173,25 +173,26 @@
   display: flex;
   padding: 35px;
 }
-.services-prices__calculator {
+.services-prices__calc {
   width: 50%;
 }
 .services-prices__img {
   width: 50%;
   height: 300px;
   max-height: 530px;
+  background-image: url("../images/hands.jpg");
   background-color: #d8b9b9;
 }
 
-.calculator {
+.calc {
   padding-left: 2rem;
 }
-.calculator__title {
+.calc__title {
   font-size: 30px;
   font-weight: 400;
   color: #16191E;
 }
-.calculator__box {
+.calc__box {
   border: 1px solid red;
 }
 
@@ -382,9 +383,6 @@ img {
   text-transform: uppercase;
 }
 
-<<<<<<< HEAD
-/* футер и хедер */
-=======
 @media screen and (max-width: 1023px) {
   .slide_text {
     font-size: 1.1em;
@@ -445,7 +443,6 @@ img {
     font-size: 0.5rem;
   }
 }
->>>>>>> main
 .header__nav, .footer__container {
   max-width: 1600px;
   margin: 0 auto;
@@ -532,7 +529,8 @@ footer {
 }
 
 .slider .item img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 50%;
   height: 400px;
 }
@@ -540,8 +538,6 @@ footer {
 .previous, .next {
   align-self: center;
   cursor: pointer;
-<<<<<<< HEAD
-=======
 }
 
 .services-prices {
@@ -587,5 +583,4 @@ footer {
 }
 .calc__box {
   border: 1px solid red;
->>>>>>> main
 }/*# sourceMappingURL=styles.css.map */
