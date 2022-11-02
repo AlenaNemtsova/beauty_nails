@@ -382,9 +382,6 @@ img {
   text-transform: uppercase;
 }
 
-<<<<<<< HEAD
-/* футер и хедер */
-=======
 @media screen and (max-width: 1023px) {
   .slide_text {
     font-size: 1.1em;
@@ -415,6 +412,7 @@ img {
     font-size: 0.7rem;
   }
 }
+
 @media screen and (max-width: 767px) {
   .slide_text {
     font-size: 1em;
@@ -445,10 +443,14 @@ img {
     font-size: 0.5rem;
   }
 }
->>>>>>> main
+
 .header__nav, .footer__container {
-  max-width: 1600px;
+  max-width: 90%;
   margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+}
+
+.slider__container {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -502,8 +504,16 @@ footer {
 }
 
 .slider {
-  margin: 100px;
+  margin: 0px 100px;
   padding: 50px;
+}
+
+.slider__container {
+  background-color: #E6E9EE;
+  padding-top: 50px;
+}
+.slider__container h1 {
+  text-align: center;
 }
 
 .item {
@@ -518,32 +528,65 @@ footer {
   text-align: center;
 }
 
-.btn {
+.popup__open {
   padding: 10px;
   background-color: #E8F01A;
-  color: #E8F01A;
-  border-radius: 5px;
+  color: #16191E;
+  border-radius: 15px;
   cursor: pointer;
 }
 
-.btn:hover {
+.popup__open:hover {
   background-color: #E8F01A;
   transition: 0.5s;
+  text-decoration: none;
 }
 
-.slider .item img {
-  object-fit: cover;
-  width: 50%;
+
+#slider__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 60%;
   height: 400px;
+  margin: 0px 50px;
 }
 
 .previous, .next {
   align-self: center;
   cursor: pointer;
-<<<<<<< HEAD
-=======
 }
 
+.arrow_mobile {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .slider_item {
+    flex-direction: column-reverse;
+  }
+  .slider {
+    margin: 0;
+    padding: auto;
+  }
+  #slider__img {
+    width: 100%;
+    height: 80%;
+    padding: 10px;
+  }
+  .previous, .next {
+    display: none;
+  }
+  .arrow_mobile {
+    display: flex;
+    justify-content: space-around;
+  }
+  .previous_mobile, .next_mobile {
+    align-self: center;
+    cursor: pointer;
+    transition: 0.5s;
+    color: blue;
+  }
+}
 .services-prices {
   background-color: #E6E9EE;
 }
@@ -587,5 +630,5 @@ footer {
 }
 .calc__box {
   border: 1px solid red;
->>>>>>> main
+
 }/*# sourceMappingURL=styles.css.map */
