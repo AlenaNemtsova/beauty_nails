@@ -1,14 +1,32 @@
-ymaps.ready(init);
-function init() {
-    // Создание карты.
-    var myMap = new ymaps.Map("map", {
-        // Координаты центра карты.
-        // Порядок по умолчанию: «широта, долгота».
-        // Чтобы не определять координаты центра карты вручную,
-        // воспользуйтесь инструментом Определение координат.
-        center: [55.76, 37.64],
-        // Уровень масштабирования. Допустимые значения:
-        // от 0 (весь мир) до 19.
-        zoom: 12
+ymaps.ready(function () {
+    var myMap = new ymaps.Map('map', {
+        center: [55.732839, 37.622315],
+        zoom: 15,
+        controls: ['routePanelControl']
     });
-}
+
+    var control = myMap.controls.get('routePanelControl');
+
+    control.routePanel.state.set({
+        type: 'masstransit',
+        fromEnabled: true,
+        toEnabled: false,
+        to: 'Москва, Погорельский переулок 6',
+    });
+
+    control.routePanel.options.set({
+        allowSwitch: false,
+        reverseGeocoding: true,
+        types: { masstransit: true, pedestrian: true, taxi: true }
+    });
+
+    var switchPointsButton = new ymaps.control.Button({
+        data: { content: "Поменять местами", title: "Поменять точки местами" },
+        options: { selectOnClick: false, maxWidth: 160 }
+    });
+
+    switchPointsButton.events.add('click', function () {
+        control.routePanel.switchPoints();
+    });
+    myMap.controls.add(switchPointsButton);
+});
