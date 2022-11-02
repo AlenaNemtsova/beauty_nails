@@ -173,57 +173,40 @@
   display: flex;
   padding: 35px;
 }
-.services-prices__calculator {
+.services-prices__calc {
   width: 50%;
 }
 .services-prices__img {
   width: 50%;
   height: 300px;
   max-height: 530px;
+  background-image: url("../images/hands.jpg");
   background-color: #d8b9b9;
 }
 
-.calculator {
+.calc {
   padding-left: 2rem;
 }
-.calculator__title {
+.calc__title {
   font-size: 30px;
   font-weight: 400;
   color: #16191E;
 }
-.calculator__box {
+.calc__box {
   border: 1px solid red;
-}
-
-body {
-  min-width: 320px;
-  font-weight: 400;
-  font-family: "Montserrat", Arial, sans-serif;
-}
-
-.wrapper {
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-
-.content-container {
-  max-width: 1200px;
-  margin: 0px auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-img {
-  max-width: 100%;
 }
 
 /* Услуги и цены */
 .container__price {
-  height: 100%;
+  padding-top: 7rem;
+  padding-bottom: 1.6rem;
   padding-left: 140px;
   padding-right: 140px;
   background: #E6E9EE;
+}
+
+.container__price-header {
+  padding-left: 0.8rem;
 }
 
 .container__price-header span {
@@ -234,6 +217,10 @@ img {
   color: #191919;
   border-radius: 50px;
   font-weight: 300;
+}
+
+.price-service {
+  padding-top: 1rem;
 }
 
 .card__menu {
@@ -377,6 +364,7 @@ img {
 }
 
 .slide_text {
+  padding: 1rem;
   font-family: Montserrat;
   font-size: 1.3em;
   text-transform: uppercase;
@@ -412,7 +400,6 @@ img {
     font-size: 0.7rem;
   }
 }
-
 @media screen and (max-width: 767px) {
   .slide_text {
     font-size: 1em;
@@ -442,6 +429,130 @@ img {
   .text_note {
     font-size: 0.5rem;
   }
+}
+.container__gift-certificates {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem 1rem;
+  grid-template-areas: "text sertificate1 sertificate2" "sertificate3 sertificate4 sertificate5";
+}
+
+.gift-certificates_header {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 2.5em;
+}
+
+.gift-certificates_text {
+  font-family: Montserrat;
+  font-weight: 300;
+  font-size: 1.2em;
+}
+
+.text {
+  justify-self: center;
+  align-self: center;
+  grid-area: text;
+}
+
+.sertificate1 {
+  background-image: url("/src/images/certificates_bckgrnd.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sertificate2 {
+  background-image: url("/src/images/certificates_bckgrnd.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sertificate3 {
+  background-image: url("/src/images/certificates_bckgrnd.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sertificate4 {
+  background-image: url("/src/images/certificates_bckgrnd.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sertificate5 {
+  background-image: url("/src/images/certificates_bckgrnd.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sertificate_text {
+  margin: 0 auto;
+  display: flex;
+  width: 50%;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 1.6em;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 1023px) {
+  .gift-certificates_header {
+    font-size: 1.8em;
+  }
+  .gift-certificates_text {
+    font-size: 1em;
+  }
+  .sertificate_text {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container__gift-certificates {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0.5rem 0.5rem;
+    grid-template-areas: "text sertificate1" "sertificate2 sertificate3" "sertificate4 sertificate5";
+  }
+  .gift-certificates_header {
+    font-size: 1.5em;
+  }
+  .gift-certificates_text {
+    font-size: 0.7em;
+  }
+  .sertificate_text {
+    font-size: 1em;
+  }
+}
+body {
+  min-width: 320px;
+  font-weight: 400;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-container {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+img {
+  max-width: 100%;
 }
 
 .header__nav, .footer__container {
@@ -542,10 +653,8 @@ footer {
   text-decoration: none;
 }
 
-
 #slider__img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 60%;
   height: 400px;
   margin: 0px 50px;
@@ -630,5 +739,4 @@ footer {
 }
 .calc__box {
   border: 1px solid red;
-
 }/*# sourceMappingURL=styles.css.map */
