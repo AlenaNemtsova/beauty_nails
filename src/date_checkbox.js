@@ -1,6 +1,6 @@
 const today = new Date();
 const day = today.getDate();
-const month = today.getMonth(); console.log(month);
+const month = today.getMonth();
 const year = today.getFullYear();
 const dateString = today.toLocaleDateString('en-us', {
     weekday: 'long',
@@ -22,7 +22,7 @@ let dayOnWeek = [];
 let newDayOfWeek = firstDayOfWeek.getDate();
 for (i = 0; i < 7; i++) {
     if (newDayOfWeek != dayInMonth) {
-        newDayOfWeek = new Date(year, month, firstDayOfWeek.getDate() + i);
+        newDayOfWeek = new Date(year, month - 1, firstDayOfWeek.getDate() + i);
     } else {
         newDayOfWeek = new Date(year, month + 1, i - lastDayOfWeek.getDate())
     }
@@ -34,17 +34,24 @@ for (i = 0; i < 7; i++) {
     newDayOfWeek = newDayOfWeek.getDate();
 }
 
-
-// let formCheckbox = document.getElementById('mark-done');
 let labelbox = document.querySelectorAll('.label');
-console.log(labelbox)
+let radiobox = document.querySelectorAll('.selection');
+let n = 0;
 let j = 0;
 labelbox.forEach(item => {
+    let dateInMass = dayOnWeek[n].slice(0, 2);
+    if (dateInMass == today.getDate()) {
+        item.classList.add('today_style');
+    }
+    item.textContent += dayOnWeek[n];
+    n++;
+});
+
+radiobox.forEach(item => {
     let dateInMass = dayOnWeek[j].slice(0, 2);
     if (dateInMass == today.getDate()) {
         item.classList.add('today_style');
-        //item.parentElement.classList.add('today_style'); // стиль для всего div today
     }
-    item.textContent += dayOnWeek[j];
+    item.value = dayOnWeek[j];
     j++;
-});
+})

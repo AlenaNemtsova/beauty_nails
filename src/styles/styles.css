@@ -147,11 +147,15 @@
 .choose_type {
   display: flex;
   align-items: center;
-  justify-items: start;
+  justify-content: space-between;
+  width: 650px;
+  border-radius: 30px;
+  border: 2px solid #E6E9EE;
 }
 
 .item__type,
-.item__date {
+.item__date,
+.item__time {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -186,6 +190,28 @@ input[type=checkbox] {
 
 p {
   margin: 0.5rem;
+}
+
+/* Время */
+.choose_time {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.time {
+  width: 100px;
+  height: 30px;
+  margin: 0.5em;
+  border-radius: 30px;
+  background-color: #ffffff;
+  border-color: 1px solid #83868c;
+  text-align: center;
+  font-size: 1em;
+}
+
+.selected {
+  background-color: #F5FF00;
 }
 
 .services-prices {

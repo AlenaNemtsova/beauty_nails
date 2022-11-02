@@ -176,11 +176,15 @@ $attention-text:#F5FF00;
     display: flex;
     align-items: center;
     // justify-content: flex-start;
-    justify-items: start;
+    justify-content: space-between;
+    width: 650px;
+    border-radius: 30px;
+    border: 2px solid $page-bg-grey;
 }
 
 .item__type,
-.item__date {
+.item__date,
+.item__time {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -217,5 +221,31 @@ p {
     margin: 0.5rem;
 }
 
-//дата и время - как?
-//валидация формы
+/* Время */
+.choose_time{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.time {
+    width: 100px;
+    height: 30px;
+    margin: 0.5em;
+    border-radius: 30px;
+    background-color: $page-bg-white;
+    border-color: 1px solid $card-text;
+    text-align: center;
+    font-size: 1em;
+}
+.selected{
+    background-color: $btn-price-main;
+}
+// .time_radio{
+//     position: absolute;
+//     z-index: -1;
+//     opacity: 0;
+//     width: 80px;
+//     height: 30px;
+//     margin-left: -25px;
+// }

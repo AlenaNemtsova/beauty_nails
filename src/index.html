@@ -68,7 +68,7 @@
                 <form action="" class="popup__content" id="booking">
 
                   <a href="#header" class="popup__close">&#215;</a>
-
+                  <!-- Данные клиента -->
                   <div class="item">
                     <label for="first_name">Введите Ваше имя</label>
                     <input type="text" id="username" class="input" name="username" required />
@@ -78,10 +78,9 @@
                     <label for="phone">Введите Ваш номер телефона</label>
                     <input type="tel" id="phone" class="input" maxlength="11" minlength="11" name="phone" required />
                   </div>
-
+                  <!-- Выбор специалиста -->
                   <div class="item">
                     <label for="master">Выбрать специалиста</label>
-                    <!-- <select name="person" id="master" class="choose_master" onchange="selectedMaster(this)"> -->
                     <select name="person" id="master" class="choose_master">
                       <option value="none" class="option" default></option>
                       <option value="Мария Усманова" class="option">Мария Усманова</option>
@@ -89,9 +88,9 @@
                       <option value="Татьяна Лютова" class="option">Татьяна Лютова</option>
                     </select>
                   </div>
-
+                  <!-- Выбор услуги -->
                   <div class="item item__type">
-                    <label>Выбрать услуги</label>
+                    <label>Выберите услуги</label>
                     <div class="choose_type">
                       <div>
                         <input type="checkbox" name="procedure" id="manicure" value="маникюр">
@@ -107,14 +106,14 @@
                       </div>
                     </div>
                   </div>
-
+                  <!-- Выбор даты -->
                   <div class="item item__date">
-                    <label for="">Выбрать дату</label>
+                    <label for="">Выберите дату</label>
                     <div class="week-box">
                       <div id="mon_checkbox" class="day_item">
                         <p>Пн</p>
                         <div>
-                          <input type="checkbox" name="" value="1" class="selection custom-checkbox" id="monday">
+                          <input type="radio" name="selection" value="" class="selection custom-checkbox" id="monday">
                           <label for="monday" id="mon_date" class="label"></label>
                         </div>
                       </div>
@@ -122,7 +121,7 @@
                       <div id="tues_checkbox" class="day_item">
                         <p>Вт</p>
                         <div>
-                          <input type="checkbox" name="" value="2" class="selection custom-checkbox" id="tuesday">
+                          <input type="radio" name="selection" value="" class="selection custom-checkbox" id="tuesday">
                           <label for="tuesday" id="tues_date" class="label"></label>
                         </div>
                       </div>
@@ -130,7 +129,8 @@
                       <div id="wednes_checkbox" class="day_item">
                         <p>Ср</p>
                         <div>
-                          <input type="checkbox" name="" value="3" class="selection custom-checkbox" id="wednesday">
+                          <input type="radio" name="selection" value="" class="selection custom-checkbox"
+                            id="wednesday">
                           <label for="wednesday" id="wednes_date" class="label"></label>
                         </div>
                       </div>
@@ -138,7 +138,7 @@
                       <div id="thurs_checkbox" class="day_item">
                         <p>Чт</p>
                         <div>
-                          <input type="checkbox" name="" value="4" class="selection custom-checkbox" id="thursday">
+                          <input type="radio" name="selection" value="" class="selection custom-checkbox" id="thursday">
                           <label for="thursday" id="thurs_date" class="label"></label>
                         </div>
                       </div>
@@ -146,7 +146,7 @@
                       <div id="fri_checkbox" class="day_item">
                         <p>Пт</p>
                         <div>
-                          <input type="checkbox" name="" value="5" class="selection custom-checkbox" id="friday">
+                          <input type="radio" name="selection" value="" class="selection custom-checkbox" id="friday">
                           <label for="friday" id="fri_date" class="label"></label>
                         </div>
                       </div>
@@ -154,23 +154,71 @@
                       <div id="satur_checkbox" class="day_item">
                         <p>Сб</p>
                         <div>
-                          <input type="checkbox" name="" value="6" class="selection custom-checkbox" id="saturday">
+                          <input type="radio" name="selection" value="" class="selection custom-checkbox" id="saturday">
                           <label for="saturday" id="satur_date" class="label"></label></div>
                       </div>
 
                       <div id="sun_checkbox" class="day_item">
                         <p>Вс</p>
                         <div>
-                          <input type="checkbox" name="" value="7" class="selection custom-checkbox" id="sunday">
+                          <input type="radio" name="selection" value="" class="selection custom-checkbox" id="sunday">
                           <label for="sunday" id="sun_date" class="label"></label>
                         </div>
                       </div>
                     </div>
                   </div>
-
-                  <div class="item">
-                    <div class="choose_date" style="display: none">
-                      Выбрать время
+                  <!-- Выбор времени -->
+                  <div class="item item__time">
+                    <p>Выберите время</p>
+                    <div class="choose_time">
+                      <div class="time" onclick="select(this)">
+                        <input type="radio" name="time" value="9:00" id="9" class="time_radio" >
+                        <label for="9">9:00</label>
+                      </div>
+                      <div class="time" onclick="select(this)">
+                        <input type="radio" name="time" value="10:00" id="10" class="time_radio">
+                        <label for="10">10:00</label>
+                      </div>
+                      <div class="time" onclick="select(this)">
+                        <input type="radio" name="time" value="11:00" id="11" class="time_radio">
+                        <label for="11">11:00</label>
+                      </div>
+                      <div class="time" onclick="select(this)">
+                        <input type="radio" name="time" value="12:00" id="12" class="time_radio">
+                        <label for="12">12:00</label>
+                      </div>
+                      <div class="time" onclick="select(this)">
+                        <input type="radio" name="time" value="13:00" id="13" class="time_radio">
+                        <label for="13">13:00</label>
+                      </div>
+                      <div class="time" onclick="select(this)">
+                        <input type="radio" name="time" value="14:00" id="14" class="time_radio">
+                        <label for="14">14:00</label>
+                      </div>
+                      <div class="time" onclick="select(this)">
+                        <input type="radio" name="time" value="15:00" id="15" class="time_radio">
+                        <label for="15">15:00</label>
+                      </div>
+                      <div class="time" onclick="select(this)">
+                        <input type="radio" name="time" value="16:00" id="16" class="time_radio">
+                        <label for="16">16:00</label>
+                      </div>
+                      <div class="time" onclick="select(this)">
+                        <input type="radio" name="time" value="17:00" id="17" class="time_radio">
+                        <label for="17">17:00</label>
+                      </div>
+                      <div class="time" onclick="select(this)">
+                        <input type="radio" name="time" value="18:00" id="18" class="time_radio">
+                        <label for="18">18:00</label>
+                      </div>
+                      <div class="time" onclick="select(this)">
+                        <input type="radio" name="time" value="19:00" id="19" class="time_radio">
+                        <label for="19">19:00</label>
+                      </div>
+                      <div class="time" onclick="select(this)">
+                        <input type="radio" name="time" value="20:00" id="20" class="time_radio">
+                        <label for="20">20:00</label>
+                      </div>
                     </div>
                   </div>
 
