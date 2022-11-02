@@ -1,0 +1,40 @@
+.contacts {
+    font-family: $default-font;
+
+    &__title {
+        text-align: center;
+        margin: 0 auto; 
+        font-size: 52px;
+        font-weight: 400;
+        color: $main-text;
+        padding-top: 105px;
+        margin-bottom: 50px;
+    }
+
+    &__flex {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    
+    }
+
+    &__text {
+        width: 30%;
+        font-size: 24px;
+
+        span {
+           
+        }
+
+        a {
+            font-size: 18px;
+        }
+    }
+
+    &__map {
+        width: 760px; 
+        height: 415px;
+    }
+
+    
+}

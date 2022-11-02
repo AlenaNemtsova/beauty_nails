@@ -226,7 +226,7 @@
         </section>
 
         <!-- блок 5 Услуги и цены – калькулятор -->
-        <section class="services-prices">
+        <section class="services-prices" id="prices">
           <div class="content-container">
             <h2 class="services-prices__title">Услуги и цены</h2>
             <div class="services-prices__content">
@@ -627,12 +627,18 @@
         </section>
 
         <!-- блок 8 Контакты – карта -->
-        <section>
+        <section class="contacts">
           <div class="content-container">
-            <div class="map">
-              <h2 class="map__title">Контакты</h2>
-              <div class="map__text"></div>
-              <div id="map" style="width: 760px; height: 415px"></div>
+            <h2 class="contacts__title">Контакты</h2>
+              <div class="contacts__flex">
+                <div class="contacts__text">
+                  <span>Москва</span>
+                  <span>Погорельский переулок, 6</span>
+                  <a href=tel:"+99999999999999">+9 (999) 999-99-99</a>
+
+                </div>
+                <div class="contacts__map" id="map"></div>
+              </div>
             </div>
           </div>
         </section>

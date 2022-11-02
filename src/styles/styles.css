@@ -196,6 +196,35 @@
   border: 1px solid red;
 }
 
+.contacts {
+  font-family: "Montserrat", Arial, sans-serif;
+}
+.contacts__title {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 52px;
+  font-weight: 400;
+  color: #16191E;
+  padding-top: 105px;
+  margin-bottom: 50px;
+}
+.contacts__flex {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.contacts__text {
+  width: 30%;
+  font-size: 24px;
+}
+.contacts__text a {
+  font-size: 18px;
+}
+.contacts__map {
+  width: 760px;
+  height: 415px;
+}
+
 body {
   min-width: 320px;
   font-weight: 400;
