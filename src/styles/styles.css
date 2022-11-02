@@ -41,6 +41,9 @@
   text-decoration: none;
   cursor: pointer;
 }
+.popup__close:focus, .popup__close:hover {
+  text-decoration: none;
+}
 .popup__open {
   background-color: #5FC369;
   border: none;
@@ -140,15 +143,49 @@
   box-shadow: 0 0 0 30px white inset;
 }
 
-.item {
+.item,
+.choose_type {
   display: flex;
   align-items: center;
   justify-items: start;
 }
 
+.item__type,
+.item__date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+}
+
 .confirmation {
   font-size: 1.2em;
   line-height: 1.5em;
+}
+
+.week-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+}
+
+.day_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+p {
+  margin: 0.5rem;
 }
 
 .services-prices {
@@ -173,26 +210,87 @@
   display: flex;
   padding: 35px;
 }
-.services-prices__calculator {
+.services-prices__calc {
   width: 50%;
 }
 .services-prices__img {
   width: 50%;
   height: 300px;
   max-height: 530px;
+  background-image: url("../images/hands.jpg");
   background-color: #d8b9b9;
 }
 
-.calculator {
+.calc {
   padding-left: 2rem;
 }
-.calculator__title {
+.calc__title {
   font-size: 30px;
   font-weight: 400;
   color: #16191E;
 }
-.calculator__box {
+.calc__box {
   border: 1px solid red;
+}
+
+/* кастомизированный чекбокс */
+.custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-checkbox + label {
+  display: inline-flex;
+  align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.custom-checkbox + label::before {
+  content: "";
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #83868c;
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+}
+
+.custom-checkbox:checked + label::before {
+  border-color: #83868c;
+  background-color: #F5FF00;
+}
+
+/* стили при наведении курсора на checkbox */
+.custom-checkbox:not(:disabled):not(:checked) + label:hover::before {
+  border-color: #16191E;
+}
+
+/* стили для активного состояния чекбокса (при нажатии на него) */
+.custom-checkbox:not(:disabled):active + label::before {
+  background-color: rgba(128, 128, 128, 0.5);
+  border-color: rgba(128, 128, 128, 0.5);
+}
+
+/* стили для чекбокса, находящегося в состоянии disabled */
+.custom-checkbox:disabled + label::before {
+  background-color: #e9ecef;
+}
+
+.today_style {
+  font-weight: 700;
+}
+
+.calendar {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 5rem;
+  width: 80%;
 }
 
 body {
@@ -382,9 +480,6 @@ img {
   text-transform: uppercase;
 }
 
-<<<<<<< HEAD
-/* футер и хедер */
-=======
 @media screen and (max-width: 1023px) {
   .slide_text {
     font-size: 1.1em;
@@ -445,7 +540,6 @@ img {
     font-size: 0.5rem;
   }
 }
->>>>>>> main
 .header__nav, .footer__container {
   max-width: 1600px;
   margin: 0 auto;
@@ -532,7 +626,8 @@ footer {
 }
 
 .slider .item img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 50%;
   height: 400px;
 }
@@ -540,8 +635,6 @@ footer {
 .previous, .next {
   align-self: center;
   cursor: pointer;
-<<<<<<< HEAD
-=======
 }
 
 .services-prices {
@@ -587,5 +680,4 @@ footer {
 }
 .calc__box {
   border: 1px solid red;
->>>>>>> main
 }/*# sourceMappingURL=styles.css.map */

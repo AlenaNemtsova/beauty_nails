@@ -46,7 +46,7 @@
     </header>
 
     <main>
-      
+
       <!-- блок 1 – название и баннер -->
       <div class="content-container">Сеть салонов красоты в Москве</div>
 
@@ -66,14 +66,14 @@
             <div class="popup__body">
               <div class="">
                 <form action="" class="popup__content" id="booking">
-                  
+
                   <a href="#header" class="popup__close">&#215;</a>
 
                   <div class="item">
                     <label for="first_name">Введите Ваше имя</label>
                     <input type="text" id="username" class="input" name="username" required />
                   </div>
-                  
+
                   <div class="item">
                     <label for="phone">Введите Ваш номер телефона</label>
                     <input type="tel" id="phone" class="input" maxlength="11" minlength="11" name="phone" required />
@@ -90,7 +90,7 @@
                     </select>
                   </div>
 
-                  <div class="item">
+                  <div class="item item__type">
                     <label>Выбрать услуги</label>
                     <div class="choose_type">
                       <div>
@@ -108,10 +108,63 @@
                     </div>
                   </div>
 
-                  <div class="item">
+                  <div class="item item__date">
                     <label for="">Выбрать дату</label>
-                    <div class="choose_date">
-                      <input type="date" class="form-control" id="date" name="date" required>
+                    <div class="week-box">
+                      <div id="mon_checkbox" class="day_item">
+                        <p>Пн</p>
+                        <div>
+                          <input type="checkbox" name="" value="1" class="selection custom-checkbox" id="monday">
+                          <label for="monday" id="mon_date" class="label"></label>
+                        </div>
+                      </div>
+
+                      <div id="tues_checkbox" class="day_item">
+                        <p>Вт</p>
+                        <div>
+                          <input type="checkbox" name="" value="2" class="selection custom-checkbox" id="tuesday">
+                          <label for="tuesday" id="tues_date" class="label"></label>
+                        </div>
+                      </div>
+
+                      <div id="wednes_checkbox" class="day_item">
+                        <p>Ср</p>
+                        <div>
+                          <input type="checkbox" name="" value="3" class="selection custom-checkbox" id="wednesday">
+                          <label for="wednesday" id="wednes_date" class="label"></label>
+                        </div>
+                      </div>
+
+                      <div id="thurs_checkbox" class="day_item">
+                        <p>Чт</p>
+                        <div>
+                          <input type="checkbox" name="" value="4" class="selection custom-checkbox" id="thursday">
+                          <label for="thursday" id="thurs_date" class="label"></label>
+                        </div>
+                      </div>
+
+                      <div id="fri_checkbox" class="day_item">
+                        <p>Пт</p>
+                        <div>
+                          <input type="checkbox" name="" value="5" class="selection custom-checkbox" id="friday">
+                          <label for="friday" id="fri_date" class="label"></label>
+                        </div>
+                      </div>
+
+                      <div id="satur_checkbox" class="day_item">
+                        <p>Сб</p>
+                        <div>
+                          <input type="checkbox" name="" value="6" class="selection custom-checkbox" id="saturday">
+                          <label for="saturday" id="satur_date" class="label"></label></div>
+                      </div>
+
+                      <div id="sun_checkbox" class="day_item">
+                        <p>Вс</p>
+                        <div>
+                          <input type="checkbox" name="" value="7" class="selection custom-checkbox" id="sunday">
+                          <label for="sunday" id="sun_date" class="label"></label>
+                        </div>
+                      </div>
                     </div>
                   </div>
 
@@ -571,20 +624,20 @@
 
     <footer>
       <div class="content-container">
-      <div class="footer__container">
-        <div class="flex-column navbar navbar-expand-lg">
-          <div class="footer__nav-brand navbar m-auto">
-            <a class="navbar-brand" href="#">Beauty <br />Nails</a>
-          </div>
-          <div class="footer__nav-link navbar m-auto">
-            <a class="nav-item nav-link" href="#">УСЛУГИ И ЦЕНЫ</a>
-            <a class="nav-item nav-link" href="#">ОТЗЫВЫ</a>
-            <a class="nav-item nav-link" href="#">МАГАЗИН</a>
-            <a class="nav-item nav-link" href="#">КОНТАКТЫ</a>
+        <div class="footer__container">
+          <div class="flex-column navbar navbar-expand-lg">
+            <div class="footer__nav-brand navbar m-auto">
+              <a class="navbar-brand" href="#">Beauty <br />Nails</a>
+            </div>
+            <div class="footer__nav-link navbar m-auto">
+              <a class="nav-item nav-link" href="#">УСЛУГИ И ЦЕНЫ</a>
+              <a class="nav-item nav-link" href="#">ОТЗЫВЫ</a>
+              <a class="nav-item nav-link" href="#">МАГАЗИН</a>
+              <a class="nav-item nav-link" href="#">КОНТАКТЫ</a>
+            </div>
           </div>
         </div>
       </div>
-     </div>
     </footer>
   </div>
 
@@ -600,6 +653,7 @@
 
   <script src="index.js"></script>
   <script src="booking.js"></script>
+  <script src="date_checkbox.js"></script>
   <script src="calc.js"></script>
 </body>
 
