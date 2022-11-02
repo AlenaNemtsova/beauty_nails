@@ -42,7 +42,7 @@
   cursor: pointer;
 }
 .popup__open {
-  background-color: #5FC369;
+  background-color: #F5FF00;
   border: none;
   padding: 18px 30px;
   cursor: pointer;
@@ -173,26 +173,81 @@
   display: flex;
   padding: 35px;
 }
-.services-prices__calculator {
+.services-prices__calc {
   width: 50%;
 }
 .services-prices__img {
   width: 50%;
   height: 300px;
   max-height: 530px;
+  background-image: url("../images/hands.jpg");
   background-color: #d8b9b9;
 }
 
-.calculator {
+.calc {
   padding-left: 2rem;
 }
-.calculator__title {
+.calc__title {
   font-size: 30px;
   font-weight: 400;
   color: #16191E;
 }
-.calculator__box {
+.calc__box {
   border: 1px solid red;
+}
+
+* {
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+.block2 {
+  background: linear-gradient(to top, #E6E9EE 20%, #ffffff 80%);
+}
+
+.service-list {
+  display: grid;
+  grid-template-columns: 1fr 0.2fr 1fr;
+  grid-template-rows: 1fr;
+  margin: 3rem 3rem 0;
+}
+
+.service-list_title {
+  grid-column: 1/2;
+  margin-bottom: 2em;
+}
+
+.service-list_pedicure {
+  grid-column: 1/2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-list_manicure {
+  grid-column: 3/4;
+  grid-row: 1/3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-list_subtitle {
+  align-self: flex-start;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.service-list_text {
+  align-self: flex-start;
+  margin-left: 0.5rem;
+}
+
+.service-list_img {
+  max-width: 450px;
+}
+
+.popup__open {
+  margin-bottom: 1rem;
 }
 
 body {
@@ -412,7 +467,6 @@ img {
     font-size: 0.7rem;
   }
 }
-
 @media screen and (max-width: 767px) {
   .slide_text {
     font-size: 1em;
@@ -443,7 +497,6 @@ img {
     font-size: 0.5rem;
   }
 }
-
 .header__nav, .footer__container {
   max-width: 90%;
   margin: 0 auto;
@@ -542,7 +595,6 @@ footer {
   text-decoration: none;
 }
 
-
 #slider__img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -630,5 +682,4 @@ footer {
 }
 .calc__box {
   border: 1px solid red;
-
 }/*# sourceMappingURL=styles.css.map */
