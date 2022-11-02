@@ -1,6 +1,5 @@
 'use strict'
 
-
 //JSON для комбинированных услуг
 //Маникюр + покрытие
 const combinedServiceManicureTop = [
@@ -630,3 +629,42 @@ new ItcAccordion('#accordion-13', {
 new ItcAccordion('#accordion-14', {
     alwaysOpen: false
 });
+
+const certificate = document.getElementById('sertificate');
+const certificateTwo = document.getElementById('sertificate2');
+const certificateThree = document.getElementById('sertificate3');
+const certificateFour = document.getElementById('sertificate4');
+const certificateFive = document.getElementById('sertificate5');
+
+
+certificate.addEventListener('click', (event) => {
+    if (event.target.classList.contains('sertificate1')) {
+        alert('Сертификат на 1000 рублей добавлен в корзину');
+    }
+})
+
+certificateTwo.addEventListener('click', (event) => {
+    if (event.target.classList.contains('sertificate2')) {
+        alert('Сертификат на 3000 рублей добавлен в корзину');
+    }
+})
+
+certificateThree.addEventListener('click', (event) => {
+    if (event.target.classList.contains('sertificate3')) {
+        alert('Сертификат на 5000 рублей добавлен в корзину');
+    }
+})
+
+certificateFour.addEventListener('click', (event) => {
+    if (event.target.classList.contains('sertificate4')) {
+        alert('Сертификат на 7000 рублей добавлен в корзину');
+    }
+})
+
+certificateFive.addEventListener('click', (event) => {
+    if (event.target.classList.contains('sertificate5')) {
+        alert('Сертификат на 10000 рублей добавлен в корзину');
+    }
+})
+
+
