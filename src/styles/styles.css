@@ -11,6 +11,7 @@
   opacity: 0;
   visibility: hidden;
   transition: 0.5s all;
+  overflow-y: scroll;
 }
 .popup__body {
   display: flex;
@@ -24,7 +25,7 @@
   align-items: flex-start;
   position: relative;
   max-width: 700px;
-  padding: 4rem;
+  padding: 2rem 4rem;
   background-color: #e5eef6;
   color: #16191e;
 }
@@ -42,10 +43,10 @@
 }
 .popup__open {
   padding: 1.1rem 2rem;
-  background-color: #5FC369;
+  background-color: #5fc369;
   border: none;
   cursor: pointer;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .popup.open {
   opacity: 1;
@@ -190,7 +191,6 @@ p {
 .confirmation {
   padding: 2rem;
   font-size: 1.2em;
-  line-height: 1.5em;
   border-radius: 2rem;
   border: 2px solid #f5ff00;
   background-color: #ffffff;
@@ -358,6 +358,11 @@ p {
 .services-prices {
   background-color: #e6e9ee;
 }
+.services-prices span {
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-right: 30px;
+}
 .services-prices__title {
   text-align: center;
   margin: 0 auto;
@@ -370,7 +375,6 @@ p {
 }
 .services-prices__content {
   width: 100%;
-  height: 600px;
   background: white;
 }
 .services-prices__content_flex {
@@ -380,26 +384,48 @@ p {
 .services-prices__calc {
   width: 50%;
 }
+.services-prices__calc p {
+  margin-left: 0;
+  font-size: 1.2rem;
+}
 .services-prices__img {
   width: 50%;
-  height: 300px;
-  max-height: 530px;
-  background-image: url("../images/hands.jpg");
-  background-color: #d8b9b9;
 }
 
 .calc {
   padding-left: 2rem;
 }
 .calc__title {
-  font-size: 30px;
+  font-size: 1.8rem;
   font-weight: 400;
   color: #16191e;
 }
-.calc__box {
-  border: 1px solid red;
+.calc__box a {
+  display: inline-block;
+  margin: 0 auto;
+}
+.calc__flex {
+  display: flex;
+  flex-direction: column;
 }
 
+@media screen and (max-width: 767px) {
+  .services-prices__title {
+    font-size: 1.8rem;
+  }
+  .services-prices__img {
+    display: none;
+  }
+  .calc {
+    width: 70%;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+  .calc__title {
+    font-size: 1.5rem;
+    margin-left: 0;
+  }
+}
 /* Услуги и цены */
 .container__price {
   padding-top: 7rem;
@@ -740,14 +766,6 @@ p {
   background-color: #e6e9ee;
   padding-left: 100px;
 }
-.banner__container .banner__right-container {
-  max-width: 55%;
-}
-.banner__container .banner__left-container {
-  max-width: 35%;
-  margin: 0 auto;
-  padding-top: 100px;
-}
 .banner__container h1 {
   font-size: 50px;
   margin: 60px 0;
@@ -762,10 +780,38 @@ p {
   margin-left: 20px;
 }
 
-body {
-  scroll-behavior: smooth;
+.banner__right-container {
+  width: 55%;
 }
 
+.banner__left-container {
+  width: 35%;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+@media screen and (max-width: 767px) {
+  .banner__container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 0;
+    padding-top: 3rem;
+  }
+  .banner__container h1 {
+    font-size: 2rem;
+    margin: 2rem 0;
+  }
+  .banner__left-container {
+    width: 80%;
+    margin-bottom: 2rem;
+    padding-top: 0;
+  }
+  .banner__right-container {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
+}
 .contacts {
   font-family: "Montserrat", Arial, sans-serif;
 }
@@ -818,9 +864,6 @@ body {
     margin: 0 auto;
     width: 70%;
     margin-bottom: 3rem;
-  }
-  .contacts__title {
-    font-size: 1.5rem;
   }
   .contacts__text {
     width: 100%;
@@ -898,6 +941,7 @@ body {
 
 body {
   min-width: 320px;
+  scroll-behavior: smooth;
 }
 
 .wrapper {
@@ -1026,18 +1070,21 @@ footer {
   display: none;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 767px) {
+  .slider__container h2 {
+    font-size: 1.8rem;
+  }
+  .slider__container h3 {
+    font-size: 1.5rem;
+  }
   .slider_item {
     flex-direction: column-reverse;
-  }
-  .slider {
-    margin: 0;
-    padding: auto;
   }
   #slider__img {
     width: 100%;
     height: 80%;
     padding: 10px;
+    margin: 0;
   }
   .previous,
 .next {

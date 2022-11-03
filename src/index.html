@@ -61,9 +61,25 @@
       </div>
     </header>
 
-    <main>
-      <!-- блок 1 – название и баннер -->
-      <div class="content-container">Сеть салонов красоты в Москве</div>
+      <main>
+        <!-- блок 1 – название и баннер -->
+        <div class="banner">
+        <!-- <div class="content-container"> -->
+          <div class="banner__container">
+          <div class="banner__left-container">
+            <h5>Сеть салонов красоты в Москве</h5>
+            <h1>Маникюр, педикюр, брови и ресницы</h1>
+            <div class="banner__btns">
+              <a href="#popup" class="popup__open">Записаться</a>
+              <a href="#prices" class="banner__btns-price">Узнать стоимость</a>
+            </div>
+          </div>
+          <div class="banner__right-container">
+            <img src="../src/images/girl.jpg" class="banner_img" alt="banner">
+          </div>
+        </div>
+      <!-- </div> -->
+    </div>
 
       <!-- блок 2 Услуги -->
       <section class="block2">
@@ -98,7 +114,6 @@
       <section>
         <div class="content-container">
           <!-- Запись -->
-          <a href="#popup" class="popup__open">Записаться</a>
           <div class="popup" id="popup">
             <div class="popup__body">
               <!-- <div class=""> -->
@@ -288,6 +303,7 @@
                   <p>Маникюр, педикюр, наращивание ногтей</p>
                   <a href="#popup" class="popup__open">Записаться</a>
                 </div>
+
                 <img id="slider__img" src="images/master.jpg" alt="" />
                 <a class="next" onclick="nextSlide()">&#10095;</a>
               </div>
@@ -297,6 +313,7 @@
                   <h3>Ирина Петрова</h3>
                   <p>Маникюр, педикюр, наращивание ногтей</p>
                   <a href="#popup" class="popup__open">Записаться</a>
+
                 </div>
                 <img id="slider__img" src="images/master2.jpg" alt="" />
                 <a class="next" onclick="nextSlide()">&#10095;</a>
@@ -321,54 +338,83 @@
         </div>
       </section>
 
-      <!-- блок 5 Услуги и цены – калькулятор -->
-      <section class="services-prices" id="prices">
-        <div class="content-container">
-          <h2 class="services-prices__title">Услуги и цены</h2>
-          <div class="services-prices__content">
-            <div class="services-prices__content_flex">
-              <div class="services-prices__calc calc">
-                <p class="calc__title">Маникюр</p>
-                <div class="calc__box">
-                  <form action="" class="calc__form" onchange="getPrice()">
-                    <div class="form__select">
-                      Выберите маникюр
-                      <select name="" class="select-val">
-                        <option value="2000" selected>Классический</option>
-                        <option value="2200">Комбинированный</option>
-                        <option value="2500">Аппаратный</option>
-                      </select>
 
-                      <div>
-                        Дополнительно
-
-                        <input type="checkbox" name="" value="200" class="select-val" id="remove" /><label class=""
-                          for="remove">снятие</label><br />
-
-                        <input type="checkbox" name="package" value="500" class="select-val" id="alignment" />
-                        <label class="" for="alignment">выравнивание</label>
+        <!-- блок 5 Услуги и цены – калькулятор -->
+        <section class="services-prices" id="prices">
+          <div class="content-container">
+            <h2 class="services-prices__title">Услуги и цены</h2>
+            <div class="services-prices__content">
+              <div class="services-prices__content_flex">
+                <div class="services-prices__calc calc">
+                  <p class="calc__title">Маникюр</p>
+                  <div class="calc__box">
+                    <form action="" class="calc__form" onchange="getPrice()">
+                      <div class="calc__flex">
+                      <div class="calc__item">
+                        <span>Выберите маникюр</span>
+                        
+                        <select name="" class="select-val">
+                          <option value="2000" selected>Классический</option>
+                          <option value="2200">Комбинированный</option>
+                          <option value="2500">Аппаратный</option>
+                        </select>
                       </div>
-                      Выберите покрытие
 
-                      <select name="" class="select-val">
-                        <option value="0">Без покрытия</option>
-                        <option value="200">Первое</option>
-                        <option value="300">Второе</option>
-                      </select>
-                      Добавим дизайн?
-                      <select name="" class="select-val">
-                        <option value="0">Нет</option>
-                        <option value="300">Френч</option>
-                        <option value="600">Дизайн</option>
-                      </select>
+                      <div class="calc__item">
+                        <span>Дополнительно</span>
+                        <div>
+
+                          <input
+                            type="checkbox"
+                            name=""
+                            value="200"
+                            class="select-val"
+                            id="remove"
+                          /><label class="" for="remove">снятие</label><br />
+
+                          <input
+                            type="checkbox"
+                            name="package"
+                            value="500"
+                            class="select-val"
+                            id="alignment"
+                          />
+                          <label class="" for="alignment">выравнивание</label>
+                        </div>
+                      </div>
+                          
+                          
+                      <div class="calc__item">
+                        <span>Выберите покрытие</span>
+                        <select name="" class="select-val">
+                          <option value="0">Без покрытия</option>
+                          <option value="200">Первое</option>
+                          <option value="300">Второе</option>
+                        </select>
+                      </div>
+                        
+                      <div class="calc__item">
+                        <span>Добавим дизайн?</span>
+                        <select name="" class="select-val">
+                          <option value="0">Нет</option>
+                          <option value="300">Френч</option>
+                          <option value="600">Дизайн</option>
+                        </select>
+                      </div>
+
+                      <div class="calc__result">
+                        <p>Стоимость услуги:</p>
+                        <p id="js-result-sum">2000 руб.</p>
+                      </div>
                     </div>
-                    <div class="calc__result">
-                      <p>Стоимость услуги:</p>
-                      <p id="js-result-sum">2000 руб.</p>
-                    </div>
-                  </form>
-                  <a href="#popup" class="popup__open">Записаться</a>
+                    </form>
+                    
+                    <a href="#popup" class="popup__open">Записаться</a>
+                  </div>
                 </div>
+                <div class="services-prices__img">
+                  <img alt="hands" src="./images/hands2.jpg">
+
               </div>
               <div class="services-prices__img"></div>
             </div>
@@ -727,6 +773,7 @@
             <p id="sertificate" class="js-sertificate_text">СЕРТИФИКАТ 1000 РУБЛЕЙ</p>
           </div>
         </div>
+
         <div class="sertificate2">
           <div class="sertificate_text">
             <p id="sertificate2" class="js-sertificate_text2">СЕРТИФИКАТ 3000 РУБЛЕЙ</p>
@@ -751,16 +798,15 @@
     </div>
   </section>
 
-  <!-- блок 8 Контакты – карта -->
-  <section class="contacts">
-    <div class="content-container">
-      <h2 class="contacts__title">Контакты</h2>
-      <div class="contacts__flex">
-        <div class="contacts__text">
-          <p>Москва</p>
-          <p>Погорельский переулок, 6</p>
-          <a href=tel:"+99999999999999">тел: +9 (999) 999-99-99</a>
-
+        <!-- блок 8 Контакты – карта -->
+        <section class="contacts">
+          <div class="content-container">
+            <h2 class="contacts__title">Контакты</h2>
+              <div class="contacts__flex">
+                <div class="contacts__text">
+                  <p>Москва</p>
+                  <p>Погорельский переулок, 6</p>
+                  <a href=tel:"+99999999999999">тел: +9 (999) 999-99-99</a>
         </div>
         <div class="contacts__map" id="map"></div>
       </div>

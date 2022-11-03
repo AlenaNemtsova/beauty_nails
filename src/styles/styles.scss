@@ -35,6 +35,7 @@ $attention-text: #f5ff00;
 
 body {
   min-width: 320px;
+  scroll-behavior: smooth;
 }
 
 .wrapper {
@@ -169,20 +170,26 @@ footer {
   display: none;
 }
 
-@media screen and (max-width: 800px) {
+// @media screen and (max-width: 800px) {
+@media screen and (max-width: 767px) {
+  .slider__container {
+    h2 {
+      font-size: 1.8rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
   .slider_item {
     flex-direction: column-reverse;
-  }
-
-  .slider {
-    margin: 0;
-    padding: auto;
   }
 
   #slider__img {
     width: 100%;
     height: 80%;
     padding: 10px;
+    margin: 0;
   }
 
   .previous,
