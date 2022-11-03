@@ -282,29 +282,6 @@
   border: 1px solid red;
 }
 
-body {
-  min-width: 320px;
-  font-weight: 400;
-  font-family: "Montserrat", Arial, sans-serif;
-}
-
-.wrapper {
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-
-.content-container {
-  max-width: 1200px;
-  margin: 0px auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-img {
-  max-width: 100%;
-}
-
 /* Услуги и цены */
 .container__price {
   padding-top: 7rem;
@@ -834,44 +811,33 @@ footer {
 .arrow_mobile {
   display: none;
 }
-.services-prices__title {
-  text-align: center;
-  margin: 0 auto;
-  font-family: "Montserrat", Arial, sans-serif;
-  font-size: 52px;
-  font-weight: 400;
-  color: #16191E;
-  padding-top: 120px;
-  margin-bottom: 50px;
-}
-.services-prices__content {
-  width: 100%;
-  height: 600px;
-  background: white;
-}
-.services-prices__content_flex {
-  display: flex;
-  padding: 35px;
-}
-.services-prices__calc {
-  width: 50%;
-}
-.services-prices__img {
-  width: 50%;
-  height: 300px;
-  max-height: 530px;
-  background-image: url("../images/hands.jpg");
-  background-color: #d8b9b9;
-}
 
-.calc {
-  padding-left: 2rem;
-}
-.calc__title {
-  font-size: 30px;
-  font-weight: 400;
-  color: #16191E;
-}
-.calc__box {
-  border: 1px solid red;
+@media screen and (max-width: 800px) {
+  .slider_item {
+    flex-direction: column-reverse;
+  }
+  .slider {
+    margin: 0;
+    padding: auto;
+  }
+  #slider__img {
+    width: 100%;
+    height: 80%;
+    padding: 10px;
+  }
+  .previous,
+.next {
+    display: none;
+  }
+  .arrow_mobile {
+    display: flex;
+    justify-content: space-around;
+  }
+  .previous_mobile,
+.next_mobile {
+    align-self: center;
+    cursor: pointer;
+    transition: 0.5s;
+    color: blue;
+  }
 }/*# sourceMappingURL=styles.css.map */
