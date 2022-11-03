@@ -49,11 +49,19 @@ const popupClose = (popupActive) => {
 // const select = (sender) => {
 //     sender.classList.toggle('selected');
 // }
+// валидация формы
+const formValidate = () => {
+    if (document.querySelector('#username').value == '') {
+        document.querySelector('.error__username').innerHTML += `Введите имя`;
+    } else if (document.querySelector('#phone').value == '') {
+        document.querySelector('.error__userphone').innerHTML += `Введите номер телефона`;
+    }
+}
 
 //отправка формы
 document.querySelector('.confirm').addEventListener('click', (e) => {
     e.preventDefault();
-
+    formValidate();
     fetch('https://httpbin.org/post', {
             method: 'POST',
             body: new FormData(booking)
@@ -68,7 +76,7 @@ document.querySelector('.confirm').addEventListener('click', (e) => {
         })
         .catch(err => console.log(err));
 })
-    
+
 
 //валидация формы
 //даты раньше текущей - неактивны
