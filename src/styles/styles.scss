@@ -1,433 +1,201 @@
-
 //шрифт montserrat 200/300/400/500
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap");
 
-@import "booking"; 
-// @import "services-prices.scss";
-
-@import 'services-prices';
-@import 'map';
-
-//переменные 
+//переменные
 //для элементов
-$btn-price-main: #F5FF00;
-$btn-price-hover: #E8F01A;
+$btn-price-main: #f5ff00;
+$btn-price-hover: #e8f01a;
 $page-bg-white: #ffffff;
-$page-bg-grey: #E6E9EE;
-$card-title-bg: #16191E;
-$card-body-bg:#E5EEF6;
+$page-bg-grey: #e6e9ee;
+$card-title-bg: #16191e;
+$card-body-bg: #e5eef6;
 
 //для текста
 $default-font: "Montserrat", Arial, sans-serif;
-$main-fsz: rem(16);
 
-$main-text: #16191E;
-$card-text:#83868c;
-$attention-text:#F5FF00;
+$main-text: #16191e;
+$card-grey: #83868c;
+$attention-text: #f5ff00;
 
-//Дания тексты
-$color3: #000;
-$color4:#090909;
+@import "booking";
+@import "list_of_services";
+@import "services-prices";
+@import "prices";
+@import "certificates";
+@import "banner";
 
+* {
+  font-family: $default-font;
+  font-weight: 400;
+}
 
 body {
-    min-width: 320px;
-    font-weight: 400;
-    font-family: $default-font;
+  min-width: 320px;
 }
 
 .wrapper {
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .content-container {
-    max-width: 1200px;
-    margin: 0px auto;
-    padding-left: 20px;
-    padding-right: 20px;
+  max-width: 1200px;
+  margin: 0px auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 img {
-    max-width: 100%; //делает изображения адаптивными
-}
-
-/* Услуги и цены */
-.container__price {
-    // width: 1440px;
-    height: 100%;
-    padding-left: 140px;
-    padding-right: 140px;
-    background: #E6E9EE;
-}
-
-.container__price-header span {
-    display: inline;
-    background-color: white;
-    box-shadow: -10px 0 0 white, 10px 0 0 white;
-    padding: 5px 0;
-    color: #191919;
-    border-radius: 50px;
-    font-weight: 300;
-}
-
-.card__menu {
-    display: grid;
-    grid-template-columns: 6fr 1fr;
-    // background-color: #f6d365;
-}
-
-.card__item {
-    display: grid;
-    grid-template-columns: 6fr 1fr;
-    // padding: 5px;
-    // margin-top: 5px;
-}
-
-.service__title {
-    // background-image: url(/assets/images/line_services_title.png);
-    // // height: 5px;
-    // background-repeat: no-repeat;
-    // background-position: center center;
-    // background-attachment: fixed;
-    // -webkit-background-size: cover;
-    // -moz-background-size: cover;
-    // -o-background-size: cover;
-    // background-size: cover;
-    font-family: Montserrat;
-    font-weight: 400;
-    text-transform: uppercase;
-    // text-align: center;
-    // font-size: 50px;
-    font-size: 1.1em;
-    color: #000;
-    padding-left: 10px;
-    // line-height: 59px;
-}
-
-.service__title span {
-    display: inline;
-    background-color: white;
-    box-shadow: -10px 0 0 white, 10px 0 0 white;
-    padding: 5px 0;
-    color: #191919;
-    // font-size: 45px;
-    border-radius: 50px;
-}
-
-.service__title_item {
-    padding-top: 0.6rem;
-    font-family: Montserrat;
-    font-weight: 400;
-    font-size: 1.2rem;
-}
-
-.card__name {
-    font-family: Montserrat;
-    font-weight: 400;
-    padding: 15px;
-    color: #83868c;
-}
-
-.card__line {
-    width: 124%;
-
-}
-
-.card__price {
-    min-width: 75px;
-    height: 0.2px;
-    font-family: Montserrat;
-    font-size: 500;
-    font-weight: 300;
-    // font-size: 1.1rem;
-    line-height: 2px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    text-transform: uppercase;
-    color: #090909;
-    background: #F5FF00;
-    border-radius: 30px;
-    padding: 20px;
-}
-
-.text_note {
-    font-family: Montserrat;
-    font-size: 0.8rem;
-    font-weight: 200;
-}
-
-///аккордеон для прайса
-.accordion {
-    padding: 0.5%;
-}
-
-.accordion__header::after {
-    flex-shrink: 0;
-    width: 1.25rem;
-    height: 1.25rem;
-    margin-left: auto;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-    background-repeat: no-repeat;
-    background-size: 1.25rem;
-    content: "";
-}
-
-.accordion__item_show .accordion__header::after {
-    transform: rotate(-180deg);
-}
-
-.accordion__item {
-    margin-bottom: 0.5rem;
-    border-radius: 0.25rem;
-    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 15%);
-}
-
-.accordion__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.75rem 1rem;
-    color: rgb(229, 238, 246);
-    font-weight: 500;
-    background-color: #83868c;
-    border-top-left-radius: 0.25rem;
-    border-top-right-radius: 0.25rem;
-    cursor: pointer;
-    transition: background-color 0.2s ease-out;
-}
-
-//   .accordion__header:hover {
-//     background-color: #0b5ed7;
-//   }
-
-.accordion__item_hidden .accordion__header {
-    border-bottom-right-radius: 0.25rem;
-    border-bottom-left-radius: 0.25rem;
-}
-
-.accordion__body {
-    padding: 0.75rem 1rem;
-    overflow: hidden;
-    background: rgb(229, 238, 246);
-    border-bottom-right-radius: 0.25rem;
-    border-bottom-left-radius: 0.25rem;
-}
-
-.accordion__item:not(.accordion__item_show) .accordion__header {
-    border-bottom-right-radius: 0.25rem;
-    border-bottom-left-radius: 0.25rem;
-}
-
-.accordion__item:not(.accordion__item_show) .accordion__body {
-    display: none;
-}
-
-
-//cтили для скрывания списка услуг полностьж
-.slide div.close__all,
-.slide [type="checkbox"]{
-    display:none;
-}
-
-.slide [type="checkbox"]:checked ~ div.close__all {
-    display:block;
-}
-
-.slide_text {
-    font-family: Montserrat;
-    font-size: 1.3em;
-    text-transform: uppercase;
-}
-
-
-//изменения после вебпака ПЕРЕНЕСТИ ДАНИЯ
-@media screen and (max-width:1023px) {
-
-    .slide_text {
-        font-size: 1.1em;
-    }
-
-    .service__title_item {
-        font-size: 0.95rem;
-    }
-
-    .accordion__header {
-        padding: 0.5rem 0.8rem;
-    }
-
-    .service__title {
-        font-size: 0.9rem;
-    }
-
-    .service__title span {
-        padding: 5px 0;
-    }
-
-    .card__name {
-        font-size: 0.8em;
-    }
-
-    .card__price {
-        min-width: 85px;
-        // height: 0.2px;
-        font-size: 0.8em;
-        border-radius: 30px;
-        padding:12px;
-        margin-top: 15px;
-    }
-
-    .text_note {
-        font-size: 0.7rem;
-    }
-}
-
-
-@media screen and (max-width:767px) {
-
-    .slide_text {
-        font-size: 1em;
-    }
-
-    .service__title_item {
-        font-size: 0.8rem;
-    }
-
-    .accordion__header {
-        padding: 0.3rem 0.6rem;
-    }
-
-    .service__title {
-        font-size: 0.7rem;
-    }
-
-    .service__title span {
-        padding: 5px 0;
-    }
-
-    .card__name {
-        font-size: 0.8em;
-    }
-
-    .card__price {
-        min-width: 75px;
-        // height: 0.2px;
-        font-size: 0.6em;
-        border-radius: 30px;
-        padding:12px;
-        margin-top: 15px;
-    }
-
-    .text_note {
-        font-size: 0.5rem;
-    }
-}
-
-.header__nav, .footer__container {
-    max-width: 1600px;
-    margin: 0 auto;
-    font-family: 'Montserrat', sans-serif;
+  max-width: 100%; //делает изображения адаптивными
 }
 
 .header__nav-container {
-    background-color: #E6E9EE;
+  background-color: #e6e9ee;
 }
 
 .header__nav {
-    &-brand {
-            font-size: 24px;
-        }
-    & a {
-        color: #16191E;
-    }
-    &-phone {
+  &-brand {
+    font-size: 24px;
+    font-weight: 300;
+  }
+  & a {
+    color: #16191e;
+  }
+  &-phone {
     color: $btn-price-main;
-    }
+  }
 }
 
 .header__nav-brand:hover {
-    color: #16191E;
+  color: #16191e;
 }
 
 .header__nav-link a:hover {
-    border: 1px solid $attention-text;
-    border-radius: 30px;
-    background-color: $attention-text;
-    color: #16191E;
+  border: 1px solid $attention-text;
+  border-radius: 30px;
+  background-color: $attention-text;
+  color: #16191e;
 }
 
 .header__nav-phone:hover {
-    border: 1px solid $attention-text;
-    border-radius: 30px;
-    background-color: $attention-text; 
-    color: #16191E;
+  border: 1px solid $attention-text;
+  border-radius: 30px;
+  background-color: $attention-text;
+  color: #16191e;
 }
 
 footer {
-    background-color: #E6E9EE;
-    
+  background-color: #e6e9ee;
 }
 
 .footer__nav-brand {
-    & a {
-        color: #16191E;
-        font-size: 24px; 
-    }      
+  & a {
+    color: #16191e;
+    font-size: 24px;
+  }
 }
 
 .footer__nav-link {
-    & a {
-        color: #16191E;
-    }
+  & a {
+    color: #16191e;
+  }
 }
 
 .footer__container a:hover {
-    color: #16191E;    
+  color: #16191e;
 }
 
 .slider {
-    margin: 100px;
-    padding: 50px;
+  margin: 0px 100px;
+  padding: 50px;
+}
+
+.slider__container {
+  background-color: #e6e9ee;
+  h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+  }
+
+  padding-top: 50px;
 }
 
 .item {
-    display: flex;
-    justify-content: space-evenly;
-    height: 100%;
-    color: #16191E;
+  display: flex;
+  justify-content: space-evenly;
+  height: 100%;
+  color: #16191e;
 }
 
 .item_col {
-    align-self: center;
-    text-align: center;
+  align-self: center;
+  text-align: center;
 }
 
-.btn {
+.popup__open {
+  padding: 10px;
+  background-color: #e8f01a;
+  color: #16191e;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.popup__open:hover {
+  background-color: #e8f01a;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+#slider__img {
+  object-fit: cover;
+  width: 60%;
+  height: 400px;
+  margin: 0px 50px;
+}
+
+.previous,
+.next {
+  align-self: center;
+  cursor: pointer;
+}
+
+.arrow_mobile {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .slider_item {
+    flex-direction: column-reverse;
+  }
+
+  .slider {
+    margin: 0;
+    padding: auto;
+  }
+
+  #slider__img {
+    width: 100%;
+    height: 80%;
     padding: 10px;
-    background-color: #E8F01A;
-    color: #E8F01A;
-    border-radius: 5px;
-    cursor: pointer;
-}
+  }
 
-.btn:hover {
-    background-color:#E8F01A;
-    transition: 0.5s;
-}
+  .previous,
+  .next {
+    display: none;
+  }
 
-.slider .item img {
-    object-fit: cover;
-    width: 50%;
-    height: 400px;
-}
+  .arrow_mobile {
+    display: flex;
+    justify-content: space-around;
+  }
 
-.previous, .next {
+  .previous_mobile,
+  .next_mobile {
     align-self: center;
     cursor: pointer;
+    transition: 0.5s;
+    color: blue;
+  }
 }
-
-
-@import 'services-prices';

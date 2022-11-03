@@ -5,10 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="./styles/normalize.css" />
 
-    <!-- <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>" /> -->
-    <link rel="stylesheet" href="./styles/styles.css" />
+  <!-- <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>" /> -->
+
+  <link rel="stylesheet" href="./styles/styles.css" />
 
     <link
       rel="stylesheet"
@@ -25,53 +31,64 @@
     <title>Beauty Nails</title>
   </head>
 
-  <body>
-    <!-- класс wrapper делает все блоки flex -->
-    <div class="wrapper">
-      <header id="header">
-        <!-- класс content-container ограничивает ширину внутреннего содержания блока и ставит по центру-->
-        <!-- <div class="content-container"></div> -->
-        <div class="header__nav-container" id="header">
-          <nav class="header__nav navbar navbar-expand-lg mb-5">
-            <a class="header__nav-brand navbar-brand mr-5" href="#"
-              >Beauty <br />Nails</a
-            >
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="header__nav-link navbar-nav mr-auto">
-                <a class="nav-item nav-link mr-1" href="#">УСЛУГИ И ЦЕНЫ</a>
-                <a class="nav-item nav-link mr-1" href="#">ОТЗЫВЫ</a>
-                <a class="nav-item nav-link mr-1" href="#">МАГАЗИН</a>
-                <a class="nav-item nav-link mr-1" href="#">КОНТАКТЫ</a>
-              </div>
-              <a class="header__nav-phone nav-item nav-link" href="#"
-                >+9 (999) 999-99-99</a
-              >
+<body>
+  <!-- класс wrapper делает все блоки flex -->
+  <div class="wrapper">
+    <header id="header">
+      <!-- класс content-container ограничивает ширину внутреннего содержания блока и ставит по центру-->
+      <!-- <div class="content-container"></div> -->
+      <div class="header__nav-container" id="header">
+        <nav class="header__nav navbar navbar-expand-lg">
+          <a class="header__nav-brand navbar-brand mr-5" href="#">Beauty <br />Nails</a>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="header__nav-link navbar-nav mr-auto">
+              <a class="nav-item nav-link mr-4 p-2" href="#">УСЛУГИ И ЦЕНЫ</a>
+              <a class="nav-item nav-link mr-4 p-2" href="#">ОТЗЫВЫ</a>
+              <a class="nav-item nav-link mr-4 p-2" href="#">МАГАЗИН</a>
+              <a class="nav-item nav-link mr-4 p-2" href="#">КОНТАКТЫ</a>
             </div>
-            <div class="navbar navbar-light">
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-            </div>
-          </nav>
-        </div>
-      </header>
+            <a class="header__nav-phone nav-item nav-link" href=tel:"+99999999999">+9 (999) 999-99-99</a>
+          </div>
+          <div class="navbar navbar-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
 
       <main>
         <!-- блок 1 – название и баннер -->
         <div class="content-container">Сеть салонов красоты в Москве</div>
 
         <!-- блок 2 Услуги -->
-        <section>
+        <section class="block2">
           <div class="content-container">
-            <h2>Услуги</h2>
+            <div class="service-list">
+              <h2 class="service-list_title">Услуги</h2>
+
+              <div class="service-list_pedicure">
+                <h4 class="service-list_subtitle">Педикюр</h4>
+                <p class="service-list_text">
+                  У нас вы найдёте самые уникальные и интересные оттенки. А наши
+                  мастера воплотят любые ваши идеи дизайна.
+                </p>
+                <a href="#popup" class="popup__open">Записаться</a>
+                <img src="./images/legs.jpg" alt="" class="service-list_img" />
+              </div>
+
+              <div class="service-list_manicure">
+                <img src="./images/hands.jpg" alt="" class="service-list_img" />
+                <h4 class="service-list_subtitle">Маникюр</h4>
+                <p class="service-list_text">
+                  У нас вы найдёте самые уникальные и интересные оттенки. А наши
+                  мастера воплотят любые ваши идеи дизайна.
+                </p>
+                <a href="#popup" class="popup__open">Записаться</a>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -79,7 +96,7 @@
         <section>
           <div class="content-container">
             <!-- Запись -->
-            <a href="#popup" class="popup__open">Записаться</a>
+            <!-- <a href="#popup" class="popup__open">Записаться</a> -->
             <div class="popup" id="popup">
               <div class="popup__body">
                 <div class="">
@@ -187,39 +204,48 @@
 
         <!-- блок 4 Галерея мастеров -->
         <section>
-          <div class="content-container">
-            <div class="slider">
-              <div class="slider_item">
-                <a class="previous" onclick="previousSlide()">&#10094;</a>
-                <div class="item_col">
-                  <h3>Мария Усманова</h3>
-                  <p>Маникюр, педикюр</p>
-                  <button class="btn">Записаться</button>
+          <div class="slider__container">
+            <h2>Выберите своего мастера</h2>
+            <div class="content-container">
+              <div class="slider">
+                <div class="slider_item">
+                  <a class="previous" onclick="previousSlide()">&#10094;</a>
+                  <div class="item_col">
+                    <h3>Мария Усманова</h3>
+                    <p>Маникюр, педикюр, наращивание ногтей</p>
+                    <a href="#popup" class="popup__open">Записаться</a>
+                  </div>
+                  <img id="slider__img" src="images/master.jpg" alt="" />
+                  <a class="next" onclick="nextSlide()">&#10095;</a>
                 </div>
-                <img src="images/master.jpg" alt="" />
-                <a class="next" onclick="nextSlide()">&#10095;</a>
-              </div>
 
-              <div class="slider_item">
-                <a class="previous" onclick="previousSlide()">&#10094;</a>
-                <div class="item_col">
-                  <h3>Ирина Петрова</h3>
-                  <p>Маникюр, педикюр, наращивание ногтей</p>
-                  <button class="btn">Записаться</button>
+                <div class="slider_item">
+                  <a class="previous" onclick="previousSlide()">&#10094;</a>
+                  <div class="item_col">
+                    <h3>Ирина Петрова</h3>
+                    <p>Маникюр, педикюр, наращивание ногтей</p>
+                    <a href="#popup" class="popup__open">Записаться</a>
+                  </div>
+                  <img id="slider__img" src="images/master2.jpg" alt="" />
+                  <a class="next" onclick="nextSlide()">&#10095;</a>
                 </div>
-                <img src="images/master2.jpg" alt="" />
-                <a class="next" onclick="nextSlide()">&#10095;</a>
-              </div>
 
-              <div class="slider_item">
-                <a class="previous" onclick="previousSlide()">&#10094;</a>
-                <div class="item_col">
-                  <h3>Татьяна Лютова</h3>
-                  <p>Маникюр, педикюр, наращивание ногтей</p>
-                  <button class="btn">Записаться</button>
+                <div class="slider_item">
+                  <a class="previous" onclick="previousSlide()">&#10094;</a>
+                  <div class="item_col">
+                    <h3>Татьяна Лютова</h3>
+                    <p>Маникюр, педикюр, наращивание ногтей</p>
+                    <a href="#popup" class="popup__open">Записаться</a>
+                  </div>
+                  <img id="slider__img" src="images/master3.jpg" alt="" />
+                  <a class="next" onclick="nextSlide()">&#10095;</a>
                 </div>
-                <img src="images/master3.jpg" alt="" />
-                <a class="next" onclick="nextSlide()">&#10095;</a>
+                <div class="arrow_mobile">
+                  <a class="previous_mobile" onclick="previousSlide()"
+                    >&#10094;</a
+                  >
+                  <a class="next_mobile" onclick="nextSlide()">&#10095;</a>
+                </div>
               </div>
             </div>
           </div>
@@ -289,14 +315,20 @@
               </div>
             </div>
           </div>
+
+        </div>
+   
+
         </section>
 
         <!-- блок 6 Стоимость услуг – прайс -->
         <section>
           <div class="container__price">
-            <h2 class="container__price-header">
-              <span>Стоимость услуг</span>
-            </h2>
+          <div class="content-container">
+            <h3 class="container__price-header">
+              <span>СТОИМОСТЬ УСЛУГ</span>
+            </h3>
+
             <div class="price-service">
               <div class="service__card">
                 <div class="slide">
@@ -309,9 +341,10 @@
                   </label>
                   <input type="checkbox" id="slide1" />
                   <div class="close__all">
-                    <h3 class="service__title">
+
+                    <h4 class="service__title">
                       <span>Комбинированные услуги</span>
-                    </h3>
+                    </h4>
                     <!-- <hr> -->
                     <!-- аккордеон -->
                     <div class="accordion" id="accordion-1">
@@ -384,6 +417,7 @@
                           </p>
                         </div>
                         <div class="accordion__body">
+
                           <div
                             class="service__list_manicure-top-alignment-remove"
                           >
@@ -491,7 +525,8 @@
                   </label>
                   <input type="checkbox" id="slide2" />
                   <div class="close__all">
-                    <h3 class="service__title"><span>Моноуслуги</span></h3>
+
+                    <h4 class="service__title"><span>Моноуслуги</span></h4>
                     <!-- <hr> -->
                     <!-- Маникюр-->
                     <div class="accordion" id="accordion-9">
@@ -619,12 +654,47 @@
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- блок 7 Подарочные сертификаты -->
-        <section>
-          <div class="content-container"></div>
-        </section>
+
+      <!-- блок 7 Подарочные сертификаты -->
+      <section>
+        <div class="content-container">
+          <div class="container__gift-certificates">
+            <div class="text">
+              <h3 class="gift-certificates_header">Подарочные сертификаты</h3>
+              <p class="gift-certificates_text">Купить подарочный сертификат можно прямо на нашем сайте или в одном из
+                салонов.</p>
+            </div>
+            <div class="sertificate1" id="sertificate">
+              <div class="sertificate_text">
+                <p>СЕРТИФИКАТ 1000 РУБЛЕЙ</p>
+              </div>
+            </div>
+            <div class="sertificate2" id="sertificate2">
+              <div class="sertificate_text">
+                <p>СЕРТИФИКАТ 3000 РУБЛЕЙ</p>
+              </div>
+            </div>
+            <div class="sertificate3" id="sertificate3">
+              <div class="sertificate_text">
+                <p>СЕРТИФИКАТ 5000 РУБЛЕЙ</p>
+              </div>
+            </div>
+            <div class="sertificate4" id="sertificate4">
+              <div class="sertificate_text">
+                <p>СЕРТИФИКАТ 7000 РУБЛЕЙ</p>
+              </div>
+            </div>
+            <div class="sertificate5" id="sertificate5">
+              <div class="sertificate_text">
+                <p>СЕРТИФИКАТ 10000 РУБЛЕЙ</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
         <!-- блок 8 Контакты – карта -->
         <section class="contacts">
@@ -644,24 +714,24 @@
         </section>
       </main>
 
-      <footer>
-        <div class="content-container">
-          <div class="footer__container">
-            <div class="flex-column navbar navbar-expand-lg">
-              <div class="footer__nav-brand navbar m-auto">
-                <a class="navbar-brand" href="#">Beauty <br />Nails</a>
-              </div>
-              <div class="footer__nav-link navbar m-auto">
-                <a class="nav-item nav-link" href="#">УСЛУГИ И ЦЕНЫ</a>
-                <a class="nav-item nav-link" href="#">ОТЗЫВЫ</a>
-                <a class="nav-item nav-link" href="#">МАГАЗИН</a>
-                <a class="nav-item nav-link" href="#">КОНТАКТЫ</a>
-              </div>
+    <footer>
+      <div class="content-container">
+        <div class="footer__container">
+          <div class="flex-column navbar navbar-expand-lg">
+            <div class="footer__nav-brand navbar m-auto">
+              <a class="navbar-brand" href="#">Beauty <br />Nails</a>
+            </div>
+            <div class="footer__nav-link navbar m-auto">
+              <a class="nav-item nav-link" href="#">УСЛУГИ И ЦЕНЫ</a>
+              <a class="nav-item nav-link" href="#">ОТЗЫВЫ</a>
+              <a class="nav-item nav-link" href="#">МАГАЗИН</a>
+              <a class="nav-item nav-link" href="#">КОНТАКТЫ</a>
             </div>
           </div>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
+  </div>
 
     <!-- Скрипты -->
     <script
@@ -677,9 +747,11 @@
 
     <!-- <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script> -->
 
-    <script src="index.js"></script>
-    <script src="booking.js"></script>
-    <script src="calc.js"></script>
-    <script src="map.js"></script>
-  </body>
+  <script src="index.js"></script>
+  <script src="booking.js"></script>
+  <script src="calc.js"></script>
+  <script src="prices.js"></script>
+</body>
+
 </html>
+
