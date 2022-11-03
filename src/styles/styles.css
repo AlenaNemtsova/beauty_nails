@@ -282,34 +282,6 @@
   border: 1px solid red;
 }
 
-
-* {
-  font-family: "Montserrat", Arial, sans-serif;
-  font-weight: 400;
-}
-
-body {
-  min-width: 320px;
-}
-
-.wrapper {
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-
-.content-container {
-  max-width: 1200px;
-  margin: 0px auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-img {
-  max-width: 100%;
-}
-
-
 /* Услуги и цены */
 .container__price {
   padding-top: 7rem;
@@ -330,8 +302,7 @@ img {
   padding: 5px 0;
   color: #191919;
   border-radius: 50px;
-  font-weight: 400;
-  font-size: 1.4rem;
+  font-weight: 300;
 }
 
 .price-service {
@@ -349,6 +320,8 @@ img {
 }
 
 .service__title {
+  font-family: Montserrat;
+  font-weight: 400;
   text-transform: uppercase;
   font-size: 1.1em;
   color: #000;
@@ -366,10 +339,14 @@ img {
 
 .service__title_item {
   padding-top: 0.6rem;
+  font-family: Montserrat;
+  font-weight: 400;
   font-size: 1.2rem;
 }
 
 .card__name {
+  font-family: Montserrat;
+  font-weight: 400;
   padding: 15px;
   color: #83868c;
 }
@@ -381,7 +358,8 @@ img {
 .card__price {
   min-width: 75px;
   height: 0.2px;
-  font-size: 1rem;
+  font-family: Montserrat;
+  font-size: 500;
   font-weight: 300;
   line-height: 2px;
   display: flex;
@@ -396,6 +374,7 @@ img {
 }
 
 .text_note {
+  font-family: Montserrat;
   font-size: 0.8rem;
   font-weight: 200;
 }
@@ -471,10 +450,9 @@ img {
 }
 
 .slide_text {
-
-
-  font-size: 1.2em;
-
+  padding: 1rem;
+  font-family: Montserrat;
+  font-size: 1.3em;
   text-transform: uppercase;
 }
 
@@ -538,11 +516,9 @@ img {
     font-size: 0.5rem;
   }
 }
-
 .container__gift-certificates {
   padding-top: 2rem;
   padding-bottom: 2rem;
-  height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -551,13 +527,12 @@ img {
 }
 
 .gift-certificates_header {
-  font-family: Montserrat;
   font-weight: 400;
-  font-size: 2.5em;
+  font-size: 3rem;
+  margin-bottom: 1.25rem;
 }
 
 .gift-certificates_text {
-  font-family: Montserrat;
   font-weight: 300;
   font-size: 1.2em;
 }
@@ -607,10 +582,9 @@ img {
   margin: 0 auto;
   display: flex;
   width: 50%;
-  font-family: Montserrat;
   font-weight: 500;
   font-size: 1.6em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 @media screen and (max-width: 1023px) {
@@ -641,10 +615,13 @@ img {
     font-size: 1em;
   }
 }
+* {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 400;
+}
+
 body {
   min-width: 320px;
-  font-weight: 400;
-  font-family: "Montserrat", Arial, sans-serif;
 }
 
 .wrapper {
@@ -663,17 +640,6 @@ body {
 img {
   max-width: 100%;
 }
-
-.header__nav, .footer__container {
-  max-width: 90%;
-  margin: 0 auto;
-  font-family: "Montserrat", sans-serif;
-}
-
-.slider__container {
-  font-family: "Montserrat", sans-serif;
-}
-
 
 .header__nav-container {
   background-color: #e6e9ee;
@@ -767,7 +733,8 @@ footer {
 }
 
 #slider__img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 60%;
   height: 400px;
   margin: 0px 50px;
@@ -811,50 +778,4 @@ footer {
     transition: 0.5s;
     color: blue;
   }
-
-}
-.services-prices {
-  background-color: #E6E9EE;
-}
-.services-prices__title {
-  text-align: center;
-  margin: 0 auto;
-  font-family: "Montserrat", Arial, sans-serif;
-  font-size: 52px;
-  font-weight: 400;
-  color: #16191E;
-  padding-top: 120px;
-  margin-bottom: 50px;
-}
-.services-prices__content {
-  width: 100%;
-  height: 600px;
-  background: white;
-}
-.services-prices__content_flex {
-  display: flex;
-  padding: 35px;
-}
-.services-prices__calc {
-  width: 50%;
-}
-.services-prices__img {
-  width: 50%;
-  height: 300px;
-  max-height: 530px;
-  background-image: url("../images/hands.jpg");
-  background-color: #d8b9b9;
-}
-
-.calc {
-  padding-left: 2rem;
-}
-.calc__title {
-  font-size: 30px;
-  font-weight: 400;
-  color: #16191E;
-}
-.calc__box {
-  border: 1px solid red;
-
 }/*# sourceMappingURL=styles.css.map */

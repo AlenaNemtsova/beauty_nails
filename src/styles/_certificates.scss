@@ -1,0 +1,109 @@
+//стили для блока сертификатов
+.container__gift-certificates {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem 1rem;
+  grid-template-areas:
+    "text sertificate1 sertificate2"
+    "sertificate3 sertificate4 sertificate5";
+}
+
+.gift-certificates_header {
+  font-weight: 400;
+  font-size: 3rem;
+  margin-bottom: 1.25rem;
+}
+
+.gift-certificates_text {
+  font-weight: 300;
+  font-size: 1.2em;
+}
+
+.text {
+  justify-self: center;
+  align-self: center;
+  grid-area: text;
+}
+.sertificate1 {
+  background-image: url("/src/images/certificates_bckgrnd.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sertificate2 {
+  background-image: url("/src/images/certificates_bckgrnd.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sertificate3 {
+  background-image: url("/src/images/certificates_bckgrnd.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sertificate4 {
+  background-image: url("/src/images/certificates_bckgrnd.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sertificate5 {
+  background-image: url("/src/images/certificates_bckgrnd.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sertificate_text {
+  margin: 0 auto;
+  display: flex;
+  width: 50%;
+  font-weight: 500;
+  font-size: 1.6em;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1023px) {
+  .gift-certificates_header {
+    font-size: 1.8em;
+  }
+
+  .gift-certificates_text {
+    font-size: 1em;
+  }
+
+  .sertificate_text {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container__gift-certificates {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0.5rem 0.5rem;
+    grid-template-areas:
+      "text sertificate1"
+      "sertificate2 sertificate3"
+      "sertificate4 sertificate5";
+  }
+  .gift-certificates_header {
+    font-size: 1.5em;
+  }
+
+  .gift-certificates_text {
+    font-size: 0.7em;
+  }
+
+  .sertificate_text {
+    font-size: 1em;
+  }
+}
