@@ -24,7 +24,7 @@
 
     &_flex {
       display: flex;
-      padding: 35px;
+      padding: 2rem;
     }
   }
 
@@ -35,10 +35,6 @@
       margin-left: 0;
       font-size: 1.2rem;
     }
-  }
-
-  &__img {
-    width: 50%;
   }
 }
 
@@ -71,14 +67,15 @@
     display: none;
   }
 
+  .services-prices__title {
+    font-size: 1.5rem;
+    margin-left: 0;
+    padding-top: 3rem;
+  }
+
   .calc {
     width: 70%;
     margin: 0 auto;
     padding-left: 0;
-
-    &__title {
-      font-size: 1.5rem;
-      margin-left: 0;
-    }
   }
 }

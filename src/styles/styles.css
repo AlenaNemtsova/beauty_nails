@@ -379,7 +379,7 @@ p {
 }
 .services-prices__content_flex {
   display: flex;
-  padding: 35px;
+  padding: 2rem;
 }
 .services-prices__calc {
   width: 50%;
@@ -387,9 +387,6 @@ p {
 .services-prices__calc p {
   margin-left: 0;
   font-size: 1.2rem;
-}
-.services-prices__img {
-  width: 50%;
 }
 
 .calc {
@@ -416,14 +413,15 @@ p {
   .services-prices__img {
     display: none;
   }
+  .services-prices__title {
+    font-size: 1.5rem;
+    margin-left: 0;
+    padding-top: 3rem;
+  }
   .calc {
     width: 70%;
     margin: 0 auto;
     padding-left: 0;
-  }
-  .calc__title {
-    font-size: 1.5rem;
-    margin-left: 0;
   }
 }
 /* Услуги и цены */
@@ -745,7 +743,7 @@ p {
 @media screen and (max-width: 767px) {
   .container__gift-certificates {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 0.5rem 0.5rem;
     grid-template-areas: "text sertificate1" "sertificate2 sertificate3" "sertificate4 sertificate5";
   }
@@ -782,6 +780,7 @@ p {
 
 .banner__right-container {
   width: 55%;
+  padding-bottom: 5rem;
 }
 
 .banner__left-container {
@@ -864,6 +863,9 @@ p {
     margin: 0 auto;
     width: 70%;
     margin-bottom: 3rem;
+  }
+  .contacts__title {
+    padding-top: 3rem;
   }
   .contacts__text {
     width: 100%;
@@ -955,6 +957,11 @@ body {
   margin: 0px auto;
   padding-left: 20px;
   padding-right: 20px;
+}
+@media screen and (max-width: 767px) {
+  .content-container {
+    width: 80%;
+  }
 }
 
 img {
@@ -1071,6 +1078,9 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
+  .navbar {
+    padding-left: 0;
+  }
   .slider__container h2 {
     font-size: 1.8rem;
   }

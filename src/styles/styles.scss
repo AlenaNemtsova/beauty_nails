@@ -49,6 +49,10 @@ body {
   margin: 0px auto;
   padding-left: 20px;
   padding-right: 20px;
+
+  @media screen and (max-width: 767px) {
+    width: 80%;
+  }
 }
 
 img {
@@ -170,8 +174,10 @@ footer {
   display: none;
 }
 
-// @media screen and (max-width: 800px) {
 @media screen and (max-width: 767px) {
+  .navbar {
+    padding-left: 0;
+  }
   .slider__container {
     h2 {
       font-size: 1.8rem;
