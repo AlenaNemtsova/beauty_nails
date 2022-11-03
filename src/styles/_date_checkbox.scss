@@ -1,0 +1,50 @@
+/* кастомизированный чекбокс */
+.custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-checkbox + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.custom-checkbox + label::before {
+  content: "";
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid $card-text;
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+}
+
+.custom-checkbox:checked + label::before {
+  border-color: $card-text;
+  background-color: $btn-price-main;
+}
+
+/* стили при наведении курсора на checkbox */
+.custom-checkbox:not(:disabled):not(:checked) + label:hover::before {
+  border-color: $main-text;
+}
+
+/* стили для активного состояния чекбокса (при нажатии на него) */
+.custom-checkbox:not(:disabled):active + label::before {
+  background-color: rgba(128, 128, 128, 0.5);
+  border-color: rgba(128, 128, 128, 0.5);
+}
+
+/* стили для чекбокса, находящегося в состоянии disabled */
+.custom-checkbox:disabled + label::before {
+  background-color: #e9ecef;
+}
+
+// стиль для сегодняшней даты над чекбоксами
+.today_style {
+  font-weight: 700;
+}

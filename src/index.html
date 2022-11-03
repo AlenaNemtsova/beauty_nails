@@ -89,114 +89,185 @@
         </section>
 
         <!-- блок 3 Выберите мастера -->
-        <section>
-          <div class="content-container">
-            <!-- Запись -->
-            <!-- <a href="#popup" class="popup__open">Записаться</a> -->
-            <div class="popup" id="popup">
-              <div class="popup__body">
-                <div class="">
-                  <form action="" class="popup__content" id="booking">
-                    <a href="#header" class="popup__close">&#215;</a>
-                    <div class="item">
-                      <label for="first_name">Введите Ваше имя</label>
-                      <input
-                        type="text"
-                        id="username"
-                        class="input"
-                        name="username"
-                        required
-                      />
+      <section>
+        <div class="content-container">
+          <!-- Запись -->
+          <a href="#popup" class="popup__open">Записаться</a>
+          <div class="popup" id="popup">
+            <div class="popup__body">
+              <!-- <div class=""> -->
+              <form action="" class="popup__content" id="booking">
+
+                <a href="#header" class="popup__close">&#215;</a>
+                <!-- Данные клиента -->
+                <div class="item item_username">
+                  <label for="first_name">Введите Ваше имя</label>
+                  <input type="text" id="username" class="input" name="username" required />
+                </div>
+
+                <div class="item item_userphone">
+                  <label for="phone">Введите Ваш номер телефона</label>
+                  <input type="tel" id="phone" class="input" maxlength="11" minlength="11" name="phone" required />
+                </div>
+                <!-- Выбор специалиста -->
+                <div class="item item_master">
+                  <label for="master">Выберите специалиста</label>
+                  <select name="person" id="master" class="choose_master">
+                    <option value="none" class="option" default></option>
+                    <option value="Мария Усманова" class="option">Мария Усманова</option>
+                    <option value="Ирина Петрова" class="option">Ирина Петрова</option>
+                    <option value="Татьяна Лютова" class="option">Татьяна Лютова</option>
+                  </select>
+                </div>
+                <!-- Выбор услуги -->
+                <div class="item item__type">
+                  <h5>Выберите услуги</h5>
+                  <div class="choose_type">
+                    <div class="type">
+                      <input type="checkbox" name="procedure" id="manicure" value="маникюр">
+                      <label for="manicure">Маникюр</label>
                     </div>
-                    <div class="item">
-                      <label for="phone">Введите Ваш номер телефона</label>
-                      <input
-                        type="tel"
-                        id="phone"
-                        class="input"
-                        maxlength="11"
-                        minlength="11"
-                        name="phone"
-                        required
-                      />
+                    <div class="type">
+                      <input type="checkbox" name="procedure" id="pedicure" value="педикюр">
+                      <label for="pedicure">Педикюр</label>
                     </div>
-                    <div class="item">
-                      <label for="master">Выбрать специалиста</label>
-                      <!-- <select name="person" id="master" class="choose_master" onchange="selectedMaster(this)"> -->
-                      <select name="person" id="master" class="choose_master">
-                        <option value="none" class="option" default></option>
-                        <option value="Мария Усманова" class="option">
-                          Мария Усманова
-                        </option>
-                        <option value="Ирина Петрова" class="option">
-                          Ирина Петрова
-                        </option>
-                        <option value="Татьяна Лютова" class="option">
-                          Татьяна Лютова
-                        </option>
-                      </select>
+                    <div class="type">
+                      <input type="checkbox" name="procedure" id="grow_nails" value="наращивание ногтей">
+                      <label for="grow_nails">Наращивание ногтей</label>
+                    </div>
+                  </div>
+                </div>
+                <!-- Выбор даты -->
+                <div class="item item__date">
+                  <h5>Выберите дату</h5>
+                  <div class="week-box">
+                    <div id="mon_checkbox" class="day_item">
+                      <p>Пн</p>
+                      <div>
+                        <input type="radio" name="selection" value="" class="selection custom-checkbox" id="monday">
+                        <label for="monday" id="mon_date" class="label"></label>
+                      </div>
                     </div>
 
-                    <div class="item">
-                      <label>Выбрать услуги</label>
-                      <div class="choose_type">
-                        <div>
-                          <input
-                            type="checkbox"
-                            name="procedure"
-                            id="manicure"
-                            value="маникюр"
-                          />
-                          <label for="manicure">Маникюр</label>
-                        </div>
-                        <div>
-                          <input
-                            type="checkbox"
-                            name="procedure"
-                            id="pedicure"
-                            value="педикюр"
-                          />
-                          <label for="pedicure">Педикюр</label>
-                        </div>
-                        <div>
-                          <input
-                            type="checkbox"
-                            name="procedure"
-                            id="grow_nails"
-                            value="наращивание ногтей"
-                          />
-                          <label for="grow_nails">Наращивание ногтей</label>
-                        </div>
+                    <div id="tues_checkbox" class="day_item">
+                      <p>Вт</p>
+                      <div>
+                        <input type="radio" name="selection" value="" class="selection custom-checkbox" id="tuesday">
+                        <label for="tuesday" id="tues_date" class="label"></label>
                       </div>
                     </div>
-                    <div class="item">
-                      <div class="choose_date">Выбрать дату</div>
-                    </div>
-                    <div class="item">
-                      <div class="choose_date" style="display: none">
-                        Выбрать время
+
+                    <div id="wednes_checkbox" class="day_item">
+                      <p>Ср</p>
+                      <div>
+                        <input type="radio" name="selection" value="" class="selection custom-checkbox" id="wednesday">
+                        <label for="wednesday" id="wednes_date" class="label"></label>
                       </div>
                     </div>
-                    <a href="#popup_2" class="popup__open confirm"
-                      >Записаться</a
-                    >
-                  </form>
+
+                    <div id="thurs_checkbox" class="day_item">
+                      <p>Чт</p>
+                      <div>
+                        <input type="radio" name="selection" value="" class="selection custom-checkbox" id="thursday">
+                        <label for="thursday" id="thurs_date" class="label"></label>
+                      </div>
+                    </div>
+
+                    <div id="fri_checkbox" class="day_item">
+                      <p>Пт</p>
+                      <div>
+                        <input type="radio" name="selection" value="" class="selection custom-checkbox" id="friday">
+                        <label for="friday" id="fri_date" class="label"></label>
+                      </div>
+                    </div>
+
+                    <div id="satur_checkbox" class="day_item">
+                      <p>Сб</p>
+                      <div>
+                        <input type="radio" name="selection" value="" class="selection custom-checkbox" id="saturday">
+                        <label for="saturday" id="satur_date" class="label"></label></div>
+                    </div>
+
+                    <div id="sun_checkbox" class="day_item">
+                      <p>Вс</p>
+                      <div>
+                        <input type="radio" name="selection" value="" class="selection custom-checkbox" id="sunday">
+                        <label for="sunday" id="sun_date" class="label"></label>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <!-- Подтверждение -->
-            <div class="popup" id="popup_2">
-              <div class="popup__body">
-                <div class="popup__content">
-                  <a href="#header" class="popup__close close-popup-js"
-                    >&#215;</a
-                  >
-                  <div class="confirmation"></div>
+                <!-- Выбор времени -->
+                <div class="item item__time">
+                  <h5>Выберите время</h5>
+                  <div class="choose_time">
+                    <div class="time" onclick="select(this)">
+                      <input type="radio" name="time" value="9:00" id="9" class="time_radio">
+                      <label for="9">9:00</label>
+                    </div>
+                    <div class="time" onclick="select(this)">
+                      <input type="radio" name="time" value="10:00" id="10" class="time_radio">
+                      <label for="10">10:00</label>
+                    </div>
+                    <div class="time" onclick="select(this)">
+                      <input type="radio" name="time" value="11:00" id="11" class="time_radio">
+                      <label for="11">11:00</label>
+                    </div>
+                    <div class="time" onclick="select(this)">
+                      <input type="radio" name="time" value="12:00" id="12" class="time_radio">
+                      <label for="12">12:00</label>
+                    </div>
+                    <div class="time" onclick="select(this)">
+                      <input type="radio" name="time" value="13:00" id="13" class="time_radio">
+                      <label for="13">13:00</label>
+                    </div>
+                    <div class="time" onclick="select(this)">
+                      <input type="radio" name="time" value="14:00" id="14" class="time_radio">
+                      <label for="14">14:00</label>
+                    </div>
+                    <div class="time" onclick="select(this)">
+                      <input type="radio" name="time" value="15:00" id="15" class="time_radio">
+                      <label for="15">15:00</label>
+                    </div>
+                    <div class="time" onclick="select(this)">
+                      <input type="radio" name="time" value="16:00" id="16" class="time_radio">
+                      <label for="16">16:00</label>
+                    </div>
+                    <div class="time" onclick="select(this)">
+                      <input type="radio" name="time" value="17:00" id="17" class="time_radio">
+                      <label for="17">17:00</label>
+                    </div>
+                    <div class="time" onclick="select(this)">
+                      <input type="radio" name="time" value="18:00" id="18" class="time_radio">
+                      <label for="18">18:00</label>
+                    </div>
+                    <div class="time" onclick="select(this)">
+                      <input type="radio" name="time" value="19:00" id="19" class="time_radio">
+                      <label for="19">19:00</label>
+                    </div>
+                    <div class="time" onclick="select(this)">
+                      <input type="radio" name="time" value="20:00" id="20" class="time_radio">
+                      <label for="20">20:00</label>
+                    </div>
+                  </div>
                 </div>
-              </div>
+
+                <a href="#popup_2" class="popup__open confirm">Записаться</a>
+              </form>
             </div>
           </div>
-        </section>
+        </div>
+        <!-- Подтверждение -->
+        <div class="popup" id="popup_2">
+          <div class="popup__body">
+            <div class="popup__content">
+              <a href="#header" class="popup__close close-popup-js">&#215;</a>
+              <div class="confirmation"></div>
+            </div>
+          </div>
+          <!-- </div> -->
+        </div>
+      </section>
 
         <!-- блок 4 Галерея мастеров -->
         <section>
@@ -214,7 +285,6 @@
                   <img id="slider__img" src="images/master.jpg" alt="" />
                   <a class="next" onclick="nextSlide()">&#10095;</a>
                 </div>
-
                 <div class="slider_item">
                   <a class="previous" onclick="previousSlide()">&#10094;</a>
                   <div class="item_col">
@@ -745,6 +815,7 @@
 
   <script src="index.js"></script>
   <script src="booking.js"></script>
+  <script src="date_checkbox.js"></script>
   <script src="calc.js"></script>
   <script src="prices.js"></script>
   <script src="map.js"></script>
