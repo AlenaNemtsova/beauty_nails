@@ -11,6 +11,7 @@
   opacity: 0;
   visibility: hidden;
   transition: 0.5s all;
+  overflow-y: scroll;
 }
 .popup__body {
   display: flex;
@@ -24,7 +25,7 @@
   align-items: flex-start;
   position: relative;
   max-width: 700px;
-  padding: 4rem;
+  padding: 2rem 4rem;
   background-color: #e5eef6;
   color: #16191e;
 }
@@ -42,10 +43,10 @@
 }
 .popup__open {
   padding: 1.1rem 2rem;
-  background-color: #5FC369;
+  background-color: #5fc369;
   border: none;
   cursor: pointer;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .popup.open {
   opacity: 1;
@@ -190,7 +191,6 @@ p {
 .confirmation {
   padding: 2rem;
   font-size: 1.2em;
-  line-height: 1.5em;
   border-radius: 2rem;
   border: 2px solid #f5ff00;
   background-color: #ffffff;
