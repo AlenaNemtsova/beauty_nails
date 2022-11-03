@@ -636,33 +636,32 @@ const certificateThree = document.getElementById('sertificate3');
 const certificateFour = document.getElementById('sertificate4');
 const certificateFive = document.getElementById('sertificate5');
 
-
 certificate.addEventListener('click', (event) => {
-    if (event.target.classList.contains('sertificate1')) {
+    if (event.target.classList.contains('js-sertificate_text')) {
         alert('Сертификат на 1000 рублей добавлен в корзину');
     }
 })
 
 certificateTwo.addEventListener('click', (event) => {
-    if (event.target.classList.contains('sertificate2')) {
+    if (event.target.classList.contains('js-sertificate_text2')) {
         alert('Сертификат на 3000 рублей добавлен в корзину');
     }
 })
 
 certificateThree.addEventListener('click', (event) => {
-    if (event.target.classList.contains('sertificate3')) {
+    if (event.target.classList.contains('js-sertificate_text3')) {
         alert('Сертификат на 5000 рублей добавлен в корзину');
     }
 })
 
 certificateFour.addEventListener('click', (event) => {
-    if (event.target.classList.contains('sertificate4')) {
+    if (event.target.classList.contains('js-sertificate_text4')) {
         alert('Сертификат на 7000 рублей добавлен в корзину');
     }
 })
 
 certificateFive.addEventListener('click', (event) => {
-    if (event.target.classList.contains('sertificate5')) {
+    if (event.target.classList.contains('js-sertificate_text5')) {
         alert('Сертификат на 10000 рублей добавлен в корзину');
     }
 })
