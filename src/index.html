@@ -57,7 +57,23 @@
 
       <main>
         <!-- блок 1 – название и баннер -->
-        <div class="content-container">Сеть салонов красоты в Москве</div>
+        <div class="banner">
+        <!-- <div class="content-container"> -->
+          <div class="banner__container">
+          <div class="banner__left-container">
+            <h5>Сеть салонов красоты в Москве</h5>
+            <h1>Маникюр, педикюр, брови и ресницы</h1>
+            <div class="banner__btns">
+              <a href="#popup" class="popup__open">Записаться</a>
+              <a href="#prices" class="banner__btns-price">Узнать стоимость</a>
+            </div>
+          </div>
+          <div class="banner__right-container">
+            <img src="../src/images/girl.jpg" class="banner_img" alt="banner">
+          </div>
+        </div>
+      <!-- </div> -->
+    </div>
 
         <!-- блок 2 Услуги -->
         <section class="block2">
@@ -92,7 +108,6 @@
       <section>
         <div class="content-container">
           <!-- Запись -->
-          <a href="#popup" class="popup__open">Записаться</a>
           <div class="popup" id="popup">
             <div class="popup__body">
               <!-- <div class=""> -->
@@ -290,7 +305,7 @@
                   <div class="item_col">
                     <h3>Ирина Петрова</h3>
                     <p>Маникюр, педикюр, наращивание ногтей</p>
-                    <a href="#popup" class="popup__open">Записаться</a>
+                    <a href="#popup" class="popup__open">Записаться
                   </div>
                   <img id="slider__img" src="images/master2.jpg" alt="" />
                   <a class="next" onclick="nextSlide()">&#10095;</a>
@@ -327,16 +342,20 @@
                   <p class="calc__title">Маникюр</p>
                   <div class="calc__box">
                     <form action="" class="calc__form" onchange="getPrice()">
-                      <div class="form__select">
-                        Выберите маникюр
+                      <div class="calc__flex">
+                      <div class="calc__item">
+                        <span>Выберите маникюр</span>
+                        
                         <select name="" class="select-val">
                           <option value="2000" selected>Классический</option>
                           <option value="2200">Комбинированный</option>
                           <option value="2500">Аппаратный</option>
                         </select>
+                      </div>
 
+                      <div class="calc__item">
+                        <span>Дополнительно</span>
                         <div>
-                          Дополнительно
 
                           <input
                             type="checkbox"
@@ -355,29 +374,40 @@
                           />
                           <label class="" for="alignment">выравнивание</label>
                         </div>
-                        Выберите покрытие
-
+                      </div>
+                          
+                          
+                      <div class="calc__item">
+                        <span>Выберите покрытие</span>
                         <select name="" class="select-val">
                           <option value="0">Без покрытия</option>
                           <option value="200">Первое</option>
                           <option value="300">Второе</option>
                         </select>
-                        Добавим дизайн?
+                      </div>
+                        
+                      <div class="calc__item">
+                        <span>Добавим дизайн?</span>
                         <select name="" class="select-val">
                           <option value="0">Нет</option>
                           <option value="300">Френч</option>
                           <option value="600">Дизайн</option>
                         </select>
                       </div>
+
                       <div class="calc__result">
                         <p>Стоимость услуги:</p>
                         <p id="js-result-sum">2000 руб.</p>
                       </div>
+                    </div>
                     </form>
+                    
                     <a href="#popup" class="popup__open">Записаться</a>
                   </div>
                 </div>
-                <div class="services-prices__img"></div>
+                <div class="services-prices__img">
+                  <img alt="hands" src="./images/hands2.jpg">
+                </div>
               </div>
             </div>
           </div>
@@ -776,7 +806,6 @@
                 <div class="contacts__map" id="map"></div>
               </div>
             </div>
-          </div>
         </section>
       </main>
 
