@@ -1,7 +1,9 @@
 //шрифт montserrat 200/300/400/500
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap");
 
 //переменные
+
 //для элементов
 $btn-price-main: #f5ff00;
 $btn-price-hover: #e8f01a;
@@ -199,3 +201,21 @@ footer {
     color: blue;
   }
 }
+
+
+.slider .item img {
+    object-fit: cover;
+    width: 50%;
+    height: 400px;
+}
+
+.previous, .next {
+    align-self: center;
+    cursor: pointer;
+}
+
+
+@import 'services-prices';
+@import "booking"; 
+@import 'date_checkbox';
+
