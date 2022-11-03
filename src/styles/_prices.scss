@@ -1,0 +1,251 @@
+/* Услуги и цены */
+.container__price {
+  padding-top: 7rem;
+  padding-bottom: 1.6rem;
+  padding-left: 140px;
+  padding-right: 140px;
+  background: #e6e9ee;
+}
+
+.container__price-header {
+  padding-left: 0.8rem;
+}
+
+.container__price-header span {
+  display: inline;
+  background-color: white;
+  box-shadow: -10px 0 0 white, 10px 0 0 white;
+  padding: 5px 0;
+  color: #191919;
+  border-radius: 50px;
+  font-weight: 300;
+}
+
+.price-service {
+  padding-top: 1rem;
+}
+
+.card__menu {
+  display: grid;
+  grid-template-columns: 6fr 1fr;
+}
+
+.card__item {
+  display: grid;
+  grid-template-columns: 6fr 1fr;
+}
+
+.service__title {
+  font-family: Montserrat;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  color: #000;
+  padding-left: 10px;
+}
+
+.service__title span {
+  display: inline;
+  background-color: white;
+  box-shadow: -10px 0 0 white, 10px 0 0 white;
+  padding: 5px 0;
+  color: #191919;
+  border-radius: 50px;
+}
+
+.service__title_item {
+  padding-top: 0.6rem;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.card__name {
+  font-family: Montserrat;
+  font-weight: 400;
+  padding: 15px;
+  color: #83868c;
+}
+
+.card__line {
+  width: 124%;
+}
+
+.card__price {
+  min-width: 75px;
+  height: 0.2px;
+  font-family: Montserrat;
+  font-size: 500;
+  font-weight: 300;
+  line-height: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #090909;
+  background: #f5ff00;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.text_note {
+  font-family: Montserrat;
+  font-size: 0.8rem;
+  font-weight: 200;
+}
+
+///аккордеон для прайса
+.accordion {
+  padding: 0.5%;
+}
+
+.accordion__header::after {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: auto;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  content: "";
+}
+
+.accordion__item_show .accordion__header::after {
+  transform: rotate(-180deg);
+}
+
+.accordion__item {
+  margin-bottom: 0.5rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 15%);
+}
+
+.accordion__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  color: rgb(229, 238, 246);
+  font-weight: 500;
+  background-color: #83868c;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-out;
+}
+
+.accordion__item_hidden .accordion__header {
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.accordion__body {
+  padding: 0.75rem 1rem;
+  overflow: hidden;
+  background: rgb(229, 238, 246);
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.accordion__item:not(.accordion__item_show) .accordion__header {
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.accordion__item:not(.accordion__item_show) .accordion__body {
+  display: none;
+}
+
+//cтили для скрывания списка услуг полностьж
+.slide div.close__all,
+.slide [type="checkbox"] {
+  display: none;
+}
+
+.slide [type="checkbox"]:checked ~ div.close__all {
+  display: block;
+}
+
+.slide_text {
+  padding: 1rem;
+  font-family: Montserrat;
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1023px) {
+  .slide_text {
+    font-size: 1.1em;
+  }
+
+  .service__title_item {
+    font-size: 0.95rem;
+  }
+
+  .accordion__header {
+    padding: 0.5rem 0.8rem;
+  }
+
+  .service__title {
+    font-size: 0.9rem;
+  }
+
+  .service__title span {
+    padding: 5px 0;
+  }
+
+  .card__name {
+    font-size: 0.8em;
+  }
+
+  .card__price {
+    min-width: 85px;
+    font-size: 0.8em;
+    border-radius: 30px;
+    padding: 12px;
+    margin-top: 15px;
+  }
+
+  .text_note {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .slide_text {
+    font-size: 1em;
+  }
+
+  .service__title_item {
+    font-size: 0.8rem;
+  }
+
+  .accordion__header {
+    padding: 0.3rem 0.6rem;
+  }
+
+  .service__title {
+    font-size: 0.7rem;
+  }
+
+  .service__title span {
+    padding: 5px 0;
+  }
+
+  .card__name {
+    font-size: 0.8em;
+  }
+
+  .card__price {
+    min-width: 75px;
+    font-size: 0.6em;
+    border-radius: 30px;
+    padding: 12px;
+    margin-top: 15px;
+  }
+
+  .text_note {
+    font-size: 0.5rem;
+  }
+}
