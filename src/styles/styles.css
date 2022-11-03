@@ -604,9 +604,7 @@ p {
     margin-top: 0.3rem;
     margin-bottom: 0.3rem;
   }
-  .item_username,
-.item_userphone,
-.item_master {
+  .item_username, .item_userphone, .item_master {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
