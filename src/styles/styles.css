@@ -282,6 +282,64 @@
   border: 1px solid red;
 }
 
+
+.banner__container {
+  font-family: "Montserrat", Arial, sans-serif;
+  display: flex;
+  flex-direction: row;
+  background-color: #E6E9EE;
+  padding-left: 100px;
+}
+.banner__container .banner__right-container {
+  max-width: 55%;
+}
+.banner__container .banner__left-container {
+  max-width: 35%;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+.banner__container h1 {
+  font-size: 50px;
+  margin: 60px 0;
+}
+.banner__container .banner__btns-price {
+  background-color: #E6E9EE;
+  border: 2px solid #F5FF00;
+  color: #16191E;
+  padding: 10px;
+  border-radius: 15px;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  font-weight: 400;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-container {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+img {
+  max-width: 100%;
+}
+
+
 /* Услуги и цены */
 .container__price {
   padding-top: 7rem;
@@ -516,6 +574,7 @@
     font-size: 0.5rem;
   }
 }
+
 .container__gift-certificates {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -778,4 +837,5 @@ footer {
     transition: 0.5s;
     color: blue;
   }
+
 }/*# sourceMappingURL=styles.css.map */
