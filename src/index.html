@@ -69,18 +69,18 @@
 
                   <a href="#header" class="popup__close">&#215;</a>
                   <!-- Данные клиента -->
-                  <div class="item">
+                  <div class="item item_username">
                     <label for="first_name">Введите Ваше имя</label>
                     <input type="text" id="username" class="input" name="username" required />
                   </div>
 
-                  <div class="item">
+                  <div class="item item_userphone">
                     <label for="phone">Введите Ваш номер телефона</label>
                     <input type="tel" id="phone" class="input" maxlength="11" minlength="11" name="phone" required />
                   </div>
                   <!-- Выбор специалиста -->
-                  <div class="item">
-                    <label for="master">Выбрать специалиста</label>
+                  <div class="item item_master">
+                    <label for="master">Выберите специалиста</label>
                     <select name="person" id="master" class="choose_master">
                       <option value="none" class="option" default></option>
                       <option value="Мария Усманова" class="option">Мария Усманова</option>
@@ -90,17 +90,17 @@
                   </div>
                   <!-- Выбор услуги -->
                   <div class="item item__type">
-                    <label>Выберите услуги</label>
+                    <h5>Выберите услуги</h5>
                     <div class="choose_type">
-                      <div>
+                      <div class="type">
                         <input type="checkbox" name="procedure" id="manicure" value="маникюр">
                         <label for="manicure">Маникюр</label>
                       </div>
-                      <div>
+                      <div class="type">
                         <input type="checkbox" name="procedure" id="pedicure" value="педикюр">
                         <label for="pedicure">Педикюр</label>
                       </div>
-                      <div>
+                      <div class="type">
                         <input type="checkbox" name="procedure" id="grow_nails" value="наращивание ногтей">
                         <label for="grow_nails">Наращивание ногтей</label>
                       </div>
@@ -108,7 +108,7 @@
                   </div>
                   <!-- Выбор даты -->
                   <div class="item item__date">
-                    <label for="">Выберите дату</label>
+                    <h5>Выберите дату</h5>
                     <div class="week-box">
                       <div id="mon_checkbox" class="day_item">
                         <p>Пн</p>
@@ -169,7 +169,7 @@
                   </div>
                   <!-- Выбор времени -->
                   <div class="item item__time">
-                    <p>Выберите время</p>
+                    <h5>Выберите время</h5>
                     <div class="choose_time">
                       <div class="time" onclick="select(this)">
                         <input type="radio" name="time" value="9:00" id="9" class="time_radio" >
