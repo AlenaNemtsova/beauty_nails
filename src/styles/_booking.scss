@@ -1,161 +1,320 @@
+//переменные 
+//для элементов
+$btn-price-main: #F5FF00;
+$btn-price-hover: #E8F01A;
+$page-bg-white: #ffffff;
+$page-bg-grey: #E6E9EE;
+$card-title-bg: #16191E;
+$card-body-bg:#E5EEF6;
+
+//для текста
+$default-font: "Montserrat",
+Arial,
+sans-serif;
+$main-fsz: rem(16);
+
+$main-text: #16191E;
+$card-text:#83868c;
+$attention-text:#F5FF00;
+
 /* Запись к мастеру */
 .popup {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(128, 128, 128, 0.5);
-  top: 0;
-  left: 0;
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.5s all;
-
-  &__body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem 1rem;
-  }
-
-  &__content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    /* display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(5, 1fr); */
-    position: relative;
-    min-width: 600px;
-    padding: 30px;
-    background-color: $card-body-bg;
-    color: $main-text;
-    /* overflow-y: scroll; */
-  }
-
-  &__close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 30px;
-    color: $main-text;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  &__open {
-    background-color: #5fc369;
-    border: none;
-    padding: 18px 30px;
-    cursor: pointer;
-    color: #ffffff;
-  }
-
-  &.open {
-    opacity: 1;
-    visibility: visible;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(128, 128, 128, 0.5);
+    opacity: 0;
+    visibility: hidden;
     transition: 0.5s all;
-  }
+
+    &__body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 1rem;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        max-width: 700px;
+        padding: 4rem;
+        background-color: $card-body-bg;
+        color: $main-text;
+    }
+
+    &__close {
+        position: absolute;
+        top: 0.6rem;
+        right: 0.6rem;
+        font-size: 2em;
+        color: $main-text;
+        text-decoration: none;
+        cursor: pointer;
+
+        &:focus,
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    &__open {
+        padding: 1.1rem 2rem;
+        background-color: #5FC369;
+        border: none;
+        cursor: pointer;
+        color: #FFFFFF;
+    }
+
+    &.open {
+        opacity: 1;
+        visibility: visible;
+        transition: 0.5s all;
+    }
 }
 
 .confirm {
-  /* width: 155px;
-    height: 55px; */
-  width: 400px;
-  height: 50px;
-  margin: 0.5em auto;
-  border-radius: 10px;
-  background-color: $btn-price-main;
-  border: 1px solid $btn-price-main;
-  color: $main-text;
-  font-size: 1.2em;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 0.5rem;
-  &:focus,
-  &:hover {
-    text-decoration: none;
-  }
+    min-width: 400px;
+    min-height: 50px;
+    margin: 0.5em auto;
+    padding: 0.5rem;
+    border-radius: 10px;
+    background-color: $btn-price-main;
+    border: 1px solid $btn-price-main;
+    color: $main-text;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    text-align: center;
+
+    &:focus,
+    &:hover {
+        text-decoration: none;
+    }
 }
 
-.option {
-  width: 400px;
-  height: 70px;
-  margin: 0.5em auto;
-  border-radius: 30px;
-  border-color: $btn-price-main;
-  text-align: center;
-  font-size: 1em;
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 600px;
+    margin-top: 0.8rem;
+    border-radius: 2rem;
+
+    &_username,
+    &_userphone,
+    &_master {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-size: 1.1em;
+    }
+
+    &__type,
+    &__date,
+    &__time {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border: 2px solid $btn-price-main;
+    }
+
+    .item__type {
+        font-size: 1.1em;
+    }
 }
 
-.master {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  justify-content: start;
-  align-items: center;
-  width: 400px;
-  height: 100px;
-  margin: 0.5em auto;
-  border-radius: 30px;
-  border-color: $page-bg-grey;
-  background-color: $page-bg-white;
-}
-
-.ava {
-  grid-column: 1/2;
-  justify-self: center;
-  max-height: 80px;
-  border-radius: 50%;
-}
-
-.text {
-  grid-column: 2/3;
+/* Выбор услуги */
+.choose_type {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 600px;
+    margin-top: 1rem;
+    border-radius: 2rem;
 }
 
 .type {
-  display: flex;
-  /* align-items: center; */
-  width: 400px;
-  height: 50px;
-  margin: 0.5em auto;
-  border-radius: 10px;
-  background-color: $page-bg-white;
-  border: 2px solid $page-bg-grey;
-  font-size: 1.5em;
-
-  &_name {
-    text-align: center;
-    margin: 0.2em auto;
-  }
+    display: flex;
 }
 
+input[type="checkbox"] {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.3rem;
+}
+
+/* Выбор мастера */
 .input,
 .choose_master {
-  width: 250px;
-  height: 50px;
-  margin: 0.5em auto;
-  text-align: center;
-  border-radius: 10px;
-  border: 2px solid $page-bg-grey;
+    min-width: 250px;
+    min-height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid $page-bg-grey;
 }
 
 .input:-webkit-autofill,
 .input:-webkit-autofill:hover,
 .input:-webkit-autofill:focus,
 .input:-webkit-autofill:active {
-  box-shadow: 0 0 0 30px white inset;
+    box-shadow: 0 0 0 30px white inset;
 }
 
-.item {
-  display: flex;
-  align-items: center;
-  // justify-content: flex-start;
-  justify-items: start;
+.option {
+    min-width: 400px;
+    min-height: 70px;
+    margin: 0.5em auto;
+    border-radius: 2rem;
+    border-color: $btn-price-main;
+    text-align: center;
+    font-size: 1em;
 }
 
+/* Дата */
+.week-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.day_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+p {
+    margin: 0.5rem;
+}
+
+/* Время */
+.choose_time {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.time {
+    min-width: 80px;
+    min-height: 30px;
+    margin: 0.7rem;
+    border-radius: 2rem;
+    background-color: $page-bg-white;
+    border: 1px solid $card-text;
+    text-align: center;
+    font-size: 1em;
+}
+
+.selected {
+    background-color: $btn-price-main;
+}
+
+/* Подтверждение записи */
 .confirmation {
-  font-size: 1.2em;
-  line-height: 1.5em;
+    padding: 2rem;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    border-radius: 2rem;
+    border: 2px solid $btn-price-main;
+    background-color: $page-bg-white;
 }
 
-//дата и время - как?
-//валидация формы
+/* медиа запросы блок 3 */
+@media screen and (max-width:1023px) {}
+
+@media screen and (max-width:767px) {
+    .popup__content {
+        max-width: 600px;
+    }
+
+    .item {
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .popup__content {
+        max-width: 400px;
+        padding-top: 1.2rem;
+        padding-bottom: 1rem;
+    }
+
+    .item {
+        margin-top: 0.3rem;
+        margin-bottom: 0.3rem;
+
+        &_username,
+        &_userphone,
+        &_master {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            font-size: 1.1em;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+
+    .choose_type {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        min-width: 320px;
+        margin-top: 0.5rem;
+        margin-left: 2rem;
+        border-radius: 2rem;
+    }
+
+    .choose_time {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .week-box {
+        flex-wrap: wrap;
+    }
+
+    .day_item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1rem;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    p {
+        display: none;
+    }
+
+    .time {
+        min-width: 70px;
+        min-height: 30px;
+        margin: 0.5rem;
+        font-size: 1em;
+    }
+
+    .confirm {
+        min-width: 200px;
+        min-height: 50px;
+    }
+
+    .confirmation {
+        min-width: 80%;
+        padding: 1rem;
+        font-size: 1em;
+        line-height: 1.2em;
+    }
+}
