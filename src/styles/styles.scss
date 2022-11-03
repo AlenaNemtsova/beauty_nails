@@ -16,7 +16,7 @@ $card-body-bg: #e5eef6;
 $default-font: "Montserrat", Arial, sans-serif;
 
 $main-text: #16191e;
-$card-grey: #83868c;
+$card-text: #83868c;
 $attention-text: #f5ff00;
 
 @import "booking";
@@ -25,6 +25,7 @@ $attention-text: #f5ff00;
 @import "prices";
 @import "certificates";
 @import "banner";
+@import "date_checkbox";
 
 * {
   font-family: $default-font;
@@ -202,20 +203,14 @@ footer {
   }
 }
 
-
 .slider .item img {
-    object-fit: cover;
-    width: 50%;
-    height: 400px;
+  object-fit: cover;
+  width: 50%;
+  height: 400px;
 }
 
-.previous, .next {
-    align-self: center;
-    cursor: pointer;
+.previous,
+.next {
+  align-self: center;
+  cursor: pointer;
 }
-
-
-@import 'services-prices';
-@import "booking"; 
-@import 'date_checkbox';
-
