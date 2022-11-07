@@ -10,17 +10,17 @@ The site also has tablet and mobile versions.
 
 ## Technology stack
 <p><img src="src\images\HTML.png" alt="HTML" width="100rem"/>
-<img src="src\images\SASS.png" alt="SASS" width="100rem"/></p>
+<img src="src\images\SASS.png" alt="SASS" width="100rem"/>
 <img src="src\images\CSS.png" alt="CSS" width="100rem"/>
 <img src="src\images\JS.png" alt="JS" width="100rem"/></p>
 
 
 ## Result
 
-<p><img src="images\Capture1.PNG" alt="beauty_nails-result"/>
-<img src="images\Capture2.PNG" alt="beauty_nails-result"/>
-<img src="images\Capture3.PNG" alt="beauty_nails-result"/>
-<img src="images\Capture4.PNG" alt="beauty_nails-result"/></p>
+<p><img src="src\images\Capture1.PNG" alt="beauty_nails-result"/>
+<img src="src\images\Capture2.PNG" alt="beauty_nails-result"/>
+<img src="src\images\Capture3.PNG" alt="beauty_nails-result"/>
+<img src="src\images\Capture4.PNG" alt="beauty_nails-result"/></p>
 
 
 ## Authors
