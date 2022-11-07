@@ -51,10 +51,15 @@ const popupClose = (popupActive) => {
 // }
 // валидация формы
 const formValidate = () => {
-    if (document.querySelector('#username').value == '') {
-        document.querySelector('.error__username').innerHTML += `Введите имя`;
-    } else if (document.querySelector('#phone').value == '') {
-        document.querySelector('.error__userphone').innerHTML += `Введите номер телефона`;
+    const username = document.querySelector('#username');
+    const phone = document.querySelector('#phone');
+    
+    document.querySelector('.error').innerHTML = "";
+    
+    if (!username.value) {
+        document.querySelector('.error__username').innerHTML += 'Введите имя';
+    } else if (!phone.value) {
+        document.querySelector('.error__userphone').innerHTML += 'Введите номер телефона';
     }
 }
 
@@ -82,3 +87,4 @@ document.querySelector('.confirm').addEventListener('click', (e) => {
 //даты раньше текущей - неактивны
 //выбранное время - неактивно - локал сторидж?
 //при выборе времени менять фон контейнера
+//очистка формы после заполнения
